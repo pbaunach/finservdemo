@@ -1,5 +1,5 @@
 class MobileController < ApplicationController
-  layout 'mobile'
+  layout 'community'
 
   def demo
   end

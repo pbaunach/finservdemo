@@ -217,18 +217,6 @@
 		    <li class="slds-tabs__item slds-text-heading--label center-tabs-temp" title="Details" role="presentation" id="main-tab-details"><a  role="tab" tabindex="0" aria-selected="true">Details</a></li>
 		    <li class="slds-tabs__item slds-text-heading--label slds-active center-tabs-temp" title="Tearsheet" role="presentation" id="main-tab-tearsheet"><a  role="tab" tabindex="0" aria-selected="true">Tearsheet</a></li>
 		    <li class="slds-tabs__item slds-text-heading--label center-tabs-temp" title="Financial Accounts" role="presentation" id="main-tab-financial"><a href="#" role="tab" tabindex="-1" aria-selected="false">Financial Accounts</a></li>
-		    <li class="slds-tabs__item slds-text-heading--label center-tabs-temp" title="Relationships" role="presentation" id="main-tab-relationships"><a href="#" role="tab" tabindex="-1" aria-selected="false">Relationships</a></li>
-		    <li class="slds-tabs__item slds-text-heading--label center-tabs-temp" title="Goals" role="presentation" id="main-tab-goals"><a href="#" role="tab" tabindex="-1" aria-selected="false">Goals</a></li>
-		    <li class="slds-tabs__item slds-text-heading--label center-tabs-temp" title="More" role="presentation"><a href="#" role="tab" tabindex="-1" aria-selected="false">
-		    	More
-    			<button class="slds-button slds-button--icon-bare">
-	              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
-	                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
-	              </svg>
-	              <span class="slds-assistive-text">More Actions</span>
-	            </button>
-	          </a>
-	        </li>
 		  </ul>
 		  <div class="slds-tabs__content slds-hide slds-grid main-tab-content" role="tabpanel" id="main-tab-content-overview">
 			<div class="slds-form slds-grid slds-wrap slds-m-top--large">
@@ -709,13 +697,12 @@
 			    <li class="slds-tabs__item slds-text-heading--label side-tabs-temp" title="Item One" role="presentation" id="side-tab-activity"><a href="#" role="tab" tabindex="0" aria-selected="true">Activity</a></li>
 			    <li class="slds-tabs__item slds-text-heading--label slds-active side-tabs-temp" title="Item Two" role="presentation" id="side-tab-collaborate"><a href="#" role="tab" tabindex="-1" aria-selected="false" >Collaborate</a></li>
 			  </ul>
-			  <div class="slds-tabs__content slds-hide side-tab-content" role="tabpanel" id="side-tab-content-activity">
+			  <div class="slds-tabs__content slds-show side-tab-content" role="tabpanel" id="side-tab-content-activity">
 			    <div class="slds-tabs--scoped" style="padding-bottom:1.5rem;">
 				  <ul class="slds-tabs--scoped__nav" role="tablist">
-				    <li class="slds-tabs__item slds-text-heading--label slds-active" title="Item One" role="presentation"><a href="#" role="tab" tabindex="0" aria-selected="true">New Task</a></li>
-				    <li class="slds-tabs__item slds-text-heading--label" title="Item Two" role="presentation"><a href="#" role="tab" tabindex="-1" aria-selected="false">New Event</a></li>
+				    <li class="slds-tabs__item slds-text-heading--label slds-active" title="Item One" role="presentation"><a href="#" role="tab" tabindex="0" aria-selected="true">Task</a></li>
+				    <li class="slds-tabs__item slds-text-heading--label" title="Item Two" role="presentation"><a href="#" role="tab" tabindex="-1" aria-selected="false">Event</a></li>
 				    <li class="slds-tabs__item slds-text-heading--label" title="Item Three" role="presentation"><a href="#" role="tab" tabindex="-1" aria-selected="false">Log a Call</a></li>
-				    <li class="slds-tabs__item slds-text-heading--label" title="Item Three" role="presentation"><a href="#" role="tab" tabindex="-1" aria-selected="false">Email</a></li>
 				  </ul>
 				  <div class="slds-tabs__content slds-show" role="tabpanel">
 				     <input id="input__filter_test" class="slds-input" type="text" placeholder="Create a new task..." />
@@ -733,7 +720,60 @@
 					<h2 class="sectionHeader"> Next Steps </h2>
 				</div>
 				<div>
-					No Activity
+				<li class="slds-timeline__item">
+				    <span class="slds-assistive-text">Task</span>
+				    <div class="slds-media slds-media--reverse">
+				      <div class="slds-media__figure">
+				        <div class="slds-timeline__actions">
+				          <p class="slds-timeline__date">Feb 24</p>
+				          <button class="slds-button slds-button--icon-border-filled">
+				            <svg aria-hidden="true" class="slds-button__icon">
+				              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+				            </svg>
+				            <span class="slds-assistive-text">Switch</span>
+				          </button>
+				        </div>
+				      </div>
+				      <div class="slds-media__body">
+				        <div class="slds-media slds-media--timeline slds-timeline__media--task">
+				          <div class="slds-media__figure">
+				            <svg aria-hidden="true" class="slds-icon slds-icon-standard-task slds-timeline__icon">
+				              <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#task"></use>
+				            </svg>
+				          </div>
+				          <div class="slds-media__body">
+				            <div class="slds-media slds-tile slds-media--small">
+				              <div class="slds-media__figure">
+				                <label class="slds-checkbox" for="mark-complete">
+				                  <input name="checkbox" type="checkbox" id="mark-complete" />
+				                  <span class="slds-checkbox--faux"></span>
+				                  <span class="slds-form-element__label slds-assistive-text">mark-complete</span>
+				                </label>
+				              </div>
+				              <div class="slds-media__body">
+				                <p class="slds-tile__title slds-truncate"><a href="#">Review proposals for EBC deck with larger team and have marketing review this</a></p>
+				                <ul class="slds-tile__detail slds-list--horizontal slds-text-body--small">
+				                  <li class="slds-list__item slds-m-right--large">
+				                    <dl class="slds-dl--inline">
+				                      <dt class="slds-dl--inline__label">Contact:</dt>
+				                      <dd class="slds-dl--inline__detail"><a href="#">Lei Chan</a></dd>
+				                    </dl>
+				                  </li>
+				                  <li class="slds-list__item">
+				                    <dl class="slds-dl--inline">
+				                      <dt class="slds-dl--inline__label">Assigned to:</dt>
+				                      <dd class="slds-dl--inline__detail"><a href="#">Betty Mason</a></dd>
+				                    </dl>
+				                  </li>
+				                </ul>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				  </li>
+				</ul>
 				</div>
 				<div class="timelineHeader">
 					<h2 class="sectionHeader"> Past Activity </h2>
@@ -932,7 +972,7 @@
 				</ul>
 				<!-- End Timeline -->
 			  </div>
-			  <div class="slds-tabs__content slds-show side-tab-content" role="tabpanel" id="side-tab-content-collaborate">
+			  <div class="slds-tabs__content slds-hide side-tab-content" role="tabpanel" id="side-tab-content-collaborate">
 			    <div class="slds-tabs--scoped" style="padding-bottom:1.5rem;">
 				  <ul class="slds-tabs--scoped__nav" role="tablist">
 				    <li class="slds-tabs__item slds-text-heading--label slds-active" title="Item One" role="presentation"><a href="#" role="tab" tabindex="0" aria-selected="true">Post</a></li>

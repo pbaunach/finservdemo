@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'mc/journey'
 
   get 'mobile/demo'
+  get 'mobile/ipad'
 
   get 'ins/community'
 
