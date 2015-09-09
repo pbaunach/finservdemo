@@ -1,0 +1,37 @@
+
+<div id="mobile_01" class="mobile-screen" style="background: url(/assets/images/mobile_01.png); background-size:100% 100%; background-repeat: no-repeat; height:100vh; width:100vw; z-index:1;position:absolute; top:0; right:0;" >
+</div>
+<div id="mobile_02" class="mobile-screen" style="background: url(/assets/images/mobile_02.png); background-size:100% 100%; background-repeat: no-repeat; height:100vh; width:100vw; z-index:3; display:none; position:absolute; top:0; right:0;" >
+</div>
+<div id="mobile_03" class="mobile-screen" style="background: url(/assets/images/mobile_03.png); background-size:100% 100%; background-repeat: no-repeat; height:100vh; width:100vw; z-index:5; display:none; position:absolute; top:0; right:0;" >
+</div>
+<div id="mobile_04" class="mobile-screen" style="background: url(/assets/images/mobile_04.png); background-size:100% 100%; background-repeat: no-repeat; height:100vh; width:100vw; z-index:7; display:none; position:absolute; top:0; right:0;" >
+</div>
+<div id="mobile_05" class="mobile-screen" style="background: url(/assets/images/mobile_05.png); background-size:100% 100%; background-repeat: no-repeat; height:100vh; width:100vw;z-index:9; display:none;position:absolute; top:0; right:0; " >
+</div>
+<script>
+$(document).ready(function(){
+
+
+$('#mobile_01').click(function() {
+		//$(this).animate({width:'hide'},150);
+		$('#mobile_02').animate({width:'show'},150);
+	});
+$('#mobile_02').click(function() {
+		//$(this).animate({width:'hide'},150);
+		$('#mobile_03').animate({width:'show'},150);
+	});
+$('#mobile_03').click(function() {
+		$(this).hide();
+		$('#mobile_04').show();
+	});
+$('#mobile_04').click(function() {
+		//$(this).animate({width:'hide'},150);
+		$('#mobile_05').animate({width:'show'},150);
+	});
+$('#mobile_05').click(function() {
+		$('.mobile-screen').hide();
+		$('#mobile_01').show();
+	});
+})
+</script>

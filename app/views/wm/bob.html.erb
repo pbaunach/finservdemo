@@ -1,0 +1,476 @@
+
+ <div class="slds-grid" style="height:100vh; width:100vw;">
+	<div style="min-height:100%; background-color:rgb(22, 50, 92);">
+		<div class="tempSideNav">
+			<ul class="">
+				<li>
+					<a href="#" class="sidenav-row-temp">
+						<span class="slds-icon__container slds-icon-utility-rows">
+						  <svg aria-hidden="true" class="slds-icon slds-icon--small">
+						    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#rows"></use>
+						  </svg>
+						</span>
+					</a>
+				</li>
+				<li>
+					<%= link_to(root_path+'today/today') do %>
+						<span class="slds-icon__container">
+						  <svg aria-hidden="true" class="slds-icon">
+						    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#today"></use>
+						  </svg>
+						</span>
+						Today
+					<% end %>
+				</li>
+				<li>
+					<%= link_to(root_path+'sales/leadlist') do %>
+						<span class="slds-icon__container">
+						  <svg aria-hidden="true" class="slds-icon">
+						    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#lead"></use>
+						  </svg>
+						</span>
+						Leads
+					<% end %>
+				</li>
+				<li class="selected-temp">
+					<%= link_to(root_path+'wm/bob') do %>
+						<span class="slds-icon__container slds-icon-custom-15">
+						  <svg aria-hidden="true" class="slds-icon">
+						    <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom15"></use>
+						  </svg>
+						</span>
+						Clients
+					<% end %>
+				</li>
+				<li>
+					<%= link_to(root_path+'wm/profile') do %>
+						<span class="slds-icon__container">
+						  <svg aria-hidden="true" class="slds-icon">
+						    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#people"></use>
+						  </svg>
+						</span>
+						People
+					<% end %>
+				</li>
+				<li>
+					<%= link_to(root_path+'cb/profile') do %>
+						<span class="slds-icon__container">
+						  <svg aria-hidden="true" class="slds-icon">
+						    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#account"></use>
+						  </svg>
+						</span>
+						Accounts
+					<% end %>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="slds-col">
+	 <div class="slds-grid slds-wrap slds-align-top">
+	 	<div class="slds-col slds-size--1-of-1 navbar-temp">
+	 		<div class="slds-grid">
+			  <div class="slds-col slds-align-middle">
+			  	<span class="slds-icon__container slds-icon-utility-salesforce1">
+				  <svg aria-hidden="true" class="slds-icon slds-icon-text-default icon-salesforce1-temp">
+				    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#salesforce1"></use>
+				  </svg>
+				</span>
+			  </div>
+			  <div class="slds-col slds-align-middle" style="text-align:center;">
+			  	<div class="slds-input" style="text-align:left;">
+			  		<span class="slds-icon__container slds-icon-utility-search slds-m-horizontal--x-small">
+					  <svg aria-hidden="true" class="slds-icon--x-small slds-icon-text-default">
+					    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+					  </svg>
+					</span>
+			  		<input id="input__filter" type="text" placeholder="Search Salesforce" style="width:70%; border:none;">
+			  	</div>
+			  	
+			  </div>
+			  <div class="slds-col slds-align-middle icon-container ">
+				<span class="slds-icon__container slds-icon-utility-apps slds-m-horizontal--x-small">
+				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
+				    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#apps"></use>
+				  </svg>
+				</span>
+				<span class="slds-icon__container slds-icon-utility-question slds-m-horizontal--x-small">
+				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
+				    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#question"></use>
+				  </svg>
+				</span>
+				<span class="slds-icon__container slds-icon-utility-setup slds-m-horizontal--x-small">
+				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
+				    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#setup"></use>
+				  </svg>
+				</span>
+				<span class="slds-icon__container slds-icon-utility-notification slds-m-horizontal--x-small">
+				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
+				    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#notification"></use>
+				  </svg>
+				</span>
+		 		<%= link_to(root_path) do %>
+			 		<span class="slds-avatar slds-avatar--circle slds-avatar--small slds-m-horizontal--x-small">
+					  <img src="/assets/images/Ryan.png" alt="person name" />
+					</span>
+				<% end %>
+			  </div>
+			</div>
+	 	</div>
+		<nav class="slds-col slds-size--1-of-1">
+		<!-- begin header -->
+			<div class="slds-page-header">
+				<div class="slds-grid">
+				    <div class="slds-media">
+				        <div class="slds-media__figure">
+				          <svg aria-hidden="true" class="slds-icon slds-icon--large slds-icon-custom-15">
+				            <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom15"></use>
+				          </svg>
+				        </div>
+			        </div>
+				    <div class="slds-col slds-has-flexi-truncate">
+				      <p class="slds-text-heading--label">Book of Business</p>
+				      <div class="slds-grid">
+				        <div class="slds-grid slds-type-focus slds-no-space">
+				          <h1 class="slds-text-heading--medium slds-truncate" title="My Leads (truncates)">My Book of Business</h1>
+				          <button class="slds-button slds-button--icon-bare slds-shrink-none slds-align-middle slds-m-left--x-small">
+				            <svg aria-hidden="true" class="slds-button__icon">
+				              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+				            </svg>
+				            <span class="slds-assistive-text">View More</span>
+				          </button>
+				        </div>
+				        <button class="slds-button slds-button--icon-more slds-shrink-none slds-m-left--large" aria-haspopup="true">
+				          <svg aria-hidden="true" class="slds-button__icon">
+				            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#settings"></use>
+				          </svg>
+				          <span class="slds-assistive-text">Settings</span>
+				          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
+				            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+				          </svg>
+				        </button>
+				        <button class="slds-button slds-button--brand slds-button-space-left slds-m-right--medium slds-shrink-none slds-align-middle slds-hide" aria-hidden="true">Save</button>
+				      </div>
+				    </div>
+	<!-- Begin Buttons -->
+				    <div class="slds-col slds-no-flex slds-align-bottom">
+					    <div class="slds-grid">
+					        <div class="slds-button-space-left">
+					          <button class="slds-button slds-button--icon-more" aria-haspopup="true">
+					            <svg aria-hidden="true" class="slds-button__icon">
+					              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#table"></use>
+					            </svg>
+					            <span class="slds-assistive-text">Table</span>
+					            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
+					              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+					            </svg>
+					          </button>
+					        </div>
+					        <div class="slds-button-group slds-button-space-left" role="group">
+		<!-- Filter -->
+								<div class="slds-dropdown-trigger" aria-haspopup="true">
+								  <button class="slds-button slds-button--icon-border">
+								    <svg aria-hidden="true" class="slds-button__icon">
+								      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#filterList"></use>
+								    </svg>
+								    <span class="slds-assistive-text">Show More</span>
+								  </button>
+								  <div class="slds-dropdown slds-dropdown--left slds-dropdown--menu">
+								    <ul class="slds-dropdown__list" role="menu">
+								      <li id="menu-86-1" href="#" class="slds-dropdown__item slds-text-heading--label" role="menuitem option" tabindex="-1"> <a href="#" tabindex="-1" class="slds-truncate"> Level </a> </li>
+								      <li id="menu-87-1" href="#" class="slds-dropdown__item" role="menuitem option" tabindex="-1">
+								      	<a href="#" tabindex="-1" class="slds-truncate">
+								      	<label class="slds-checkbox" for="select-filter1">
+								          <input name="select-filter1" class="filter-diamond" type="checkbox" id="select-filter1" />
+								          <span class="slds-checkbox--faux"></span>
+								        </label>
+								      	<span class="slds-m-left--x-small"> Diamond </span>
+								      	</a>
+								      </li>
+								      <li id="menu-87-2" href="#" class="slds-dropdown__item" role="menuitem option" tabindex="-1">
+								      	<a href="#" tabindex="-1" class="slds-truncate">
+								      	<label class="slds-checkbox" for="select-filter2">
+								          <input name="select-filter2" class="filter-platinum" type="checkbox" id="select-filter2" />
+								          <span class="slds-checkbox--faux"></span>
+								        </label>
+								      	<span class="slds-m-left--x-small"> Platinum </span>
+								      	</a>
+								      </li>
+								      <li id="menu-87-3" href="#" class="slds-dropdown__item" role="menuitem option" tabindex="-1">
+								      	<a href="#" tabindex="-1" class="slds-truncate">
+								      	<label class="slds-checkbox" for="select-filter3">
+								          <input name="select-filter3" class="filter-gold" type="checkbox" id="select-filter3" />
+								          <span class="slds-checkbox--faux"></span>
+								        </label>
+								      	<span class="slds-m-left--x-small"> Gold </span>
+								      	</a>
+								      </li>
+								      <li id="menu-87-4" href="#" class="slds-dropdown__item" role="menuitem option" tabindex="-1">
+								      	<a href="#" tabindex="-1" class="slds-truncate">
+								      	<label class="slds-checkbox" for="select-filter4">
+								          <input name="select-filter4" class="filter-silver" type="checkbox" id="select-filter4" />
+								          <span class="slds-checkbox--faux"></span>
+								        </label>
+								      	<span class="slds-m-left--x-small"> Silver </span>
+								      	</a>
+								      </li>
+								      <li id="menu-861-2" href="#" class="slds-dropdown__item slds-text-heading--label" role="menuitem option" tabindex="-1"> <a href="#" tabindex="-1" class="slds-truncate"> Alert Type </a> </li>
+								      <li id="menu-871-1" href="#" class="slds-dropdown__item" role="menuitem option" tabindex="-1">
+								      	<a href="#" tabindex="-1" class="slds-truncate">
+								      	<label class="slds-checkbox" for="select-filter5">
+								          <input name="select-filter5" class="filter-transfer" type="checkbox" id="select-filter5" />
+								          <span class="slds-checkbox--faux"></span>
+								        </label>
+								      	<span class="slds-m-left--x-small"> Asset Transfer </span>
+								      	</a>
+								      </li>
+								      <li id="menu-871-2" href="#" class="slds-dropdown__item" role="menuitem option" tabindex="-1">
+								      	<a href="#" tabindex="-1" class="slds-truncate">
+								      	<label class="slds-checkbox" for="select-filter6">
+								          <input name="select-filter6" class="filter-office" type="checkbox" id="select-filter6" />
+								          <span class="slds-checkbox--faux"></span>
+								        </label>
+								      	<span class="slds-m-left--x-small"> Back Office </span>
+								      	</a>
+								      </li>
+								      <li id="menu-871-3" href="#" class="slds-dropdown__item" role="menuitem option" tabindex="-1">
+								      	<a href="#" tabindex="-1" class="slds-truncate">
+								      	<label class="slds-checkbox" for="select-filter7">
+								          <input name="select-filter7" class="filter-drift" type="checkbox" id="select-filter7" />
+								          <span class="slds-checkbox--faux"></span>
+								        </label>
+								      	<span class="slds-m-left--x-small"> Drift </span>
+								      	</a>
+								      </li>				      
+								    </ul>
+								  </div>
+							  </div>
+					          <button class="slds-button slds-button--icon-border">
+					            <svg aria-hidden="true" class="slds-button__icon">
+					              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chart"></use>
+					            </svg>
+					            <span class="slds-assistive-text">Chart</span>
+					          </button>
+					          <button class="slds-button slds-button--icon-more">
+					            <svg aria-hidden="true" class="slds-button__icon">
+					              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#sort"></use>
+					            </svg>
+					            <span class="slds-assistive-text">Sort</span>
+					            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
+					              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+					            </svg>
+					            <span class="slds-assistive-text">More</span>
+					          </button>
+					        </div>
+
+					        <div class="slds-button-group" role="group">
+					          <button class="slds-button slds-button--neutral">Actions</button>
+					          <div class="slds-button--last">
+					            <button class="slds-button slds-button--icon-border-filled">
+					              <svg aria-hidden="true" class="slds-button__icon">
+					                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+					              </svg>
+					              <span class="slds-assistive-text">More Actions</span>
+					            </button>
+					          </div>
+					        </div>
+					    </div>
+					</div>
+				</div>
+				<p class="slds-text-body--small slds-m-top--x-small">10 items • Sorted by Level</p>
+			</div>
+			<!-- end header -->
+		</nav>
+		<!-- begin grid -->
+		<main class="slds-col slds-size--1-of-2 slds-medium-size--5-of-6 slds-large-size--8-of-12">
+			<div class="row-main">
+				<!-- begin table -->
+				<table class="slds-table slds-table--bordered slds-max-medium-table--stacked">
+				  <thead>
+				    <tr class="slds-text-heading--label">
+				      <th class="slds-row-select" scope="col">
+				        <label class="slds-checkbox" for="select-all">
+				          <input name="checkbox" type="checkbox" id="select-all" />
+				          <span class="slds-checkbox--faux"></span>
+				          <span class="slds-form-element__label slds-assistive-text">select all</span>
+				        </label>
+				      </th>
+				      <th class="slds-is-sortable" scope="col">
+				        <span class="slds-truncate">Client Name</span>
+				          <button class="slds-button slds-button--icon-bare slds-button--icon-border-small">
+				          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
+				            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+				          </svg>
+				        </button>
+				      </th>
+				      <th scope="col">
+				        <span class="slds-truncate">Health</span>
+				      </th>
+				      <th class="slds-is-sortable" scope="col">
+				        <span class="slds-truncate">Level</span>
+				          <button class="slds-button slds-button--icon-bare slds-button--icon-border-small">
+				          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small" style="visibility:visible">
+				            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+				          </svg>
+				        </button>
+				      </th>
+				      <th scope="col">
+				        <span class="slds-truncate">Risk Tolerance</span>
+				      </th>
+				      <th scope="col">
+				        <span class="slds-truncate">Age</span>
+				      </th>
+				      <th scope="col">
+				        <span class="slds-truncate">Total Accounts Value</span>
+				      </th>
+				      <th scope="col">
+				        <span class="slds-truncate">AUM</span>
+				      </th>
+				      <th scope="col">
+				        <span class="slds-truncate">Held Away</span>
+				      </th>
+				      <th scope="col">
+				        <span class="slds-truncate">Last Activity</span>
+				      </th>
+				      <th class="slds-row-action" scope="col">
+				        <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
+				          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+				            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+				          </svg>
+				          <span class="slds-assistive-text">Show More</span>
+				        </button>
+				      </th>
+				    </tr>
+				  </thead>
+				  <tbody id="bobTable">
+<!-- Populated from JSON -->
+				  </tbody>
+				</table>
+				<!-- end table -->
+			</div>
+		</main>
+	</div>
+</div>
+
+<!-- end grid -->
+<script>
+$(document).ready(function(){
+
+	$(".filter-diamond").click(function(){
+        $(".not-diamond").toggle();
+    });
+	$(".filter-drift").click(function(){
+        $(".no-drift").toggle();
+    });
+
+
+	// see if there are existing items
+	var currentData = localStorage.getItem('bobData')
+
+	window.bookofbusiness = [
+		{
+			name: 'Deborah Munoz',
+			health: 'average', 
+			level: 'Diamond',
+			risk: 'Moderate',
+			age: '68 yrs',
+			value: '17,000,000',
+			aum: '10,500,000',
+			held_away: '3,000,000',
+			datetime: '8/1/2015',
+			filter: 'diamond'
+		},
+		{
+			name: 'Rachel Adams',
+			health: 'poor', 
+			level: 'Diamond',
+			risk: 'Moderate',
+			age: '50 yrs',
+			value: '9,500,000',
+			aum: '3,500,000',
+			held_away: '6,000,000',
+			datetime: '9/2/2015',
+			filter: 'diamond'
+		},
+		{
+			name: 'Katherine Harper',
+			health: 'good', 
+			level: 'Diamond',
+			risk: 'Conservative',
+			age: '32 yrs',
+			value: '650,000',
+			aum: '120,00',
+			held_away: '350,000',
+			datetime: '8/1/2015',
+			filter: 'no-drift'
+		},
+		{
+			name: 'Randy Chapman',
+			health: 'average', 
+			level: 'Silver',
+			risk: 'Aggressive',
+			age: '65 yrs',
+			value: '200,000',
+			aum: '15,000',
+			held_away: '160,000',
+			datetime: '8/1/2015',
+			filter: 'not-diamond'
+		},
+		{
+			name: 'Alan Weber',
+			health: 'poor', 
+			level: 'Silver',
+			risk: 'Moderate',
+			age: '56 yrs',
+			value: '400,000',
+			aum: '48,000',
+			held_away: '200,000',
+			datetime: '8/1/2015',
+			filter: 'not-diamond'
+		},
+		{
+			name: 'Frank Meyers',
+			health: 'good', 
+			level: 'Gold',
+			risk: 'Conservative',
+			age: '81 yrs',
+			value: '2,300,000',
+			aum: '770,000',
+			held_away: '1,300,000',
+			datetime: '8/1/2015',
+			filter: 'not-diamond'
+		},
+		
+	]
+
+	// Don't read the data from localstorage if theres already existing data
+	//if (!currentData) {
+		// Set data
+		localStorage.setItem("bobData", JSON.stringify(bookofbusiness))
+	//}
+
+	// Get data
+	var data = JSON.parse(localStorage.getItem('bobData'))
+		var numID = 0;
+	
+		data.forEach(function(datum) {
+			numID = numID+1;
+			switch(datum.health){
+				case 'poor':
+					datum.health = '<span class="slds-badge slds-theme--error">Poor</span>';
+					break;
+				case 'average':
+					datum.health = '<span class="slds-badge">Average</span>';
+					break;
+				case 'good':
+					datum.health = '<span class="slds-badge slds-theme--success">Good</span>';
+					break;
+				default:
+					datum.health = 'Unspecified';
+					break;
+			};
+
+		$('#bobTable').append('<tr class="slds-hint-parent '+datum.filter+'"> <td class="slds-row-select"> <label class="slds-checkbox" for="select-row'+numID+'"> <input name="select-row'+numID+'" type="checkbox" id="select-row'+numID+'" /> <span class="slds-checkbox--faux"></span> <span class="slds-form-element__label slds-assistive-text">select row1</span> </label> </td> <td data-label="lead-name"><a href="#" class="slds-truncate">'+datum.name+'</a></td> <td data-label="rank"> '+datum.health+' </td> <td data-label="value"> <span class="slds-truncate">'+datum.level+'</span> </td> <td data-label="interest"> '+datum.risk+' </td> <td data-label="value"> <span class="slds-truncate">'+datum.age+'</span> </td> <td data-label="customer">$'+datum.value+'</td><td>'+datum.aum+'</td><td data-label="held_away">'+datum.held_away+'</td><td data-label="activity"> <span class="slds-truncate">'+datum.datetime+'</span> </td> <td class="slds-row-action"> <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small"> <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small"> <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use> </svg> <span class="slds-assistive-text">Show More</span> </button> </td> </tr>') })
+
+
+});
+</script>

@@ -1,0 +1,137 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.tempSideNav{
+	width:240px; 
+	a{
+		color:#fff !important;
+		display:block !important;
+	}
+}
+.slds-grid-temp{
+	nav{
+		margin-bottom:1.5rem;
+	}
+}
+
+.timelineHeader{
+	height: .5rem;
+    line-height: 1rem;
+    border-bottom: 1px dashed rgb(216, 221, 230);
+    overflow: visible;
+    clear: both;
+    margin-bottom: 2rem;
+
+    .sectionHeader{
+	   	font-size: 1.125rem;
+	    color: rgb(22, 50, 92);
+	    font-family: 'SalesforceSans-Light',Arial,sans-serif;
+	    display: inline-block;
+	    background-color: #ffffff;
+	    padding-right: .75rem;
+    }
+
+}
+
+.slds-form-separator{
+	border-bottom:1px solid rgb(216, 221, 230);
+	margin-bottom:.5rem;
+
+	div{
+		padding-bottom:.5rem;
+	}
+}
+.slds-assistant-card-temp{
+	background-color:#fff !important;
+
+	.slds-tile{
+		padding:0 .5rem !important;
+		margin:0 .5rem .5rem .5rem!important;
+	}
+}
+aside{
+	.task-temp{
+		border-left:3px solid #4bc076 !important;
+	}
+	.lead-temp{
+		border-left:3px solid #f88962 !important;
+	}
+	.oppty-temp{
+		border-left:3px solid #fcb95b !important;
+	}
+}
+
+.slds-card{
+	margin-bottom:1rem;
+}
+.navbar-temp{
+	padding:.75rem;
+	border-bottom:1px solid rgb(216, 221, 230);
+
+	.slds-icon-text-default{
+		fill:#d8dde6 !important;
+	}
+
+	.icon-container{
+		text-align:right;
+	}
+	.icon-salesforce1-temp{
+		fill:#00a1e0 !important;
+	}
+	.icon-holder-temp{
+		span{
+			padding: 0 .5rem;
+		}
+	}
+}
+.tempSideNav{
+	li{
+		padding:.5rem .75rem;
+	}
+	li:hover{
+		background-color:rgb(6, 28, 63);
+
+	}
+	.sidenav-row-temp{
+		padding:.27rem;
+		margin: .5rem 0;
+	}
+	.selected-temp{
+		background-color:rgb(6, 28, 63);
+	}
+	a:hover{
+		text-decoration:none;
+	}
+	a{
+		span{
+			margin-right:.25rem;
+		}
+	}
+}
+.slds-card--white-bg{
+	background-color:#fff !important;
+}
+.slds-white-card-temp{
+	background-color:#fff !important;
+	padding:3px !important;
+}
+.slds-success-text-temp{
+	color:rgb(75, 202, 129);
+}
+.slds-error-text-temp{
+	color:rgb(194, 57, 52);
+}
+.slds-align-right-temp{
+	text-align:right;
+}
+.icon-star-inactive{
+	fill:#bac4d0;
+	width:1.2rem;
+	height:1.2rem;
+}
+.icon-star-active{
+	fill:#f88962;
+	width:1.2rem;
+	height:1.2rem;
+}

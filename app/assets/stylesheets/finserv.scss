@@ -1,0 +1,101 @@
+// Place all the styles related to the finserv controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.oneStageLeft.desktop .actionCardAnchor {
+    border-bottom: none;
+    padding: .25rem;
+}
+.oneActionCardDesktop .actionCardAnchor.desktop {
+    background-color: rgb(22, 50, 92);
+    line-height: 32px;
+}
+.oneActionCardDesktop .actionCardAnchor {
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(42, 66, 108);
+    font-family: 'SalesforceSans-Regular',Arial,sans-serif;
+    color: rgb(255, 255, 255);
+}
+a {
+    background: transparent;
+    text-decoration: none;
+    color: #006EB3;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+user agent stylesheeta:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: underline;
+    cursor: auto;
+}
+Inherited from 
+user agent stylesheetli {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from 
+.oneHomeCardListDesktop.desktop {
+    height: 100%;
+    overflow-y: hidden;
+    font-size: .875rem;
+}
+user agent stylesheetul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+Inherited from 
+.uiScroller.native>.scroller {
+    -webkit-touch-callout: default;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+.uiScroller>.scroller {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+Inherited from 
+.oneStyle.container {
+    height: 100%;
+    font-family: 'SalesforceSans-Regular',Arial,sans-serif;
+    color: rgb(22, 50, 92);
+    -webkit-text-size-adjust: none;
+}
+Inherited from 
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+}
+Pseudo ::before element
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+Pseudo ::after element
+*, *:before, *:after {
+    box-sizing: border-box;
+}

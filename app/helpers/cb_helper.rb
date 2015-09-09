@@ -1,0 +1,2 @@
+module CbHelper
+end

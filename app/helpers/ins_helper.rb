@@ -1,0 +1,2 @@
+module InsHelper
+end
