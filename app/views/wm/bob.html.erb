@@ -13,7 +13,7 @@
 					</a>
 				</li>
 				<li>
-					<%= link_to(root_path+'today/today') do %>
+					<%= link_to(root_path+'today/today?i=02u6100000052eW') do %>
 						<span class="slds-icon__container">
 						  <svg aria-hidden="true" class="slds-icon">
 						    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#today"></use>
@@ -23,7 +23,7 @@
 					<% end %>
 				</li>
 				<li>
-					<%= link_to(root_path+'sales/leadlist') do %>
+					<%= link_to(root_path+'sales/leadlist?i=02u6100000052eW') do %>
 						<span class="slds-icon__container">
 						  <svg aria-hidden="true" class="slds-icon">
 						    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#lead"></use>
@@ -33,7 +33,7 @@
 					<% end %>
 				</li>
 				<li class="selected-temp">
-					<%= link_to(root_path+'wm/bob') do %>
+					<%= link_to(root_path+'wm/bob?i=02u6100000052eW') do %>
 						<span class="slds-icon__container slds-icon-custom-15">
 						  <svg aria-hidden="true" class="slds-icon">
 						    <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom15"></use>
@@ -43,7 +43,7 @@
 					<% end %>
 				</li>
 				<li>
-					<%= link_to(root_path+'wm/profile') do %>
+					<%= link_to(root_path+'wm/profile?i=02u6100000052eW') do %>
 						<span class="slds-icon__container">
 						  <svg aria-hidden="true" class="slds-icon">
 						    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#people"></use>
@@ -53,7 +53,7 @@
 					<% end %>
 				</li>
 				<li>
-					<%= link_to(root_path+'cb/profile') do %>
+					<%= link_to(root_path+'cb/profile?i=02u6100000052eW') do %>
 						<span class="slds-icon__container">
 						  <svg aria-hidden="true" class="slds-icon">
 						    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#account"></use>
@@ -65,7 +65,7 @@
 			</ul>
 		</div>
 	</div>
-	<div class="slds-col">
+	<div class="slds-col" style="overflow:scroll;">
 	 <div class="slds-grid slds-wrap slds-align-top">
 	 	<div class="slds-col slds-size--1-of-1 navbar-temp">
 	 		<div class="slds-grid">
@@ -276,7 +276,7 @@
 					    </div>
 					</div>
 				</div>
-				<p class="slds-text-body--small slds-m-top--x-small">10 items • Sorted by Level</p>
+				<p class="slds-text-body--small slds-m-top--x-small">16 items • Sorted by Client Name</p>
 			</div>
 			<!-- end header -->
 		</nav>
@@ -296,8 +296,8 @@
 				      </th>
 				      <th class="slds-is-sortable" scope="col">
 				        <span class="slds-truncate">Client Name</span>
-				          <button class="slds-button slds-button--icon-bare slds-button--icon-border-small">
-				          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
+				        <button class="slds-button slds-button--icon-bare slds-button--icon-border-small">
+				          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small" style="visibility:visible">
 				            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
 				          </svg>
 				        </button>
@@ -307,11 +307,7 @@
 				      </th>
 				      <th class="slds-is-sortable" scope="col">
 				        <span class="slds-truncate">Level</span>
-				          <button class="slds-button slds-button--icon-bare slds-button--icon-border-small">
-				          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small" style="visibility:visible">
-				            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
-				          </svg>
-				        </button>
+
 				      </th>
 				      <th scope="col">
 				        <span class="slds-truncate">Risk Tolerance</span>
@@ -368,7 +364,19 @@ $(document).ready(function(){
 
 	window.bookofbusiness = [
 		{
-			name: 'Deborah Munoz',
+			name: 'Aaron Rodgers',
+			health: 'poor', 
+			level: 'Diamond',
+			risk: 'Moderate',
+			age: '44 yrs',
+			value: '700,000',
+			aum: '650,000',
+			held_away: '---',
+			datetime: '8/1/2015',
+			filter: 'no-drift'
+		},
+		{
+			name: 'A.J. Bouye',
 			health: 'average', 
 			level: 'Diamond',
 			risk: 'Moderate',
@@ -380,42 +388,6 @@ $(document).ready(function(){
 			filter: 'diamond'
 		},
 		{
-			name: 'Rachel Adams',
-			health: 'poor', 
-			level: 'Diamond',
-			risk: 'Moderate',
-			age: '50 yrs',
-			value: '9,500,000',
-			aum: '3,500,000',
-			held_away: '6,000,000',
-			datetime: '9/2/2015',
-			filter: 'diamond'
-		},
-		{
-			name: 'Katherine Harper',
-			health: 'good', 
-			level: 'Diamond',
-			risk: 'Conservative',
-			age: '32 yrs',
-			value: '650,000',
-			aum: '120,00',
-			held_away: '350,000',
-			datetime: '8/1/2015',
-			filter: 'no-drift'
-		},
-		{
-			name: 'Randy Chapman',
-			health: 'average', 
-			level: 'Silver',
-			risk: 'Aggressive',
-			age: '65 yrs',
-			value: '200,000',
-			aum: '15,000',
-			held_away: '160,000',
-			datetime: '8/1/2015',
-			filter: 'not-diamond'
-		},
-		{
 			name: 'Alan Weber',
 			health: 'poor', 
 			level: 'Silver',
@@ -424,6 +396,30 @@ $(document).ready(function(){
 			value: '400,000',
 			aum: '48,000',
 			held_away: '200,000',
+			datetime: '8/1/2015',
+			filter: 'not-diamond'
+		},
+		{
+			name: 'Deborah Munoz',
+			health: 'average', 
+			level: 'Diamond',
+			risk: 'Aggressive',
+			age: '74 yrs',
+			value: '5,050,000',
+			aum: '1,000,000',
+			held_away: '3,050,000',
+			datetime: '8/1/2015',
+			filter: 'diamond'
+		},
+		{
+			name: 'Edward Chen',
+			health: 'good', 
+			level: 'Platinum',
+			risk: 'Moderate',
+			age: '50 yrs',
+			value: '200,000',
+			aum: '50,000',
+			held_away: '1,000,000',
 			datetime: '8/1/2015',
 			filter: 'not-diamond'
 		},
@@ -439,6 +435,128 @@ $(document).ready(function(){
 			datetime: '8/1/2015',
 			filter: 'not-diamond'
 		},
+		{
+			name: 'Jeffery Williams',
+			health: 'good', 
+			level: 'Gold',
+			risk: 'Conservative',
+			age: '28 yrs',
+			value: '3,000,000',
+			aum: '1,700,000',
+			held_away: '800,000',
+			datetime: '8/1/2015',
+			filter: 'not-diamond'
+		},
+		{
+			name: 'Katherine Harper',
+			health: 'good', 
+			level: 'Diamond',
+			risk: 'Conservative',
+			age: '32 yrs',
+			value: '650,000',
+			aum: '120,00',
+			held_away: '350,000',
+			datetime: '8/1/2015',
+			filter: 'no-drift'
+		},
+		{
+			name: 'Kristin Anzavista',
+			health: 'good', 
+			level: 'Silver',
+			risk: 'Moderate',
+			age: '41 yrs',
+			value: '725,000',
+			aum: '200,000',
+			held_away: '300,000',
+			datetime: '8/1/2015',
+			filter: 'not-diamond'
+		},
+		{
+			name: 'Martha Garcia',
+			health: 'average', 
+			level: 'Gold',
+			risk: 'Aggressive',
+			age: '65 yrs',
+			value: '200,000',
+			aum: '15,000',
+			held_away: '160,000',
+			datetime: '8/1/2015',
+			filter: 'not-diamond'
+		},
+		{
+			name: 'Nigel Adams',
+			health: 'good', 
+			level: 'Good',
+			risk: 'Conservative',
+			age: '55 yrs',
+			value: '3,000,000',
+			aum: '1,850,000',
+			held_away: '700,000',
+			datetime: '8/1/2015',
+			filter: 'not-diamond'
+		},
+		{
+			name: 'Rachel Adams',
+			health: 'poor', 
+			level: 'Diamond',
+			risk: 'Moderate',
+			age: '50 yrs',
+			value: '3,500,000',
+			aum: '3,000,000',
+			held_away: '6,000,000',
+			datetime: '9/2/2015',
+			filter: 'diamond'
+		},		
+		{
+			name: 'Randy Chapman',
+			health: 'average', 
+			level: 'Silver',
+			risk: 'Aggressive',
+			age: '65 yrs',
+			value: '200,000',
+			aum: '15,000',
+			held_away: '160,000',
+			datetime: '8/1/2015',
+			filter: 'not-diamond'
+		},
+		{
+			name: 'Royal Tenenbaum',
+			health: 'good', 
+			level: 'Gold',
+			risk: 'Conservative',
+			age: '81 yrs',
+			value: '3,200,000',
+			aum: '1,350,000',
+			held_away: '1,000,000',
+			datetime: '8/1/2015',
+			filter: 'not-diamond'
+		},
+		{
+			name: 'Stan McAllister',
+			health: 'good', 
+			level: 'Platinum',
+			risk: 'Moderate',
+			age: '49 yrs',
+			value: '750,000',
+			aum: '150,000',
+			held_away: '600,000',
+			datetime: '8/1/2015',
+			filter: 'not-diamond'
+		},
+		{
+			name: 'Victoria Jones',
+			health: 'good', 
+			level: 'Platinum',
+			risk: 'Aggressive',
+			age: '34 yrs',
+			value: '250,000',
+			aum: '75,000',
+			held_away: '150,000',
+			datetime: '8/1/2015',
+			filter: 'not-diamond'
+		},
+
+		
 	]
 
 	// Don't read the data from localstorage if theres already existing data
@@ -468,7 +586,7 @@ $(document).ready(function(){
 					break;
 			};
 
-		$('#bobTable').append('<tr class="slds-hint-parent '+datum.filter+'"> <td class="slds-row-select"> <label class="slds-checkbox" for="select-row'+numID+'"> <input name="select-row'+numID+'" type="checkbox" id="select-row'+numID+'" /> <span class="slds-checkbox--faux"></span> <span class="slds-form-element__label slds-assistive-text">select row1</span> </label> </td> <td data-label="lead-name"><a href="#" class="slds-truncate">'+datum.name+'</a></td> <td data-label="rank"> '+datum.health+' </td> <td data-label="value"> <span class="slds-truncate">'+datum.level+'</span> </td> <td data-label="interest"> '+datum.risk+' </td> <td data-label="value"> <span class="slds-truncate">'+datum.age+'</span> </td> <td data-label="customer">$'+datum.value+'</td><td>'+datum.aum+'</td><td data-label="held_away">'+datum.held_away+'</td><td data-label="activity"> <span class="slds-truncate">'+datum.datetime+'</span> </td> <td class="slds-row-action"> <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small"> <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small"> <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use> </svg> <span class="slds-assistive-text">Show More</span> </button> </td> </tr>') })
+		$('#bobTable').append('<tr class="slds-hint-parent '+datum.filter+'"> <td class="slds-row-select"> <label class="slds-checkbox" for="select-row'+numID+'"> <input name="select-row'+numID+'" type="checkbox" id="select-row'+numID+'" /> <span class="slds-checkbox--faux"></span> <span class="slds-form-element__label slds-assistive-text">select row1</span> </label> </td> <td data-label="lead-name"><%= link_to(root_path+"wm/profile?i=02u6100000052eW") do %>'+datum.name+'<% end %></a></td> <td data-label="rank"> '+datum.health+' </td> <td data-label="value"> <span class="slds-truncate">'+datum.level+'</span> </td> <td data-label="interest"> '+datum.risk+' </td> <td data-label="value"> <span class="slds-truncate">'+datum.age+'</span> </td> <td data-label="customer">$'+datum.value+'</td><td>'+datum.aum+'</td><td data-label="held_away">'+datum.held_away+'</td><td data-label="activity"> <span class="slds-truncate">'+datum.datetime+'</span> </td> <td class="slds-row-action"> <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small"> <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small"> <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use> </svg> <span class="slds-assistive-text">Show More</span> </button> </td> </tr>') })
 
 
 });
