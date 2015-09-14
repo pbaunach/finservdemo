@@ -118,6 +118,22 @@
 	 	</div>
 		<nav class="slds-col slds-size--1-of-1">
 		<!-- begin header -->
+
+<div class="slds-notify-container" style="margin-top:5.1rem; display:none;" id="success-message">
+  <div class="slds-notify slds-notify--toast slds-theme--success" role="alert">
+    <span class="slds-assistive-text">Info</span>
+    <button class="slds-button slds-notify__close">
+      <svg aria-hidden="true" class="slds-button__icon slds-button__icon--inverse">
+        <use xlink:href="/assets/icons/action-sprite/svg/symbols.svg#close"></use>
+      </svg>
+      <span class="slds-assistive-text">Close</span>
+    </button>
+    <div class="notify__content">
+      <h2 class="slds-text-heading--small">Rebalance Portfolios Successful.</h2>
+    </div>
+  </div>
+</div>
+
 			<div class="slds-page-header">
 				<div class="slds-grid">
 				    <div class="slds-media">
@@ -151,7 +167,7 @@
 				        <button class="slds-button slds-button--brand slds-button-space-left slds-m-right--medium slds-shrink-none slds-align-middle slds-hide" aria-hidden="true">Save</button>
 				      </div>
 				    </div>
-	<!-- Begin Buttons -->
+<!-- Begin Buttons -->
 				    <div class="slds-col slds-no-flex slds-align-bottom">
 					    <div class="slds-grid">
 					        <div class="slds-button-space-left">
@@ -166,7 +182,7 @@
 					          </button>
 					        </div>
 					        <div class="slds-button-group slds-button-space-left" role="group">
-		<!-- Filter -->
+<!-- Filter -->
 								<div class="slds-dropdown-trigger" aria-haspopup="true">
 								  <button class="slds-button slds-button--icon-border">
 								    <svg aria-hidden="true" class="slds-button__icon">
@@ -264,13 +280,22 @@
 
 					        <div class="slds-button-group" role="group">
 					          <button class="slds-button slds-button--neutral">Actions</button>
-					          <div class="slds-button--last">
-					            <button class="slds-button slds-button--icon-border-filled">
+					          <div class="slds-button--last slds-dropdown-trigger">
+					            <button class="slds-button slds-button--icon-border-filled ">
 					              <svg aria-hidden="true" class="slds-button__icon">
 					                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
 					              </svg>
 					              <span class="slds-assistive-text">More Actions</span>
 					            </button>
+					              <div class="slds-dropdown slds-dropdown--right slds-dropdown--menu slds-dropdown--actions ">
+								    <ul class="slds-dropdown__list" role="menu">
+								      <li id="menu-0-0" href="#" class="slds-dropdown__item"><a href="#" class="slds-truncate" role="menuitem">New Client...</a></li>
+								      <li id="menu-1-1" href="#" class="slds-dropdown__item"><a href="#" class="slds-truncate" role="menuitem">Create Tasks...</a></li>
+								      <li id="menu-2-2" href="#" class="slds-dropdown__item"><a href="#" class="slds-truncate" role="menuitem">Send to Campaign...</a></li>
+								      <li id="menu-rebalance-portfolio" href="#" class="slds-dropdown__item"><a href="#" class="slds-truncate" role="menuitem">Rebalance Portfolios</a></li>
+								      <li id="menu-4-4" href="#" class="slds-dropdown__item"><a href="#" class="slds-truncate" role="menuitem">Export to Excel</a></li>
+								    </ul>
+								  </div>
 					          </div>
 					        </div>
 					    </div>
@@ -357,6 +382,10 @@ $(document).ready(function(){
 	$(".filter-drift").click(function(){
         $(".no-drift").toggle();
     });
+
+	$("#menu-rebalance-portfolio").click(function(){
+		$("#success-message").fadeIn('fast').delay(2000).fadeOut('fast');
+	})
 
 
 	// see if there are existing items
