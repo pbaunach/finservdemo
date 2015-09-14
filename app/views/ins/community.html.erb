@@ -2,8 +2,11 @@
 <style>
   .tempSideNav{width:80vw; color:#fff;  } 
   .tempSideNav li:hover{background-color:transparent;}
-  .menu-btn .slds-button__icon{fill:#009adc;;}
+  .menu-btn .slds-button__icon{fill:#009adc;}
   body{background-color:#F7F9FB;}
+  .huge-check{width:2.75rem !important; height:2.75rem !important;}
+  .huge-check:after{height:0.75rem !important; width:1.25rem !important; border-bottom:5px solid #1589ee !important; border-left:5px solid #1589ee !important; top:46% !important; left:54% !important;}
+
 </style> 
 
 <div class="slds-grid slds-grid--align-spread" style="position: fixed; height: 44pt; top: 0; width: 100%; z-index: 100; border-bottom:1px solid #d8dde6; background-color:#fff;"> 
@@ -45,7 +48,7 @@
       <div class="slds-card slds-card--empty slds-assistant-card-temp slds-m-top--small slds-p-around--small">
         <div class="slds-form-element">
           <div class="slds-form-element__control">
-            <span class="">@Rachel Adams! Congratulations on your new baby! When you get a chance update your profile and I'll addher to all of your policies.</span>
+            <span class="">@Rachel Adams, I noticed you love to travel. You should add Travel Insurance to your policy to make sure you're covered everywhere you go.</span>
           </div>
         </div>
       </div>
@@ -84,7 +87,7 @@
               <p class="slds-tile__title slds-truncate"><a href="#">Family Members (4)</a></p>
             </div>
             <div class="slds-align-middle">
-              <button class="slds-button slds-button--neutral slds-not-selected" aria-live="assertive" id="family-btn">
+              <button class="slds-button slds-button--neutral slds-not-selected" aria-live="assertive" >
                 <svg aria-hidden="true" class="slds-button__icon--stateful">
                   <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#add"></use>
                 </svg>
@@ -143,14 +146,14 @@
     <div class="slds-card slds-card--white-bg">
       <div class="slds-media slds-tile">
         <div class="slds-media__figure">
-          <svg aria-hidden="true" class="slds-icon slds-icon--large slds-icon-custom-24">
-            <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom24"></use>
+          <svg aria-hidden="true" class="slds-icon slds-icon--large slds-icon-custom-20">
+            <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom20"></use>
           </svg>
         </div>
         <div class="slds-media__body">
-          <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate" style="height:3rem;">
+          <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate" style="height:3rem;" id="family-btn">
             <div class="slds-align-middle">
-              <p class="slds-tile__title slds-truncate"><a href="#">New Business (0)</a></p>
+              <p class="slds-tile__title slds-truncate"><a href="#">Travel Insurance (0)</a></p>
             </div>
             <div class="slds-align-middle">
               <button class="slds-button slds-button--neutral slds-not-selected" aria-live="assertive">
@@ -166,7 +169,7 @@
     <div class="slds-card slds-card--white-bg">
       <div class="slds-media slds-tile">
         <div class="slds-media__figure">
-          <svg aria-hidden="true" class="slds-icon slds-icon--large slds-icon-custom-14">
+          <svg aria-hidden="true" class="slds-icon slds-icon--large slds-icon-custom-37">
             <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom14"></use>
           </svg>
         </div>
@@ -214,27 +217,93 @@
 
 <div class="slds-grid content-container family-container" style="margin-top:55pt; position:absolute; top:0; right:0; width:100vw; display:none;">
   <div class="slds-col--padded slds-size--1-of-1 slds-container--center">
-      <div class="slds-form-element slds-p-bottom--medium">
-        <label class="slds-form-element__label" for="sample1">Family Member's Name</label>
-        <div class="slds-form-element__control">
-          <input id="sample1" class="slds-input" type="text" placeholder="Virgina Adams" />
-        </div>
-      </div>
-      <div class="slds-form-element slds-p-bottom--medium">
-        <label class="slds-form-element__label" for="sample1">Family Relationship</label>
-        <div class="slds-form-element__control">
-          <input id="sample1" class="slds-input" type="text" placeholder="New Baby" />
-        </div>
-      </div>
-      <div class="slds-form-element slds-p-bottom--medium">
+      <div class="slds-card slds-card--white-bg">
+        <div class="slds-media slds-tile">
+          <div class="slds-media__figure">
+      <div class="slds-form-element">
         <label class="slds-checkbox" for="checkboxSample1">
           <input name="checkbox" type="checkbox" id="checkboxSample1" />
-          <span class="slds-checkbox--faux"></span>
-          <span class="slds-form-element__label">Add to Current Policies</span>
+          <span class="slds-checkbox--faux huge-check"></span>
         </label>
       </div>
+          </div>
+          <div class="slds-media__body">
+            <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate" style="height:3rem;">
+              <div class="slds-align-middle">
+                <p class="slds-tile__title slds-truncate"><a href="#">Cumulus Basic</a></p>
+              </div>
+              <div class="slds-align-middle">
+                  <button class="slds-button slds-button--icon-border-filled">
+                    <svg aria-hidden="true" class="slds-button__icon">
+                      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Switch</span>
+                  </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slds-card slds-card--white-bg">
+        <div class="slds-media slds-tile">
+          <div class="slds-media__figure">
+      <div class="slds-form-element">
+        <label class="slds-checkbox" for="checkboxSample11">
+          <input name="checkbox" type="checkbox" id="checkboxSample11" />
+          <span class="slds-checkbox--faux huge-check"></span>
+        </label>
+      </div>
+          </div>
+          <div class="slds-media__body">
+            <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate" style="height:3rem;">
+              <div class="slds-align-middle">
+                <p class="slds-tile__title slds-truncate"><a href="#">Cumulus Classic</a></p>
+              </div>
+              <div class="slds-align-middle">
+                  <button class="slds-button slds-button--icon-border-filled" id="show-more-btn">
+                    <svg aria-hidden="true" class="slds-button__icon">
+                      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Switch</span>
+                  </button>
+              </div>
+            </div>
+            <div class="slds-grid slds-hide insurance-info">
+                <p class="slds-p-bottom--small">Family emergency? Sudden illness? Canceled flight? No problem. Enjoy perfect peace of mind when you're protected with the Classic Plan. Our most popular choice for vacation coverage, the Classic Plan includes key benefits like trip cancellation and interruption, emergency medical coverage and existing medical condition coverage. Plus, kids 17 and under are covered for free when traveling with a parent or grandparent.</p>
+                <a href="#">Full Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slds-card slds-card--white-bg">
+        <div class="slds-media slds-tile">
+          <div class="slds-media__figure">
+      <div class="slds-form-element">
+        <label class="slds-checkbox" for="checkboxSample111">
+          <input name="checkbox" type="checkbox" id="checkboxSample111" />
+          <span class="slds-checkbox--faux huge-check"></span>
+        </label>
+      </div>
+          </div>
+          <div class="slds-media__body">
+            <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate" style="height:3rem;">
+              <div class="slds-align-middle">
+                <p class="slds-tile__title slds-truncate"><a href="#">Cumulus Classic+</a></p>
+              </div>
+              <div class="slds-align-middle">
+                  <button class="slds-button slds-button--icon-border-filled">
+                    <svg aria-hidden="true" class="slds-button__icon">
+                      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Switch</span>
+                  </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="slds-p-bottom--medium slds-p-top--medium">
-        <button class="slds-button slds-button--brand slds-p-around--x-small" style="width:100%" type="button" id="update-family-btn">Send</button>
+        <button class="slds-button slds-button--brand slds-p-around--x-small" style="width:100%" type="button" id="update-family-btn">Add Travel Insurance</button>
       </div>
   </div>
 </div>
@@ -242,8 +311,8 @@
 <div class="slds-grid content-container congrats-container" style="margin-top:55pt; position:absolute; top:0; right:0; width:100vw; display:none;">
   <div class="slds-col--padded slds-size--1-of-1 slds-container--center">
     <div class="slds-card slds-p-around--medium" style="color:#fff; background-color:#009adc;">
-      <p class="slds-text-heading--small slds-p-bottom--small">Congratulations on your new child!<p>
-      <p>We've added her to all of your policies.</p>
+      <p class="slds-text-heading--small slds-p-bottom--small">Congratulations on your new Travel Insurance!<p>
+      <p>We've updated your policy with Cumulus Classic Travel Insurance. Enjoy your travels!</p>
     </div>
   </div>
 </div>
@@ -257,10 +326,20 @@
               </svg>
             </span>
         </li>
+        <li>
+          <div class="slds-align-middle">
+            <span class="slds-icon__container ">
+              <svg aria-hidden="true" class="slds-icon" style="margin-top:-0.5rem">
+                <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#home"></use>
+              </svg>
+            </span>
+            <span style="margin-top:.2rem">Home</span>
+          </div>
+        </li>
         <li id="feed-item">
           <div class="slds-align-middle">
             <span class="slds-icon__container ">
-              <svg aria-hidden="true" class="slds-icon">
+              <svg aria-hidden="true" class="slds-icon" style="margin-top:-0.3rem">
                 <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#feed"></use>
               </svg>
             </span>
@@ -269,11 +348,21 @@
         </li>
         <li id="life-item">
             <span class="slds-icon__container ">
-              <svg aria-hidden="true" class="slds-icon">
-                <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#reward"></use>
+              <svg aria-hidden="true" class="slds-icon" style="margin-top:-0.3rem">
+                <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom60"></use>
               </svg>
             </span>
-            Life
+            <span>Policies</span>
+        </li>
+        <li>
+          <div class="slds-align-middle">
+            <span class="slds-icon__container ">
+              <svg aria-hidden="true" class="slds-icon " style="margin-top:-0.3rem; height:1.3rem;">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#settings"></use>
+              </svg>
+            </span>
+            <span>Settings</span>
+          </div>
         </li>
       </ul>
 </div>
@@ -300,6 +389,9 @@ $(document).ready(function(){
   $('#update-family-btn').click(function() {
     $('.content-container').hide();
     $('.congrats-container').animate({width:'show'},150);
+  });
+  $('#show-more-btn').click(function() {
+    $('.insurance-info').toggle();
   });
 })
 </script>
