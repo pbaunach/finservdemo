@@ -48,7 +48,63 @@
       <div class="slds-card slds-card--empty slds-assistant-card-temp slds-m-top--small slds-p-around--small">
         <div class="slds-form-element">
           <div class="slds-form-element__control">
-            <span class="">@Rachel Adams, I noticed you love to travel. You should add Travel Insurance to your policy to make sure you're covered everywhere you go.</span>
+            <span class="">Hey @Rachel Adams, Congratulations on your new Cumulus Travel Card! Would you like to add travel insurance to your policy?</span>
+          </div>
+        </div>
+      </div>
+      <div class="slds-m-bottom--small slds-grid slds-grid--align-spread">
+        <div style="width:47%;">
+        <button class="slds-button slds-button--brand" aria-live="assertive" style="width:100%;" id="accept-insurance">
+          <span class="slds-text-not-selected slds-p-around--small slds-p-horizontal--medium">
+            Yes
+          </span>
+        </button>
+        </div>
+        <div style="width:47%;">
+        <button class="slds-button slds-button--neutral slds-not-selected" aria-live="assertive" style="width:100%;">
+          <span class="slds-text-not-selected slds-p-around--small slds-p-horizontal--medium">
+            No
+          </span>
+        </button>
+        </div>
+      </div>
+      <div>
+        <button class="slds-button slds-button--neutral slds-not-selected" aria-live="assertive">
+          <span class="slds-text-not-selected">
+            <svg aria-hidden="true" class="slds-button__icon--stateful slds-icon--x-small">
+              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#like"></use>
+            </svg>
+          </span>
+        </button>
+        <button class="slds-button slds-button--neutral slds-not-selected" aria-live="assertive">
+          <span class="slds-text-not-selected">
+            <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
+              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#add"></use>
+            </svg> Comment
+          </span>
+        </button>
+      </div>
+    </div>
+<!-- End Feed Item -->
+<!-- Begin Feed Item -->
+    <div class="slds-p-bottom--large slds-m-bottom--large" style="border-bottom:1px solid #d8dde6;">
+      <div class="slds-media slds-tile">
+        <div class="slds-media__figure">
+          <span class="slds-avatar slds-avatar--circle slds-avatar--small">
+            <img src="/assets/images/Lester.jpg" alt="portrait" />
+          </span>
+        </div>
+        <div class="slds-media__body">
+          <p class="slds-tile__title slds-truncate"><a href="#">Lester Logan</a></p>
+          <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
+            <li class="slds-truncate slds-list__item">August 28, 2015 at 11:02 AM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="slds-card slds-card--empty slds-assistant-card-temp slds-m-top--small slds-p-around--small">
+        <div class="slds-form-element">
+          <div class="slds-form-element__control">
+            <span class="">Hey @Rachel Adams, Just confirming that your latest claim has been processed.</span>
           </div>
         </div>
       </div>
@@ -393,5 +449,9 @@ $(document).ready(function(){
   $('#show-more-btn').click(function() {
     $('.insurance-info').toggle();
   });
+  $('#accept-insurance').click(function() {
+    $('.content-container').hide();
+    $('.congrats-container').animate({width:'show'},150);
+  }); 
 })
 </script>

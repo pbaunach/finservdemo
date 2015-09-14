@@ -151,16 +151,16 @@
                             <div class="slds-media__body">
                                 <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
                                     <p class="slds-truncate slds-tile__title">
-                                        <a href="#">Benjamin Smith - Rollover 401k to IRA</a>
+                                        <a href="#">Benjamin Smith - Open Checking Account</a>
                                     </p>
                                     <div>
-                                        $325,000
+                                        $15,000
                                     </div>
                                 </div>
                                 <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
                                     <li class="slds-truncate slds-list__item">Proposal/Price Quote</li>
                                     <li class="slds-truncate slds-list__item">
-                                       08/19/2015
+                                       09/02/2015
                                     </li>
                                 </ul>
                             </div>
@@ -180,7 +180,7 @@
                                 <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
                                     <li class="slds-truncate slds-list__item">Proposal/Price Quote</li>
                                     <li class="slds-truncate slds-list__item">
-                                       08/19/2015
+                                       08/28/2015
                                     </li>
                                 </ul>
                             </div>
@@ -310,7 +310,7 @@
                     </li>
             	</ul>
 			  </section>
-			  <footer class="slds-card__footer"><a href="http://localhost:3000/sales/leadlist">View All</a></footer>
+			  <footer class="slds-card__footer"><%= link_to(root_path+'sales/leadlist?i=02u6100000052eW') do %>View All <% end %></footer>
 			</div>
 			<!-- End Card -->
 		  </div>
@@ -352,6 +352,25 @@
                     </ul>
 				  </div>
 				</div>
+				<div class="slds-media slds-tile">
+				  <div class="slds-media__figure">
+				    <label class="slds-checkbox" for="mark-complete">
+				      <input name="checkbox" type="checkbox" id="mark-complete" />
+				      <span class="slds-checkbox--faux"></span>
+				      <span class="slds-form-element__label slds-assistive-text">mark-complete</span>
+				    </label>
+				  </div>
+				  <div class="slds-media__body">
+				    <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
+				      <p class="slds-tile__title slds-truncate"><a href="#">Review lead list</a></p>
+				      <span class="label">Today</span>
+				    </div>
+					<ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
+                        <li class="slds-truncate slds-list__item">Me</li>
+                        <li class="slds-truncate slds-list__item">Task</li> 
+                    </ul>
+				  </div>
+				</div>				
 				<div class="slds-media slds-tile">
 				  <div class="slds-media__figure">
 				    <label class="slds-checkbox" for="mark-complete">
@@ -497,35 +516,33 @@
 			</div>
 		<!-- End Card -->
 		<!-- Begin Card -->
-		<div class="slds-card slds-card--empty slds-assistant-card-temp task-temp">
+			<div class="slds-card slds-card--empty slds-assistant-card-temp event-temp">
 			  <header class="slds-card__header slds-grid">
 			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
 			      <div class="slds-media__figure">
-			        <svg aria-hidden="true" class="slds-icon slds-icon-standard-task slds-icon--small">
-			          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#task"></use>
+			        <svg aria-hidden="true" class="slds-icon slds-icon-standard-event slds-icon--small">
+			          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#event"></use>
 			        </svg>
 			      </div>
 			      <div class="slds-media__body">
-			        <span class="slds-text-body--small slds-truncate">Open Task</span>
+			        <span class="slds-text-body--small slds-truncate">Meeting at 1:00pm - 1:30pm</span>
 			      </div>
 			    </div>
 			  </header>
 			  <section class="slds-card__body">
 				<div class="slds-media slds-tile">
-				  <div class="slds-media__figure">
-				    <label class="slds-checkbox" for="mark-complete">
-				      <input name="checkbox" type="checkbox" id="mark-complete" />
-				      <span class="slds-checkbox--faux"></span>
-				      <span class="slds-form-element__label slds-assistive-text">mark-complete</span>
-				    </label>
-				  </div>
 				  <div class="slds-media__body">
 				    <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
-				      <p class="slds-tile__title slds-truncate"><a href="#">Follow Up with Sarah Bui on new credit card</a></p>
-				      <span class="label">Today</span>
+				      	<p class="slds-tile__title slds-truncate"><a href="#">Customer Service Rep follow up</a></p>
+				      	<span class="label">                                        
+
+						</span>
 				    </div>
 				    <div class="slds-tile__detail slds-text-body--small">
-				      <p class="slds-truncate slds-text-align--left">Me</p>
+				      	<ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
+	                        <li class="slds-truncate slds-list__item">Sarah Bui</li>
+	                        <li class="slds-truncate slds-list__item">(415)978-9356</li> 
+	                    </ul>
 				    </div>
 				  </div>
 				</div>
@@ -575,6 +592,78 @@
 			</div>
 		<!-- End Card -->
 		<!-- Begin Card -->
+		<div class="slds-card slds-card--empty slds-assistant-card-temp task-temp">
+			  <header class="slds-card__header slds-grid">
+			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
+			      <div class="slds-media__figure">
+			        <svg aria-hidden="true" class="slds-icon slds-icon-standard-task slds-icon--small">
+			          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#task"></use>
+			        </svg>
+			      </div>
+			      <div class="slds-media__body">
+			        <span class="slds-text-body--small slds-truncate">Open Task</span>
+			      </div>
+			    </div>
+			  </header>
+			  <section class="slds-card__body">
+				<div class="slds-media slds-tile">
+				  <div class="slds-media__figure">
+				    <label class="slds-checkbox" for="mark-complete">
+				      <input name="checkbox" type="checkbox" id="mark-complete" />
+				      <span class="slds-checkbox--faux"></span>
+				      <span class="slds-form-element__label slds-assistive-text">mark-complete</span>
+				    </label>
+				  </div>
+				  <div class="slds-media__body">
+				    <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
+				      <p class="slds-tile__title slds-truncate"><a href="#">Follow Up with Sarah Bui on new credit card</a></p>
+				      <span class="label">Today</span>
+				    </div>
+				    <div class="slds-tile__detail slds-text-body--small">
+				      <p class="slds-truncate slds-text-align--left">Me</p>
+				    </div>
+				  </div>
+				</div>
+			  </section>
+			</div>
+		<!-- End Card -->
+		<!-- Begin Card -->
+		<div class="slds-card slds-card--empty slds-assistant-card-temp task-temp">
+			  <header class="slds-card__header slds-grid">
+			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
+			      <div class="slds-media__figure">
+			        <svg aria-hidden="true" class="slds-icon slds-icon-standard-task slds-icon--small">
+			          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#task"></use>
+			        </svg>
+			      </div>
+			      <div class="slds-media__body">
+			        <span class="slds-text-body--small slds-truncate">Open Task</span>
+			      </div>
+			    </div>
+			  </header>
+			  <section class="slds-card__body">
+				<div class="slds-media slds-tile">
+				  <div class="slds-media__figure">
+				    <label class="slds-checkbox" for="mark-complete">
+				      <input name="checkbox" type="checkbox" id="mark-complete" />
+				      <span class="slds-checkbox--faux"></span>
+				      <span class="slds-form-element__label slds-assistive-text">mark-complete</span>
+				    </label>
+				  </div>
+				  <div class="slds-media__body">
+				    <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
+				      <p class="slds-tile__title slds-truncate"><a href="#">Review new leads</a></p>
+				      <span class="label">Today</span>
+				    </div>
+				    <div class="slds-tile__detail slds-text-body--small">
+				      <p class="slds-truncate slds-text-align--left">Me</p>
+				    </div>
+				  </div>
+				</div>
+			  </section>
+			</div>
+		<!-- End Card -->
+		<!-- Begin Card -->
 		<div class="slds-card slds-card--empty slds-assistant-card-temp oppty-temp">
 			  <header class="slds-card__header slds-grid">
 			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
@@ -592,15 +681,91 @@
 				<div class="slds-media slds-tile">
 				  <div class="slds-media__body">
 				    <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
-				      	<p class="slds-tile__title slds-truncate"><a href="#">Benjamin Smith - Rollover 401k to IRA</a></p>
+				      	<p class="slds-tile__title slds-truncate"><a href="#">Benjamin Smith - Open Checking Account</a></p>
 				      	<span class="label">                                        
-				      		$325,000
+				      		$15,000
 						</span>
 				    </div>
 				    <div class="slds-tile__detail slds-text-body--small">
 				      	<ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
 	                        <li class="slds-truncate slds-list__item">Proposal/Price Quote</li>
-	                        <li class="slds-truncate slds-list__item">08/19/2015</li> 
+	                        <li class="slds-truncate slds-list__item">09/02/2015</li> 
+	                    </ul>
+				    </div>
+				  </div>
+				</div>
+			  </section>
+			</div>
+		<!-- End Card -->
+		<!-- Begin Card -->
+		<div class="slds-card slds-card--empty slds-assistant-card-temp lead-temp">
+			  <header class="slds-card__header slds-grid">
+			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
+			      <div class="slds-media__figure">
+			        <svg aria-hidden="true" class="slds-icon slds-icon-standard-lead slds-icon--small">
+			          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#lead"></use>
+			        </svg>
+			      </div>
+			      <div class="slds-media__body">
+			        <span class="slds-text-body--small slds-truncate">New Lead</span>
+			      </div>
+			    </div>
+			  </header>
+			  <section class="slds-card__body">
+				<div class="slds-media slds-tile">
+				  <div class="slds-media__body">
+				    <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
+				      	<p class="slds-tile__title slds-truncate"><a href="#">Jane Ramirez</a></p>
+				      	<span class="label">                                        
+                            <svg aria-hidden="true" class="icon-star-active">
+					          <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use>
+					        </svg>
+					        <svg aria-hidden="true" class="icon-star-active">
+					          <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use>
+					        </svg>
+					        <svg aria-hidden="true" class="icon-star-active">
+					          <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use>
+					        </svg>
+						</span>
+				    </div>
+				    <div class="slds-tile__detail slds-text-body--small">
+				      	<ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
+	                        <li class="slds-truncate slds-list__item">Partner Referral</li>
+	                        <li class="slds-truncate slds-list__item">Never Contacted</li> 
+	                    </ul>
+				    </div>
+				  </div>
+				</div>
+			  </section>
+			</div>
+		<!-- End Card -->
+		<!-- Begin Card -->
+		<div class="slds-card slds-card--empty slds-assistant-card-temp oppty-temp">
+			  <header class="slds-card__header slds-grid">
+			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
+			      <div class="slds-media__figure">
+			        <svg aria-hidden="true" class="slds-icon slds-icon-standard-opportunity slds-icon--small">
+			          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#opportunity"></use>
+			        </svg>
+			      </div>
+			      <div class="slds-media__body">
+			        <span class="slds-text-body--small slds-truncate">New Opportunity</span>
+			      </div>
+			    </div>
+			  </header>
+			  <section class="slds-card__body">
+				<div class="slds-media slds-tile">
+				  <div class="slds-media__body">
+				    <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
+				      	<p class="slds-tile__title slds-truncate"><a href="#">Katherine Harper - Online Checking</a></p>
+				      	<span class="label">                                        
+				      		$12,000
+						</span>
+				    </div>
+				    <div class="slds-tile__detail slds-text-body--small">
+				      	<ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
+	                        <li class="slds-truncate slds-list__item">Proposal/Price Quote</li>
+	                        <li class="slds-truncate slds-list__item">08/28/2015</li> 
 	                    </ul>
 				    </div>
 				  </div>
