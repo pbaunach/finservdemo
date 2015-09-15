@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   get 'mobile/demo'
   get 'mobile/ipad'
+  get 'mobile/ins'
 
   get 'ins/community'
 
