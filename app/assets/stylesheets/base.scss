@@ -3,15 +3,24 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .tempSideNav{
-	width:240px; 
+
 	a{
 		color:#fff !important;
 		display:block !important;
 	}
 }
-.slds-grid-temp{
+.grid-temp{
+	display:-webkit-flex; 
+	display:flex; 
+	height:100vh; 
+	width:100vw;
+
 	nav{
 		margin-bottom:1.5rem;
+	}
+	.grid-1{
+		-webkit-flex:1; 
+		flex:1; 
 	}
 }
 

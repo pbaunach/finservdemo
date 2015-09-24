@@ -1,78 +1,13 @@
-
- <div class="slds-grid" style="height:100vh; width:100vw;">
-	<div style="min-height:100%; background-color:rgb(22, 50, 92);">
-		<div class="tempSideNav">
-			<ul class="">
-				<li>
-					<a href="#" class="sidenav-row-temp">
-						<span class="slds-icon__container slds-icon-utility-rows">
-						  <svg aria-hidden="true" class="slds-icon slds-icon--small">
-						    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#rows"></use>
-						  </svg>
-						</span>
-					</a>
-				</li>
-				<li>
-					<%= link_to(root_path+'today/today?i=02u6100000052eW') do %>
-						<span class="slds-icon__container">
-						  <svg aria-hidden="true" class="slds-icon">
-						    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#today"></use>
-						  </svg>
-						</span>
-						Today
-					<% end %>
-				</li>
-				<li class="selected-temp">
-					<%= link_to(root_path+'sales/leadlist?i=02u6100000052eW') do %>
-						<span class="slds-icon__container slds-icon-standard-lead">
-						  <svg aria-hidden="true" class="slds-icon">
-						    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#lead"></use>
-						  </svg>
-						</span>
-						Leads
-					<% end %>
-				</li>
-				<li>
-					<%= link_to(root_path+'wm/bob?i=02u6100000052eW') do %>
-						<span class="slds-icon__container">
-						  <svg aria-hidden="true" class="slds-icon">
-						    <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom15"></use>
-						  </svg>
-						</span>
-						Clients
-					<% end %>
-				</li>
-				<li>
-					<%= link_to(root_path+'wm/profile?i=02u6100000052eW') do %>
-						<span class="slds-icon__container">
-						  <svg aria-hidden="true" class="slds-icon">
-						    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#people"></use>
-						  </svg>
-						</span>
-						People
-					<% end %>
-				</li>
-				<li>
-					<%= link_to(root_path+'cb/profile?i=02u6100000052eW') do %>
-						<span class="slds-icon__container">
-						  <svg aria-hidden="true" class="slds-icon">
-						    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#account"></use>
-						  </svg>
-						</span>
-						Accounts
-					<% end %>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="slds-col" style="overflow:scroll;">
+ <div class="grid-temp" style="height:100vh; width:100vw;">
+	<%= render 'layouts/nav' %>
+	<div class="slds-col grid-1" style="overflow:scroll;">
 	 <div class="slds-grid slds-wrap slds-align-top">
 	 	<div class="slds-col slds-size--1-of-1 navbar-temp">
 	 		<div class="slds-grid">
 			  <div class="slds-col slds-align-middle">
 			  	<span class="slds-icon__container slds-icon-utility-salesforce1">
 				  <svg aria-hidden="true" class="slds-icon slds-icon-text-default icon-salesforce1-temp">
-				    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#salesforce1"></use>
+				    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#salesforce1"></use>
 				  </svg>
 				</span>
 			  </div>
@@ -80,7 +15,7 @@
 			  	<div class="slds-input" style="text-align:left;">
 			  		<span class="slds-icon__container slds-icon-utility-search slds-m-horizontal--x-small">
 					  <svg aria-hidden="true" class="slds-icon--x-small slds-icon-text-default">
-					    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+					    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#search"></use>
 					  </svg>
 					</span>
 			  		<input id="input__filter" type="text" placeholder="Search Salesforce" style="width:70%; border:none;">
@@ -90,27 +25,27 @@
 			  <div class="slds-col slds-align-middle icon-container ">
 				<span class="slds-icon__container slds-icon-utility-apps slds-m-horizontal--x-small">
 				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
-				    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#apps"></use>
+				    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#apps"></use>
 				  </svg>
 				</span>
 				<span class="slds-icon__container slds-icon-utility-question slds-m-horizontal--x-small">
 				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
-				    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#question"></use>
+				    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#question"></use>
 				  </svg>
 				</span>
 				<span class="slds-icon__container slds-icon-utility-setup slds-m-horizontal--x-small">
 				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
-				    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#setup"></use>
+				    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#setup"></use>
 				  </svg>
 				</span>
 				<span class="slds-icon__container slds-icon-utility-notification slds-m-horizontal--x-small">
 				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
-				    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#notification"></use>
+				    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#notification"></use>
 				  </svg>
 				</span>
 		 		<%= link_to(root_path) do %>
 			 		<span class="slds-avatar slds-avatar--circle slds-avatar--small slds-m-horizontal--x-small">
-					  <img src="/assets/images/Mike.jpg" alt="person name" />
+					  <img src="<%= asset_path('images/Mike.jpg') %>" alt="person name" />
 					</span>
 				<% end %>
 			  </div>
@@ -123,7 +58,7 @@
 			    <div class="slds-media">
 			        <div class="slds-media__figure">
 			          <svg aria-hidden="true" class="slds-icon slds-icon--large slds-icon-standard-lead">
-			            <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#lead"></use>
+			            <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#lead"></use>
 			          </svg>
 			        </div>
 		        </div>
@@ -134,18 +69,18 @@
 			          <h1 class="slds-text-heading--medium slds-truncate" title="My Leads (truncates)">My Leads</h1>
 			          <button class="slds-button slds-button--icon-bare slds-shrink-none slds-align-middle slds-m-left--x-small">
 			            <svg aria-hidden="true" class="slds-button__icon">
-			              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+			              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
 			            </svg>
 			            <span class="slds-assistive-text">View More</span>
 			          </button>
 			        </div>
 			        <button class="slds-button slds-button--icon-more slds-shrink-none slds-m-left--large" aria-haspopup="true">
 			          <svg aria-hidden="true" class="slds-button__icon">
-			            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#settings"></use>
+			            <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#settings"></use>
 			          </svg>
 			          <span class="slds-assistive-text">Settings</span>
 			          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
-			            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+			            <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
 			          </svg>
 			        </button>
 			        <button class="slds-button slds-button--brand slds-button-space-left slds-m-right--medium slds-shrink-none slds-align-middle slds-hide" aria-hidden="true">Save</button>
@@ -156,34 +91,34 @@
 			        <div class="slds-button-space-left">
 			          <button class="slds-button slds-button--icon-more" aria-haspopup="true">
 			            <svg aria-hidden="true" class="slds-button__icon">
-			              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#table"></use>
+			              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#table"></use>
 			            </svg>
 			            <span class="slds-assistive-text">Table</span>
 			            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
-			              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+			              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
 			            </svg>
 			          </button>
 			        </div>
 			        <div class="slds-button-group slds-button-space-left" role="group">
 			          <button class="slds-button slds-button--icon-border">
 			            <svg aria-hidden="true" class="slds-button__icon">
-			              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chart"></use>
+			              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#chart"></use>
 			            </svg>
 			            <span class="slds-assistive-text">Chart</span>
 			          </button>
 			          <button class="slds-button slds-button--icon-border">
 			            <svg aria-hidden="true" class="slds-button__icon">
-			              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#filterList"></use>
+			              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#filterList"></use>
 			            </svg>
 			            <span class="slds-assistive-text">Filter List</span>
 			          </button>
 			          <button class="slds-button slds-button--icon-more">
 			            <svg aria-hidden="true" class="slds-button__icon">
-			              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#sort"></use>
+			              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#sort"></use>
 			            </svg>
 			            <span class="slds-assistive-text">Sort</span>
 			            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
-			              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+			              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
 			            </svg>
 			            <span class="slds-assistive-text">More</span>
 			          </button>
@@ -193,7 +128,7 @@
 			          <div class="slds-button--last">
 			            <button class="slds-button slds-button--icon-border-filled">
 			              <svg aria-hidden="true" class="slds-button__icon">
-			                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+			                <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
 			              </svg>
 			              <span class="slds-assistive-text">More Actions</span>
 			            </button>
@@ -225,7 +160,7 @@
 				        <span class="slds-truncate">Lead Name</span>
 				          <button class="slds-button slds-button--icon-bare slds-button--icon-border-small">
 				          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
-				            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+				            <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#arrowdown"></use>
 				          </svg>
 				        </button>
 				      </th>
@@ -236,7 +171,7 @@
 				        <span class="slds-truncate">Lead Value</span>
 				          <button class="slds-button slds-button--icon-bare slds-button--icon-border-small">
 				          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small" style="visibility:visible">
-				            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+				            <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#arrowdown"></use>
 				          </svg>
 				        </button>
 				      </th>
@@ -258,7 +193,7 @@
 				      <th class="slds-row-action" scope="col">
 				        <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
 				          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
-				            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+				            <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
 				          </svg>
 				          <span class="slds-assistive-text">Show More</span>
 				        </button>
@@ -287,9 +222,9 @@ $(document).ready(function(){
 			name: 'Sarah Bui',
 			rank: '2', 
 			value: '170',
-			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom41"></use> </svg>',
+			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom41"></use> </svg>',
 			source: 'Website',
-			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom41"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom40"></use></svg>',
+			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom41"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom40"></use></svg>',
 			contacted: 'Not Contacted',
 			datetime: '08/13/2015'
 		},
@@ -297,9 +232,9 @@ $(document).ready(function(){
 			name: 'Rachel Adams',
 			rank: '3', 
 			value: '155',
-			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom40"></use> </svg>',
+			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom40"></use> </svg>',
 			source: 'Mobile App',
-			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom41"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom40"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom90"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom17"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom16"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom28"></use> </svg>',
+			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom41"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom40"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom90"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom17"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom16"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom28"></use> </svg>',
 			contacted: 'Not Contacted',
 			datetime: '09/02/2015'
 		},
@@ -307,9 +242,9 @@ $(document).ready(function(){
 			name: 'Jeremy Catronio',
 			rank: '0', 
 			value: '130',
-			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom16"></use> </svg>',
+			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom16"></use> </svg>',
 			source: 'Partner Referral',
-			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom40"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom90"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom28"></use> </svg>',
+			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom40"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom90"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom28"></use> </svg>',
 			contacted: '08/25/2015',
 			datetime: '08/25/2015'
 		},
@@ -317,9 +252,9 @@ $(document).ready(function(){
 			name: 'Erica Wilford',
 			rank: '1', 
 			value: '125',
-			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom16"></use> </svg>',
+			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom16"></use> </svg>',
 			source: 'Phone Inquiry',
-			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom41"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom40"></use> </svg>',
+			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom41"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom40"></use> </svg>',
 			contacted: 'Not Contacted',
 			datetime: '08/13/2015'
 		},
@@ -327,9 +262,9 @@ $(document).ready(function(){
 			name: 'Jane Ramirez',
 			rank: '3', 
 			value: '125',
-			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom41"></use> </svg>',
+			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom41"></use> </svg>',
 			source: 'Partner Referral',
-			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom40"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom90"></use> </svg> ',
+			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom40"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom90"></use> </svg> ',
 			contacted: '08/18/2015',
 			datetime: '08/18/2015'
 		},
@@ -337,9 +272,9 @@ $(document).ready(function(){
 			name: 'Rachelle Siemaszko',
 			rank: '2', 
 			value: '125',
-			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom40"></use> </svg>',
+			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom40"></use> </svg>',
 			source: 'Mobile App',
-			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom41"></use> </svg> ',
+			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom41"></use> </svg> ',
 			contacted: '08/25/2015',
 			datetime: '09/04/2015'
 		},
@@ -347,9 +282,9 @@ $(document).ready(function(){
 			name: 'Frederic Torsdottir',
 			rank: '3', 
 			value: '110',
-			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom90"></use> </svg>',
+			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom90"></use> </svg>',
 			source: 'Partner Referral',
-			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom40"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom17"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom16"></use> </svg>',
+			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom40"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom17"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom16"></use> </svg>',
 			contacted: '08/13/2015',
 			datetime: '08/18/2015'
 		},
@@ -357,9 +292,9 @@ $(document).ready(function(){
 			name: 'Carter Jameson',
 			rank: '2', 
 			value: '75',
-			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom17"></use> </svg>',
+			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom17"></use> </svg>',
 			source: 'Mobile App',
-			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom41"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom40"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom90"></use> </svg> ',
+			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom41"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom40"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom90"></use> </svg> ',
 			contacted: '08/13/2015',
 			datetime: '08/27/2015'
 		},
@@ -367,9 +302,9 @@ $(document).ready(function(){
 			name: 'Bruno Fabian',
 			rank: '1', 
 			value: '75',
-			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom40"></use> </svg>',
+			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom40"></use> </svg>',
 			source: 'Website',
-			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom41"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom16"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom28"></use> </svg>',
+			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom41"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom16"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom28"></use> </svg>',
 			contacted: '08/13/2015',
 			datetime: '08/24/2015'
 		},
@@ -377,9 +312,9 @@ $(document).ready(function(){
 			name: 'Tina Moore',
 			rank: '1', 
 			value: '75',
-			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom40"></use> </svg>',
+			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom40"></use> </svg>',
 			source: 'Website',
-			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom17"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom16"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom28"></use> </svg>',
+			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom17"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom16"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom28"></use> </svg>',
 			contacted: 'Not Contacted',
 			datetime: '09/03/2015'
 		},
@@ -401,23 +336,23 @@ $(document).ready(function(){
 			switch(datum.rank){
 				
 				case '0':
-					datum.rank = '<svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use> </svg>';
+					datum.rank = '<svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg>';
 					break;
 				case '1':
-					datum.rank = '<svg aria-hidden="true" class="icon-star-active"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use> </svg>';
+					datum.rank = '<svg aria-hidden="true" class="icon-star-active"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg>';
 					break;
 				case '2':
-					datum.rank = '<svg aria-hidden="true" class="icon-star-active"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-active"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use> </svg>';
+					datum.rank = '<svg aria-hidden="true" class="icon-star-active"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-active"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg>';
 					break;
 				case '3':
-					datum.rank = '<svg aria-hidden="true" class="icon-star-active"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-active"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-active"> <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use> </svg>'; 
+					datum.rank = '<svg aria-hidden="true" class="icon-star-active"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-active"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-active"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg>'; 
 					break;
 				default:
 					datum.rank = 'Unranked';
 					break;
 			};
 
-		$('#leadlistTable').append('<tr class="slds-hint-parent"> <td class="slds-row-select"> <label class="slds-checkbox" for="select-row'+numID+'"> <input name="select-row'+numID+'" type="checkbox" id="select-row'+numID+'" /> <span class="slds-checkbox--faux"></span> <span class="slds-form-element__label slds-assistive-text">select row1</span> </label> </td> <td data-label="lead-name"><a href="#" class="slds-truncate">'+datum.name+'</a></td> <td data-label="rank"> '+datum.rank+' </td> <td data-label="value"> <span class="slds-truncate">$'+datum.value+'</span> </td> <td data-label="interest"> '+datum.source+' </td> <td data-label="value"> <span class="slds-truncate">'+datum.product+'</span> </td> <td data-label="customer">'+datum.customer+'</td><td><span class="slds-truncate">'+datum.contacted+'</span></td><td data-label="activity"> <span class="slds-truncate">'+datum.datetime+'</span> </td> <td class="slds-row-action"> <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small"> <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small"> <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use> </svg> <span class="slds-assistive-text">Show More</span> </button> </td> </tr>') 
+		$('#leadlistTable').append('<tr class="slds-hint-parent"> <td class="slds-row-select"> <label class="slds-checkbox" for="select-row'+numID+'"> <input name="select-row'+numID+'" type="checkbox" id="select-row'+numID+'" /> <span class="slds-checkbox--faux"></span> <span class="slds-form-element__label slds-assistive-text">select row1</span> </label> </td> <td data-label="lead-name"><a href="#" class="slds-truncate">'+datum.name+'</a></td> <td data-label="rank"> '+datum.rank+' </td> <td data-label="value"> <span class="slds-truncate">$'+datum.value+'</span> </td> <td data-label="interest"> '+datum.source+' </td> <td data-label="value"> <span class="slds-truncate">'+datum.product+'</span> </td> <td data-label="customer">'+datum.customer+'</td><td><span class="slds-truncate">'+datum.contacted+'</span></td><td data-label="activity"> <span class="slds-truncate">'+datum.datetime+'</span> </td> <td class="slds-row-action"> <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small"> <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small"> <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use> </svg> <span class="slds-assistive-text">Show More</span> </button> </td> </tr>') 
 	})
 
 

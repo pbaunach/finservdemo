@@ -1,78 +1,13 @@
-
- <div class="slds-grid slds-grid-temp" style="height:100vh; width:100vw;">
-	<div style="min-height:100%; background-color:rgb(22, 50, 92);">
-		<div class="tempSideNav">
-			<ul class="">
-				<li>
-					<a href="#" class="sidenav-row-temp">
-						<span class="slds-icon__container slds-icon-utility-rows">
-						  <svg aria-hidden="true" class="slds-icon slds-icon--small">
-						    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#rows"></use>
-						  </svg>
-						</span>
-					</a>
-				</li>
-				<li>
-					<%= link_to(root_path+'today/today?i=02u6100000052eW') do %>
-						<span class="slds-icon__container">
-						  <svg aria-hidden="true" class="slds-icon">
-						    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#today"></use>
-						  </svg>
-						</span>
-						Today
-					<% end %>
-				</li>
-				<li>
-					<%= link_to(root_path+'sales/leadlist?i=02u6100000052eW') do %>
-						<span class="slds-icon__container">
-						  <svg aria-hidden="true" class="slds-icon">
-						    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#lead"></use>
-						  </svg>
-						</span>
-						Leads
-					<% end %>
-				</li>
-				<li>
-					<%= link_to(root_path+'wm/bob?i=02u6100000052eW') do %>
-						<span class="slds-icon__container">
-						  <svg aria-hidden="true" class="slds-icon">
-						    <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom15"></use>
-						  </svg>
-						</span>
-						Clients
-					<% end %>
-				</li>
-				<li>
-					<%= link_to(root_path+'wm/profile?i=02u6100000052eW') do %>
-						<span class="slds-icon__container">
-						  <svg aria-hidden="true" class="slds-icon">
-						    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#people"></use>
-						  </svg>
-						</span>
-						People
-					<% end %>
-				</li>
-				<li class="selected-temp">
-					<%= link_to(root_path+'cb/profile?i=02u6100000052eW') do %>
-						<span class="slds-icon__container">
-						  <svg aria-hidden="true" class="slds-icon slds-icon-standard-account">
-						    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#account"></use>
-						  </svg>
-						</span>
-						Accounts
-					<% end %>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="slds-col" style="overflow:scroll;">
+ <div class="grid-temp" style="height:100vh; width:100vw;">
+	<%= render 'layouts/nav' %>
+	<div class="slds-col grid-1" style="overflow:scroll;">
 	 <div class="slds-grid slds-wrap slds-align-top">
 	 	<div class="slds-col slds-size--1-of-1 navbar-temp">
 	 		<div class="slds-grid">
 			  <div class="slds-col slds-align-middle">
 			  	<span class="slds-icon__container slds-icon-utility-salesforce1">
 				  <svg aria-hidden="true" class="slds-icon slds-icon-text-default icon-salesforce1-temp">
-				    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#salesforce1"></use>
+				    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#salesforce1"></use>
 				  </svg>
 				</span>
 			  </div>
@@ -80,7 +15,7 @@
 			  	<div class="slds-input" style="text-align:left;">
 			  		<span class="slds-icon__container slds-icon-utility-search slds-m-horizontal--x-small">
 					  <svg aria-hidden="true" class="slds-icon--x-small slds-icon-text-default">
-					    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+					    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#search"></use>
 					  </svg>
 					</span>
 			  		<input id="input__filter" type="text" placeholder="Search Salesforce" style="width:70%; border:none;">
@@ -90,27 +25,27 @@
 			  <div class="slds-col slds-align-middle icon-container ">
 				<span class="slds-icon__container slds-icon-utility-apps slds-m-horizontal--x-small">
 				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
-				    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#apps"></use>
+				    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#apps"></use>
 				  </svg>
 				</span>
 				<span class="slds-icon__container slds-icon-utility-question slds-m-horizontal--x-small">
 				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
-				    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#question"></use>
+				    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#question"></use>
 				  </svg>
 				</span>
 				<span class="slds-icon__container slds-icon-utility-setup slds-m-horizontal--x-small">
 				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
-				    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#setup"></use>
+				    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#setup"></use>
 				  </svg>
 				</span>
 				<span class="slds-icon__container slds-icon-utility-notification slds-m-horizontal--x-small">
 				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
-				    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#notification"></use>
+				    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#notification"></use>
 				  </svg>
 				</span>
 		 		<%= link_to(root_path) do %>
 			 		<span class="slds-avatar slds-avatar--circle slds-avatar--small slds-m-horizontal--x-small">
-					  <img src="/assets/images/Brad.jpg" alt="person name" />
+					  <img src="<%= asset_path('images/Brad.jpg') %>" alt="person name" />
 					</span>
 				<% end %>
 			  </div>
@@ -124,7 +59,7 @@
 			      <div class="slds-media">
 			        <div class="slds-media__figure">
 			          <svg aria-hidden="true" class="slds-icon slds-icon--large slds-icon-standard-account">
-			            <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#account"></use>
+			            <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#account"></use>
 			          </svg>
 			        </div>
 			        <div class="slds-media__body">
@@ -135,15 +70,15 @@
 			              <button class="slds-button slds-button--neutral slds-not-selected" aria-live="assertive">
 			                <span class="slds-text-not-selected">
 			                  <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
-			                    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#add"></use>
+			                    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#add"></use>
 			                  </svg>Follow</span>
 			                <span class="slds-text-selected">
 			                  <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
-			                    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+			                    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#check"></use>
 			                  </svg>Following</span>
 			                <span class="slds-text-selected-focus">
 			                  <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
-			                    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
+			                    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#close"></use>
 			                  </svg>Unfollow</span>
 			              </button>
 			            </div>
@@ -157,7 +92,7 @@
 			        <div class="slds-button--last">
 			          <button class="slds-button slds-button--icon-border-filled">
 			            <svg aria-hidden="true" class="slds-button__icon">
-			              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+			              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
 			            </svg>
 			            <span class="slds-assistive-text">More</span>
 			          </button>
@@ -252,7 +187,7 @@
 		                            <div class="slds-media__figure">
 	    		                        <span class="slds-icon__container slds-icon-standard-account">
 										  <svg aria-hidden="true" class="slds-icon">
-										    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#account"></use>
+										    <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#account"></use>
 										  </svg>
 										</span>
 		                            </div>
@@ -319,7 +254,7 @@
 		                                    <p class="slds-tile__title slds-truncate">
 												<span class="slds-icon__container slds-p-right--small">
 												  <svg aria-hidden="true" class="slds-icon slds-icon-text-warning slds-icon--x-small">
-												    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#warning"></use>
+												    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#warning"></use>
 												  </svg>
 												</span>
 		                                    	Past Due
@@ -332,7 +267,7 @@
 		                                    <p class="slds-tile__title slds-truncate">
 												<span class="slds-icon__container slds-p-right--small">
 												  <svg aria-hidden="true" class="slds-icon slds-icon-text-warning slds-icon--x-small">
-												    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#warning"></use>
+												    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#warning"></use>
 												  </svg>
 												</span>
 		                                    	Loan Maturing in 90 Days
@@ -347,7 +282,7 @@
 		                                <div class="slds-media slds-tile">
 		                                    <div class="slds-media__figure">
 		                                        <span class="slds-avatar slds-avatar--circle slds-avatar--small">
-		                                            <img src="/assets/images/James.jpg" alt="portrait" />
+		                                            <img src="<%= asset_path('images/James.jpg') %>" alt="portrait" />
 		                                        </span>
 		                                    </div>
 		                                    <div class="slds-media__body">
@@ -362,7 +297,7 @@
 		                                <div class="slds-media slds-tile">
 		                                    <div class="slds-media__figure">
 		                                        <span class="slds-avatar slds-avatar--circle slds-avatar--small">
-		                                            <img src="/assets/images/Linda.png" alt="portrait" />
+		                                            <img src="<%= asset_path('images/Linda.png') %>" alt="portrait" />
 		                                        </span>
 		                                    </div>
 		                                    <div class="slds-media__body">
@@ -426,7 +361,7 @@
 		                    <div class="slds-col--padded slds-size--1-of-2">
 								<div class="slds-grid slds-grid--align-center slds-p-vertical--medium">
 									<div>
-		                            	<img src="/assets/images/map.png" />
+		                            	<img src="<%= asset_path('images/map.png') %>" />
 		                            </div>
 		                        </div>
 		                    </div>
@@ -468,7 +403,7 @@
 <!-- Financial Summary -->
 		  <div class="slds-tabs__content slds-hide main-tab-content" role="tabpanel" id="main-tab-content-financial">
 		    <div class="slds-card slds-white-card-temp">
-		    	<img src="/assets/images/financial-summary.png" alt="dashboard" style="" />
+		    	<img src="<%= asset_path('images/financial-summary.png') %>" alt="dashboard" style="" />
 		    </div>
 		    <!-- Begin Card -->
 			<div class="slds-card">
@@ -476,7 +411,7 @@
 			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
 			      <div class="slds-media__figure">
 			        <svg aria-hidden="true" class="slds-icon slds-icon-custom-18 slds-icon--small">
-			          <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom17"></use>
+			          <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom17"></use>
 			        </svg>
 			      </div>
 			      <div class="slds-media__body">
@@ -488,7 +423,7 @@
 			        <button class="slds-button slds-button--neutral slds-button--small">Add</button>
 			        <button class="slds-button slds-button--icon-border-filled">
 			          <svg aria-hidden="true" class="slds-button__icon">
-			            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+			            <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
 			          </svg>
 			          <span class="slds-assistive-text">Show More</span>
 			        </button>
@@ -507,7 +442,7 @@
 			          <th class="slds-row-action" scope="col">
 			            <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
 			              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
-			                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+			                <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
 			              </svg>
 			              <span class="slds-assistive-text">Show More</span>
 			            </button>
@@ -524,7 +459,7 @@
 			          <td>
 			            <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
 			              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
-			                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+			                <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
 			              </svg>
 			              <span class="slds-assistive-text">Show More</span>
 			            </button>
@@ -539,7 +474,7 @@
 			          <td>
 			            <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
 			              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
-			                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+			                <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
 			              </svg>
 			              <span class="slds-assistive-text">Show More</span>
 			            </button>
@@ -554,7 +489,7 @@
 			          <td>
 			            <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
 			              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
-			                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+			                <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
 			              </svg>
 			              <span class="slds-assistive-text">Show More</span>
 			            </button>
@@ -569,7 +504,7 @@
 			          <td>
 			            <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
 			              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
-			                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+			                <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
 			              </svg>
 			              <span class="slds-assistive-text">Show More</span>
 			            </button>
@@ -584,11 +519,11 @@
 		  </div>
 		  <div class="slds-tabs__content slds-hide main-tab-content" role="tabpanel" id="main-tab-content-relationships">
 		    <div class="slds-card slds-white-card-temp" >
-			  <img src="/assets/images/household-summary.png" alt="dashboard" style="padding:1rem;" />
+			  <img src="<%= asset_path('images/household-summary.png') %>" alt="dashboard" style="padding:1rem;" />
 			</div>
 		    <!-- Begin Card -->
   			<div class="slds-card" style="text-align:center; padding:1rem 0;">
-			  <img src="/assets/images/householding.png" alt="dashboard" style="padding:1rem;" />
+			  <img src="<%= asset_path('images/householding.png') %>" alt="dashboard" style="padding:1rem;" />
 			</div>
 			<!-- End Card -->
 			<!-- Begin Card -->
@@ -597,7 +532,7 @@
 			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
 			      <div class="slds-media__figure">
 			        <svg aria-hidden="true" class="slds-icon slds-icon-standard-contact slds-icon--small">
-			          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#contact"></use>
+			          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#contact"></use>
 			        </svg>
 			      </div>
 			      <div class="slds-media__body">
@@ -609,7 +544,7 @@
 			        <button class="slds-button slds-button--neutral slds-button--small">Add</button>
 			        <button class="slds-button slds-button--icon-border-filled">
 			          <svg aria-hidden="true" class="slds-button__icon">
-			            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+			            <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
 			          </svg>
 			          <span class="slds-assistive-text">Show More</span>
 			        </button>
@@ -628,7 +563,7 @@
 			          <th class="slds-row-action" scope="col">
 			            <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
 			              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
-			                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+			                <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
 			              </svg>
 			              <span class="slds-assistive-text">Show More</span>
 			            </button>
@@ -645,7 +580,7 @@
 			          <td>
 			            <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
 			              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
-			                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+			                <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
 			              </svg>
 			              <span class="slds-assistive-text">Show More</span>
 			            </button>
@@ -660,13 +595,13 @@
 		  </div>
 		  <div class="slds-tabs__content slds-hide main-tab-content" role="tabpanel" id="main-tab-content-goals">
 			<div class="slds-card slds-white-card-temp">
-		    	<img src="/assets/images/goal-home-purchase.png" alt="dashboard" style="" />
+		    	<img src="<%= asset_path('images/goal-home-purchase.png') %>" alt="dashboard" style="" />
 		    </div>
 		    <div class="slds-card slds-white-card-temp">
-		    	<img src="/assets/images/goal-retirement.png" alt="dashboard" style="" />
+		    	<img src="<%= asset_path('images/goal-retirement.png') %>" alt="dashboard" style="" />
 		    </div>
 		    <div class="slds-card slds-white-card-temp">
-		    	<img src="/assets/images/goal-education-fund.png" alt="dashboard" style="" />
+		    	<img src="<%= asset_path('images/goal-education-fund.png') %>" alt="dashboard" style="" />
 		    </div>
 		  </div>
 		</div>
@@ -715,7 +650,7 @@
 				          <p class="slds-timeline__date">Today</p>
 				          <button class="slds-button slds-button--icon-border-filled">
 				            <svg aria-hidden="true" class="slds-button__icon">
-				              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+				              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#switch"></use>
 				            </svg>
 				            <span class="slds-assistive-text">Switch</span>
 				          </button>
@@ -725,7 +660,7 @@
 				        <div class="slds-media slds-media--timeline slds-timeline__media--task">
 				          <div class="slds-media__figure">
 				            <svg aria-hidden="true" class="slds-icon slds-icon-standard-task slds-timeline__icon">
-				              <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#task"></use>
+				              <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#task"></use>
 				            </svg>
 				          </div>
 				          <div class="slds-media__body">
@@ -774,7 +709,7 @@
 				          <p class="slds-timeline__date">Yesterday</p>
 				          <button class="slds-button slds-button--icon-border-filled">
 				            <svg aria-hidden="true" class="slds-button__icon">
-				              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+				              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#switch"></use>
 				            </svg>
 				            <span class="slds-assistive-text">Switch</span>
 				          </button>
@@ -784,7 +719,7 @@
 				        <div class="slds-media slds-media--timeline slds-timeline__media--task">
 				          <div class="slds-media__figure">
 				            <svg aria-hidden="true" class="slds-icon slds-icon-standard-task slds-timeline__icon">
-				              <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#reward"></use>
+				              <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#reward"></use>
 				            </svg>
 				          </div>
 				          <div class="slds-media__body">
@@ -803,7 +738,7 @@
 				          <p class="slds-timeline__date">Aug 26</p>
 				          <button class="slds-button slds-button--icon-border-filled">
 				            <svg aria-hidden="true" class="slds-button__icon">
-				              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+				              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#switch"></use>
 				            </svg>
 				            <span class="slds-assistive-text">Switch</span>
 				          </button>
@@ -813,7 +748,7 @@
 				        <div class="slds-media slds-media--timeline slds-timeline__media--call">
 				          <div class="slds-media__figure">
 				            <svg aria-hidden="true" class="slds-icon slds-icon-standard-log-a-call slds-timeline__icon">
-				              <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#log_a_call"></use>
+				              <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#log_a_call"></use>
 				            </svg>
 				          </div>
 				          <div class="slds-media__body">
@@ -846,7 +781,7 @@
 				          <p class="slds-timeline__date">Sep 3</p>
 				          <button class="slds-button slds-button--icon-border-filled">
 				            <svg aria-hidden="true" class="slds-button__icon">
-				              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+				              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#switch"></use>
 				            </svg>
 				            <span class="slds-assistive-text">Switch</span>
 				          </button>
@@ -856,7 +791,7 @@
 				        <div class="slds-media slds-media--timeline slds-timeline__media--event">
 				          <div class="slds-media__figure">
 				            <svg aria-hidden="true" class="slds-icon slds-icon-standard-event slds-timeline__icon">
-				              <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#event"></use>
+				              <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#event"></use>
 				            </svg>
 				          </div>
 				          <div class="slds-media__body">
@@ -920,7 +855,7 @@
 						<div class="slds-media slds-tile">
 						  <div class="slds-media__figure">
 						    <span class="slds-avatar slds-avatar--circle slds-avatar--small">
-						      <img src="/assets/images/Linda.png" alt="portrait" />
+						      <img src="<%= asset_path('images/Linda.png') %>" alt="portrait" />
 						    </span>
 						  </div>
 						  <div class="slds-media__body">
@@ -950,7 +885,7 @@
 				      <div class="slds-media slds-tile">
 				        <div class="slds-media__figure">
 				          <span class="slds-avatar slds-avatar--circle slds-avatar--small">
-				            <img src="/assets/images/Linda.png" alt="portrait" />
+				            <img src="<%= asset_path('images/Linda.png') %>" alt="portrait" />
 				          </span>
 				        </div>
 				        <div class="slds-media__body">
@@ -971,14 +906,14 @@
 				        <button class="slds-button slds-button--neutral slds-not-selected" aria-live="assertive">
 				          <span class="slds-text-not-selected">
 				            <svg aria-hidden="true" class="slds-button__icon--stateful slds-icon--x-small">
-				              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#like"></use>
+				              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#like"></use>
 				            </svg>
 				          </span>
 				        </button>
 				        <button class="slds-button slds-button--neutral slds-not-selected" aria-live="assertive">
 				          <span class="slds-text-not-selected">
 				            <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
-				              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#add"></use>
+				              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#add"></use>
 				            </svg> Comment
 				          </span>
 				        </button>
@@ -990,7 +925,7 @@
 				      <div class="slds-media slds-tile">
 				        <div class="slds-media__figure">
 				          <span class="slds-avatar slds-avatar--circle slds-avatar--small">
-				            <img src="/assets/images/Rachel.png" alt="portrait" />
+				            <img src="<%= asset_path('images/Rachel.png') %>" alt="portrait" />
 				          </span>
 				        </div>
 				        <div class="slds-media__body">
@@ -1011,14 +946,14 @@
 				        <button class="slds-button slds-button--neutral slds-not-selected" aria-live="assertive">
 				          <span class="slds-text-not-selected">
 				            <svg aria-hidden="true" class="slds-button__icon--stateful slds-icon--x-small">
-				              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#like"></use>
+				              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#like"></use>
 				            </svg>
 				          </span>
 				        </button>
 				        <button class="slds-button slds-button--neutral slds-not-selected" aria-live="assertive">
 				          <span class="slds-text-not-selected">
 				            <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
-				              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#add"></use>
+				              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#add"></use>
 				            </svg> Comment
 				          </span>
 				        </button>
@@ -1085,7 +1020,7 @@ $(document).ready(function(){
 	$('#collaborate__send').click(function() {
 
 		var inputValue = $('#input__collaborate').val();
-		$('#collaborate-side').prepend('<div class="slds-p-bottom--large slds-m-bottom--large" style="border-bottom:1px solid #d8dde6;"> <div class="slds-media slds-tile"> <div class="slds-media__figure"> <span class="slds-avatar slds-avatar--circle slds-avatar--small"> <img src="/assets/images/Brad.jpg" alt="portrait" /> </span> </div> <div class="slds-media__body"> <p class="slds-tile__title slds-truncate"><a href="#">Brad Lee</a></p> <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small"> <li class="slds-truncate slds-list__item">September 8, 2015 at 10:23 AM</li> </ul> </div> </div> <div class="slds-card slds-card--empty slds-assistant-card-temp slds-m-top--small slds-p-around--small"> '+inputValue+'</div> <div> <div class="slds-form-element__control"> <input id="" class="slds-input" type="text" placeholder="Write a comment ..." /> </div> </div> </div>');
+		$('#collaborate-side').prepend('<div class="slds-p-bottom--large slds-m-bottom--large" style="border-bottom:1px solid #d8dde6;"> <div class="slds-media slds-tile"> <div class="slds-media__figure"> <span class="slds-avatar slds-avatar--circle slds-avatar--small"> <img src="<%= asset_path('images/Brad.jpg') %>" alt="portrait" /> </span> </div> <div class="slds-media__body"> <p class="slds-tile__title slds-truncate"><a href="#">Brad Lee</a></p> <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small"> <li class="slds-truncate slds-list__item">September 8, 2015 at 10:23 AM</li> </ul> </div> </div> <div class="slds-card slds-card--empty slds-assistant-card-temp slds-m-top--small slds-p-around--small"> '+inputValue+'</div> <div> <div class="slds-form-element__control"> <input id="" class="slds-input" type="text" placeholder="Write a comment ..." /> </div> </div> </div>');
 
 							
 

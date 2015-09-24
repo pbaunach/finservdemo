@@ -1,0 +1,128 @@
+<div class="tempSideNav" style="min-height:100%; background-color:rgb(22, 50, 92); width:240px;">
+	<ul class="">
+		<li>
+			<a href="#" class="sidenav-row-temp">
+				<span class="slds-icon__container slds-icon-utility-rows">
+				  <svg aria-hidden="true" class="slds-icon slds-icon--small">
+				    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#rows"></use>
+				  </svg>
+				</span>
+			</a>
+		</li>
+<% if request.original_url.include? "today/today" %>
+		<li class="selected-temp">
+			<%= link_to(root_path+'today/today?i=02u6100000052eW') do %>
+				<span class="slds-icon__container slds-icon-standard-today">
+				  <svg aria-hidden="true" class="slds-icon">
+				    <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#today"></use>
+				  </svg>
+				</span>
+				Today
+			<% end %>
+		</li>
+<% else %>
+		<li>
+			<%= link_to(root_path+'today/today?i=02u6100000052eW') do %>
+				<span class="slds-icon__container">
+				  <svg aria-hidden="true" class="slds-icon">
+				    <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#today"></use>
+				  </svg>
+				</span>
+				Today
+			<% end %>
+		</li>
+<% end %>
+<% if request.original_url.include? "sales/leadlist" %>
+		<li class="selected-temp">
+			<%= link_to(root_path+'sales/leadlist?i=02u6100000052eW') do %>
+				<span class="slds-icon__container">
+				  <svg aria-hidden="true" class="slds-icon slds-icon-standard-lead">
+				    <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#lead"></use>
+				  </svg>
+				</span>
+				Leads
+			<% end %>
+		</li>
+<% else %>
+		<li>
+			<%= link_to(root_path+'sales/leadlist?i=02u6100000052eW') do %>
+				<span class="slds-icon__container">
+				  <svg aria-hidden="true" class="slds-icon">
+				    <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#lead"></use>
+				  </svg>
+				</span>
+				Leads
+			<% end %>
+		</li>
+<% end %>
+<% if request.original_url.include? "wm/bob" %>
+		<li class="selected-temp">
+			<%= link_to(root_path+'wm/bob?i=02u6100000052eW') do %>
+				<span class="slds-icon__container">
+				  <svg aria-hidden="true" class="slds-icon slds-icon-custom-15">
+				    <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom15"></use>
+				  </svg>
+				</span>
+				Clients
+			<% end %>
+		</li>
+<% else %>
+		<li>
+			<%= link_to(root_path+'wm/bob?i=02u6100000052eW') do %>
+				<span class="slds-icon__container">
+				  <svg aria-hidden="true" class="slds-icon">
+				    <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom15"></use>
+				  </svg>
+				</span>
+				Clients
+			<% end %>
+		</li>
+<% end %>
+<% if request.original_url.include? "wm/profile" %>
+		<li class="selected-temp">
+			<%= link_to(root_path+'wm/profile?i=02u6100000052eW') do %>
+				<span class="slds-icon__container">
+				  <svg aria-hidden="true" class="slds-icon slds-icon-standard-people">
+				    <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#people"></use>
+				  </svg>
+				</span>
+				People
+			<% end %>
+		</li>
+<% else %>
+		<li>
+			<%= link_to(root_path+'wm/profile?i=02u6100000052eW') do %>
+				<span class="slds-icon__container">
+				  <svg aria-hidden="true" class="slds-icon">
+				    <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#people"></use>
+				  </svg>
+				</span>
+				People
+			<% end %>
+		</li>
+<% end %>
+<% if request.original_url.include? "cb/profile" %>
+		<li class="selected-temp">
+			<%= link_to(root_path+'cb/profile?i=02u6100000052eW') do %>
+				<span class="slds-icon__container">
+				  <svg aria-hidden="true" class="slds-icon slds-icon-standard-account">
+				    <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#account"></use>
+				  </svg>
+				</span>
+				Accounts
+			<% end %>
+		</li>
+<% else %>
+		<li>
+			<%= link_to(root_path+'cb/profile?i=02u6100000052eW') do %>
+				<span class="slds-icon__container">
+				  <svg aria-hidden="true" class="slds-icon">
+				    <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#account"></use>
+				  </svg>
+				</span>
+				Accounts
+			<% end %>
+		</li>
+<% end %>
+	</ul>
+</div>

@@ -1,78 +1,13 @@
-
- <div class="slds-grid" style="height:100vh; width:100vw;">
-	<div style="min-height:100%; background-color:rgb(22, 50, 92);">
-		<div class="tempSideNav">
-			<ul class="">
-				<li>
-					<a href="#" class="sidenav-row-temp">
-						<span class="slds-icon__container slds-icon-utility-rows">
-						  <svg aria-hidden="true" class="slds-icon slds-icon--small">
-						    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#rows"></use>
-						  </svg>
-						</span>
-					</a>
-				</li>
-				<li class="selected-temp">
-					<%= link_to(root_path+'today/today?i=02u6100000052eW') do %>
-						<span class="slds-icon__container slds-icon-standard-today">
-						  <svg aria-hidden="true" class="slds-icon">
-						    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#today"></use>
-						  </svg>
-						</span>
-						Today
-					<% end %>
-				</li>
-				<li>
-					<%= link_to(root_path+'sales/leadlist?i=02u6100000052eW') do %>
-						<span class="slds-icon__container">
-						  <svg aria-hidden="true" class="slds-icon">
-						    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#lead"></use>
-						  </svg>
-						</span>
-						Leads
-					<% end %>
-				</li>
-				<li>
-					<%= link_to(root_path+'wm/bob?i=02u6100000052eW') do %>
-						<span class="slds-icon__container">
-						  <svg aria-hidden="true" class="slds-icon">
-						    <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom15"></use>
-						  </svg>
-						</span>
-						Clients
-					<% end %>
-				</li>
-				<li>
-					<%= link_to(root_path+'wm/profile?i=02u6100000052eW') do %>
-						<span class="slds-icon__container">
-						  <svg aria-hidden="true" class="slds-icon">
-						    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#people"></use>
-						  </svg>
-						</span>
-						People
-					<% end %>
-				</li>
-				<li>
-					<%= link_to(root_path+'cb/profile?i=02u6100000052eW') do %>
-						<span class="slds-icon__container">
-						  <svg aria-hidden="true" class="slds-icon">
-						    <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#account"></use>
-						  </svg>
-						</span>
-						Accounts
-					<% end %>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="slds-col" style="overflow:scroll;">
+ <div class="grid-temp" style="height:100vh; width:100vw;">
+	<%= render 'layouts/nav' %>
+	<div class="slds-col grid-1" style="overflow:scroll;">
 	 <div class="slds-grid slds-wrap slds-align-top">
 	 	<div class="slds-col slds-size--1-of-1 navbar-temp" style="margin-bottom:1rem;">
 	 		<div class="slds-grid">
 			  <div class="slds-col slds-align-middle">
 			  	<span class="slds-icon__container slds-icon-utility-salesforce1">
 				  <svg aria-hidden="true" class="slds-icon slds-icon-text-default icon-salesforce1-temp">
-				    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#salesforce1"></use>
+				    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#salesforce1"></use>
 				  </svg>
 				</span>
 			  </div>
@@ -80,7 +15,7 @@
 			  	<div class="slds-input" style="text-align:left;">
 			  		<span class="slds-icon__container slds-icon-utility-search slds-m-horizontal--x-small">
 					  <svg aria-hidden="true" class="slds-icon--x-small slds-icon-text-default">
-					    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+					    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#search"></use>
 					  </svg>
 					</span>
 			  		<input id="input__filter" type="text" placeholder="Search Salesforce" style="width:70%; border:none;">
@@ -90,27 +25,27 @@
 			  <div class="slds-col slds-align-middle icon-container ">
 				<span class="slds-icon__container slds-icon-utility-apps slds-m-horizontal--x-small">
 				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
-				    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#apps"></use>
+				    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#apps"></use>
 				  </svg>
 				</span>
 				<span class="slds-icon__container slds-icon-utility-question slds-m-horizontal--x-small">
 				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
-				    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#question"></use>
+				    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#question"></use>
 				  </svg>
 				</span>
 				<span class="slds-icon__container slds-icon-utility-setup slds-m-horizontal--x-small">
 				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
-				    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#setup"></use>
+				    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#setup"></use>
 				  </svg>
 				</span>
 				<span class="slds-icon__container slds-icon-utility-notification slds-m-horizontal--x-small">
 				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
-				    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#notification"></use>
+				    <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#notification"></use>
 				  </svg>
 				</span>
 		 		<%= link_to(root_path) do %>
 			 		<span class="slds-avatar slds-avatar--circle slds-avatar--small slds-m-horizontal--x-small">
-					  <img src="/assets/images/Mike.jpg" alt="person name" />
+					  <img src="<%= asset_path('images/Mike.jpg') %>" alt="person name" />
 					</span>
 				<% end %>
 			  </div>
@@ -133,7 +68,7 @@
 			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
 			      <div class="slds-media__figure">
 			        <svg aria-hidden="true" class="slds-icon slds-icon-standard-opportunity slds-icon--small">
-			          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#opportunity"></use>
+			          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#opportunity"></use>
 			        </svg>
 			      </div>
 			      <div class="slds-media__body">
@@ -217,7 +152,7 @@
 			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
 			      <div class="slds-media__figure">
 			        <svg aria-hidden="true" class="slds-icon slds-icon-standard-lead slds-icon--small">
-			          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#lead"></use>
+			          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#lead"></use>
 			        </svg>
 			      </div>
 			      <div class="slds-media__body">
@@ -239,13 +174,13 @@
                                     </p>
                                     <div>
                                         <svg aria-hidden="true" class="icon-star-active">
-								          <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use>
+								          <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use>
 								        </svg>
 								        <svg aria-hidden="true" class="icon-star-active">
-								          <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use>
+								          <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use>
 								        </svg>
 								        <svg aria-hidden="true" class="icon-star-active">
-								          <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use>
+								          <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use>
 								        </svg>
                                     </div>
                                 </div>
@@ -265,13 +200,13 @@
                                     </p>
                                     <div>
                                         <svg aria-hidden="true" class="icon-star-active">
-								          <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use>
+								          <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use>
 								        </svg>
 								        <svg aria-hidden="true" class="icon-star-active">
-								          <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use>
+								          <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use>
 								        </svg>
 								        <svg aria-hidden="true" class="icon-star-active">
-								          <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use>
+								          <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use>
 								        </svg>
                                     </div>
                                 </div>
@@ -291,13 +226,13 @@
                                     </p>
                                     <div>
                                         <svg aria-hidden="true" class="icon-star-active">
-								          <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use>
+								          <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use>
 								        </svg>
 								        <svg aria-hidden="true" class="icon-star-active">
-								          <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use>
+								          <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use>
 								        </svg>
 								        <svg aria-hidden="true" class="icon-star-inactive">
-								          <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use>
+								          <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use>
 								        </svg>
                                     </div>
                                 </div>
@@ -321,7 +256,7 @@
 			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
 			      <div class="slds-media__figure">
 			        <svg aria-hidden="true" class="slds-icon slds-icon-standard-task slds-icon--small">
-			          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#task"></use>
+			          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#task"></use>
 			        </svg>
 			      </div>
 			      <div class="slds-media__body">
@@ -400,7 +335,7 @@
 			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
 			      <div class="slds-media__figure">
 			        <svg aria-hidden="true" class="slds-icon slds-icon-standard-case slds-icon--small">
-			          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#case"></use>
+			          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#case"></use>
 			        </svg>
 			      </div>
 			      <div class="slds-media__body">
@@ -412,7 +347,7 @@
 			        <button class="slds-button slds-button--neutral slds-button--small">New</button>
 			        <button class="slds-button slds-button--icon-border-filled">
 			          <svg aria-hidden="true" class="slds-button__icon">
-			            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+			            <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
 			          </svg>
 			          <span class="slds-assistive-text">Show More</span>
 			        </button>
@@ -487,7 +422,7 @@
 			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
 			      <div class="slds-media__figure">
 			        <svg aria-hidden="true" class="slds-icon slds-icon-standard-event slds-icon--small">
-			          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#event"></use>
+			          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#event"></use>
 			        </svg>
 			      </div>
 			      <div class="slds-media__body">
@@ -521,7 +456,7 @@
 			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
 			      <div class="slds-media__figure">
 			        <svg aria-hidden="true" class="slds-icon slds-icon-standard-event slds-icon--small">
-			          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#event"></use>
+			          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#event"></use>
 			        </svg>
 			      </div>
 			      <div class="slds-media__body">
@@ -555,7 +490,7 @@
 			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
 			      <div class="slds-media__figure">
 			        <svg aria-hidden="true" class="slds-icon slds-icon-standard-lead slds-icon--small">
-			          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#lead"></use>
+			          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#lead"></use>
 			        </svg>
 			      </div>
 			      <div class="slds-media__body">
@@ -570,13 +505,13 @@
 				      	<p class="slds-tile__title slds-truncate"><a href="#">Rachel Adams</a></p>
 				      	<span class="label">                                        
                             <svg aria-hidden="true" class="icon-star-active">
-					          <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use>
+					          <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use>
 					        </svg>
 					        <svg aria-hidden="true" class="icon-star-active">
-					          <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use>
+					          <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use>
 					        </svg>
 					        <svg aria-hidden="true" class="icon-star-active">
-					          <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use>
+					          <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use>
 					        </svg>
 						</span>
 				    </div>
@@ -597,7 +532,7 @@
 			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
 			      <div class="slds-media__figure">
 			        <svg aria-hidden="true" class="slds-icon slds-icon-standard-task slds-icon--small">
-			          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#task"></use>
+			          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#task"></use>
 			        </svg>
 			      </div>
 			      <div class="slds-media__body">
@@ -633,7 +568,7 @@
 			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
 			      <div class="slds-media__figure">
 			        <svg aria-hidden="true" class="slds-icon slds-icon-standard-task slds-icon--small">
-			          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#task"></use>
+			          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#task"></use>
 			        </svg>
 			      </div>
 			      <div class="slds-media__body">
@@ -669,7 +604,7 @@
 			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
 			      <div class="slds-media__figure">
 			        <svg aria-hidden="true" class="slds-icon slds-icon-standard-opportunity slds-icon--small">
-			          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#opportunity"></use>
+			          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#opportunity"></use>
 			        </svg>
 			      </div>
 			      <div class="slds-media__body">
@@ -703,7 +638,7 @@
 			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
 			      <div class="slds-media__figure">
 			        <svg aria-hidden="true" class="slds-icon slds-icon-standard-lead slds-icon--small">
-			          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#lead"></use>
+			          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#lead"></use>
 			        </svg>
 			      </div>
 			      <div class="slds-media__body">
@@ -718,13 +653,13 @@
 				      	<p class="slds-tile__title slds-truncate"><a href="#">Jane Ramirez</a></p>
 				      	<span class="label">                                        
                             <svg aria-hidden="true" class="icon-star-active">
-					          <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use>
+					          <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use>
 					        </svg>
 					        <svg aria-hidden="true" class="icon-star-active">
-					          <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use>
+					          <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use>
 					        </svg>
 					        <svg aria-hidden="true" class="icon-star-active">
-					          <use xlink:href="/assets/icons/custom-sprite/svg/symbols.svg#custom11"></use>
+					          <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use>
 					        </svg>
 						</span>
 				    </div>
@@ -745,7 +680,7 @@
 			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
 			      <div class="slds-media__figure">
 			        <svg aria-hidden="true" class="slds-icon slds-icon-standard-opportunity slds-icon--small">
-			          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#opportunity"></use>
+			          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#opportunity"></use>
 			        </svg>
 			      </div>
 			      <div class="slds-media__body">
