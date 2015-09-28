@@ -2,13 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.tempSideNav{
-
-	a{
-		color:#fff !important;
-		display:block !important;
-	}
-}
 .grid-temp{
 	display:-webkit-flex; 
 	display:flex; 
@@ -116,8 +109,10 @@ aside{
 		text-decoration:none;
 	}
 	a{
+		color:#fff !important;
+		display:block !important;
 		span{
-			margin-right:.25rem;
+			margin-right:.75rem;
 		}
 	}
 }
