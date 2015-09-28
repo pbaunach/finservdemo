@@ -128,29 +128,12 @@
 </div>
 
 <script>
-
-
-
 $(document).ready( function(){
- 
-		//if (inputValue == '') return
-
-		// 1) We need to get the current data from localStorage
-		//var currentData = JSON.parse(localStorage.getItem('myTestData'))
-
-		// 2) then need to update the values
-		//currentData.push({ name: inputValue, value: '3', datetime: 'Tomorrow'})
-
-		// 3) save the updated data to localStorage so its available later
-		//localStorage.setItem("myTestData", JSON.stringify(currentData))
-
 	// see if there are existing items
-
 	if (!localStorage.getItem("navToggle")) {
 		// Set data
-		localStorage.setItem("navToggle", 'Closed')
+		localStorage.setItem("navToggle", 'Open')
 	}
-
 
     $('#menu-btn-temp').click( function() {
         var toggleWidth = $(".tempSideNav").width() == 240 ? "56px" : "240px";
@@ -161,12 +144,5 @@ $(document).ready( function(){
     });
 
     var navToggle = localStorage.getItem('navToggle') == 'Closed' ? $('.tempSideNav').width('56') : $('.tempSideNav').width('240');
-
-
-	//data.forEach(function(datum) {
-	//	$('#myTestElement').append('<tr><td>'+datum.name+'</td><td>'+datum.value+'<td><td>'+datum.datetime+'<td></tr>')
-	//})
-
 });
-
 </script>
