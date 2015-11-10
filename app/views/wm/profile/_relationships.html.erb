@@ -1,0 +1,353 @@
+<div class="slds-card slds-white-card-temp">
+	<div class="slds-card__header">
+    	<h2 class="slds-text-heading--medium slds-truncate">Household Summary</h2><a href="#">View Household</a>
+  	</div>
+  	<div class="slds-card__body slds-grid">
+  		<div class="slds-col--padded slds-size--1-of-5">
+  			<span class="slds-text-heading--label">Total Accounts</span>
+  			<p>$6,500,000</p>
+  		</div>
+  		<div class="slds-col--padded slds-size--1-of-5">
+  			<span class="slds-text-heading--label">AUM</span>
+  			<p>$2,200,500</p>
+  		</div>
+  		<div class="slds-col--padded slds-size--1-of-5">
+  			<span class="slds-text-heading--label">Assets Held Away</span>
+  			<p>$3,700,500</p>
+  		</div>
+  		<div class="slds-col--padded slds-size--1-of-5">
+  			<span class="slds-text-heading--label">Last Interaction</span>
+  			<p>8/18/2015</p>
+  		</div>
+  		<div class="slds-col--padded slds-size--1-of-5">
+  			<span class="slds-text-heading--label">Next Interaction</span>
+  			<p>12/15/2015</p>
+  		</div>
+  	</div>
+</div>
+<!-- Begin Card -->
+<div class="slds-card">
+  <header class="slds-card__header slds-grid">
+    <div class="slds-media slds-media--center slds-has-flexi-truncate">
+      <div class="slds-media__figure">
+        <svg aria-hidden="true" class="slds-icon slds-icon-custom-50 slds-icon--small">
+          <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom50"></use>
+        </svg>
+      </div>
+      <div class="slds-media__body">
+        <h3 class="slds-text-heading--small slds-truncate">Household Members (2)</h3>
+      </div>
+    </div>
+    <div class="slds-no-flex">
+      <div class="slds-button-group">
+        <button class="slds-button slds-button--neutral slds-button--small modal-action">Add Member</button>
+        <button class="slds-button slds-button--icon-border-filled">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
+          </svg>
+          <span class="slds-assistive-text">Show More</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <section class="slds-card__body">
+   <div class="slds-grid slds-wrap ">
+<!-- Household Item -->
+   				<div class="slds-media slds-tile slds-size--1-of-1 slds-col--padded">
+					<div class="slds-media__figure">
+					    <span class="slds-avatar slds-avatar--circle slds-avatar--small">
+					      <img src="/assets/images/Rachel.png" alt="" />
+					    </span>
+					</div>
+		  			<div class="slds-media__body">
+					   	<div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
+					      <p class="slds-tile__title slds-truncate"><a href="#">Rachel Adams</a> <span class="slds-badge slds-m-left--small">Primary</span></p>
+					      <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small slds-shrink-none">
+					        <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+					          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+					        </svg>
+					        <span class="slds-assistive-text">Show More</span>
+					      </button>
+					    </div>
+					    <div class="slds-grid">
+						   	<div class="slds-size--1-of-3">
+						   		<ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
+							      <li class="slds-truncate slds-list__item">Role: <span class="slds-tile__meta">Wife</span></li>
+							      <li class="slds-truncate slds-list__item">Age: <span class="slds-tile__meta">50</span></li>
+							    </ul>
+							    <p class="slds-text-body--small"> Phone: <span class="slds-tile__meta">(415)555-3132</span> </p> 
+							    <p class="slds-text-body--small"> Mobile: <span class="slds-tile__meta">(415)444-4123</span> </p> 
+							    <p class="slds-text-body--small"> Email: <span class="slds-tile__meta"><a href="#">rachel.adams@gmail.com</a></span> </p> 
+						   	</div>
+						   	<div class="slds-col--padded slds-size--1-of-3">
+						   		<p class="slds-text-body--small"> Last Interaction: <span class="slds-tile__meta">10/01/2015</span> </p> 
+                  <p class="slds-text-body--small"> Next Interaction: <span class="slds-tile__meta">2/15/2016</span> </p> 
+						   	</div>
+						   	<div class="slds-col--padded slds-size--1-of-3">
+						   		<p class="slds-text-body--small slds-p-bottom--xxx-small">
+						   			<svg aria-hidden="true" class="slds-icon slds-icon-standard-event slds-icon--x-small slds-align-top slds-m-right--xx-small">
+							          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#event"></use>
+							        </svg> Events: <span class="slds-tile__meta">4</span> 
+							    </p> 
+						   		<p class="slds-text-body--small slds-p-bottom--xxx-small">
+							   		<svg aria-hidden="true" class="slds-icon slds-icon-standard-task slds-icon--x-small slds-align-top slds-m-right--xx-small">
+							          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#task"></use>
+							        </svg> Tasks: <span class="slds-tile__meta">16</span> 
+						        </p> 
+						   		<p class="slds-text-body--small slds-p-bottom--xxx-small"> 
+							   		<svg aria-hidden="true" class="slds-icon slds-icon-standard-log-a-call slds-icon--x-small slds-align-top slds-m-right--xx-small">
+							          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#log_a_call"></use>
+							        </svg> Calls: <span class="slds-tile__meta">5</span> 
+						        </p> 
+						   		<p class="slds-text-body--small slds-p-bottom--xxx-small"> 
+							   		<svg aria-hidden="true" class="slds-icon slds-icon-standard-email slds-icon--x-small slds-align-top slds-m-right--xx-small">
+							          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#email"></use>
+							        </svg> Email: <span class="slds-tile__meta">20</span> 
+						        </p> 
+						   	</div>
+					   	</div>					    
+		  			</div>
+				</div>
+<!-- End Household Item -->
+<!-- Household Item -->
+   				<div class="slds-media slds-tile slds-size--1-of-1 slds-col--padded">
+					<div class="slds-media__figure">
+					    <span class="slds-avatar slds-avatar--circle slds-avatar--small">
+					      <img src="/assets/images/Nigel.png" alt="" />
+					    </span>
+					</div>
+		  			<div class="slds-media__body">
+					   	<div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
+					      <p class="slds-tile__title slds-truncate"><a href="#">Nigel Adams</a></p>
+					      <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small slds-shrink-none">
+					        <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+					          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+					        </svg>
+					        <span class="slds-assistive-text">Show More</span>
+					      </button>
+					    </div>
+					    <div class="slds-grid">
+						   	<div class="slds-size--1-of-3">
+						   		<ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
+							      <li class="slds-truncate slds-list__item">Role: <span class="slds-tile__meta">Husband</span></li>
+							      <li class="slds-truncate slds-list__item">Age: <span class="slds-tile__meta">55</span></li>
+							    </ul>
+							    <p class="slds-text-body--small"> Phone: <span class="slds-tile__meta">(415)555-3132</span> </p> 
+							    <p class="slds-text-body--small"> Mobile: <span class="slds-tile__meta">(415)444-4129</span> </p> 
+							    <p class="slds-text-body--small"> Email: <span class="slds-tile__meta"><a href="#">nigel.adams@gmail.com</a></span> </p> 
+						   	</div>
+						   	<div class="slds-col--padded slds-size--1-of-3">
+						   		<p class="slds-text-body--small"> Last Interaction: <span class="slds-tile__meta">10/01/2015</span> </p> 
+                  <p class="slds-text-body--small"> Next Interaction: <span class="slds-tile__meta">--</span> </p> 
+						   	</div>
+						   	<div class="slds-col--padded slds-size--1-of-3">
+						   		<p class="slds-text-body--small slds-p-bottom--xxx-small">
+						   			<svg aria-hidden="true" class="slds-icon slds-icon-standard-event slds-icon--x-small slds-align-top slds-m-right--xx-small">
+							          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#event"></use>
+							        </svg> Events: <span class="slds-tile__meta">2</span> 
+							    </p> 
+						   		<p class="slds-text-body--small slds-p-bottom--xxx-small">
+							   		<svg aria-hidden="true" class="slds-icon slds-icon-standard-task slds-icon--x-small slds-align-top slds-m-right--xx-small">
+							          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#task"></use>
+							        </svg> Tasks: <span class="slds-tile__meta">8</span> 
+						        </p> 
+						   		<p class="slds-text-body--small slds-p-bottom--xxx-small"> 
+							   		<svg aria-hidden="true" class="slds-icon slds-icon-standard-log-a-call slds-icon--x-small slds-align-top slds-m-right--xx-small">
+							          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#log_a_call"></use>
+							        </svg> Calls: <span class="slds-tile__meta">0</span> 
+						        </p> 
+						   		<p class="slds-text-body--small slds-p-bottom--xxx-small"> 
+							   		<svg aria-hidden="true" class="slds-icon slds-icon-standard-email slds-icon--x-small slds-align-top slds-m-right--xx-small">
+							          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#email"></use>
+							        </svg> Email: <span class="slds-tile__meta">4</span> 
+						        </p> 
+						   	</div>
+					   	</div>					    
+		  			</div>
+				</div>
+<!-- End Household Item -->
+<!-- Household Item -->
+          <div class="slds-media slds-tile slds-size--1-of-1 slds-col--padded">
+          <div class="slds-media__figure">
+              <span class="slds-avatar slds-avatar--circle slds-avatar--small">
+                <img src="/assets/images/Claire.png" alt="" />
+              </span>
+          </div>
+            <div class="slds-media__body">
+              <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
+                <p class="slds-tile__title slds-truncate"><a href="#">Claire Adams</a></p>
+                <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small slds-shrink-none">
+                  <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+                    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+                  </svg>
+                  <span class="slds-assistive-text">Show More</span>
+                </button>
+              </div>
+              <div class="slds-grid">
+                <div class="slds-size--1-of-3">
+                  <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
+                    <li class="slds-truncate slds-list__item">Role: <span class="slds-tile__meta">Daughter</span></li>
+                    <li class="slds-truncate slds-list__item">Age: <span class="slds-tile__meta">17</span></li>
+                  </ul>
+                  <p class="slds-text-body--small"> Phone: <span class="slds-tile__meta">--</span> </p> 
+                  <p class="slds-text-body--small"> Mobile: <span class="slds-tile__meta">--</span> </p> 
+                  <p class="slds-text-body--small"> Email: <span class="slds-tile__meta">--</span> </p> 
+                </div>
+                <div class="slds-col--padded slds-size--1-of-3">
+                  <p class="slds-text-body--small"> Last Interaction: <span class="slds-tile__meta">--</span> </p> 
+                  <p class="slds-text-body--small"> Next Interaction: <span class="slds-tile__meta">--</span> </p> 
+                </div>
+                <div class="slds-col--padded slds-size--1-of-3">
+                  <p class="slds-text-body--small slds-p-bottom--xxx-small">
+                    <svg aria-hidden="true" class="slds-icon slds-icon-standard-event slds-icon--x-small slds-align-top slds-m-right--xx-small">
+                        <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#event"></use>
+                      </svg> Events: <span class="slds-tile__meta">0</span> 
+                  </p> 
+                  <p class="slds-text-body--small slds-p-bottom--xxx-small">
+                    <svg aria-hidden="true" class="slds-icon slds-icon-standard-task slds-icon--x-small slds-align-top slds-m-right--xx-small">
+                        <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#task"></use>
+                      </svg> Tasks: <span class="slds-tile__meta">0</span> 
+                    </p> 
+                  <p class="slds-text-body--small slds-p-bottom--xxx-small"> 
+                    <svg aria-hidden="true" class="slds-icon slds-icon-standard-log-a-call slds-icon--x-small slds-align-top slds-m-right--xx-small">
+                        <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#log_a_call"></use>
+                      </svg> Calls: <span class="slds-tile__meta">0</span> 
+                    </p> 
+                  <p class="slds-text-body--small slds-p-bottom--xxx-small"> 
+                    <svg aria-hidden="true" class="slds-icon slds-icon-standard-email slds-icon--x-small slds-align-top slds-m-right--xx-small">
+                        <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#email"></use>
+                      </svg> Email: <span class="slds-tile__meta">0</span> 
+                    </p> 
+                </div>
+              </div>              
+            </div>
+        </div>
+<!-- End Household Item -->
+<!-- Household Item -->
+          <div class="slds-media slds-tile slds-size--1-of-1 slds-col--padded">
+          <div class="slds-media__figure">
+              <span class="slds-avatar slds-avatar--circle slds-avatar--small">
+                <img src="/assets/images/Jack.png" alt="" />
+              </span>
+          </div>
+            <div class="slds-media__body">
+              <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
+                <p class="slds-tile__title slds-truncate"><a href="#">Jack Adams</a></p>
+                <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small slds-shrink-none">
+                  <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+                    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+                  </svg>
+                  <span class="slds-assistive-text">Show More</span>
+                </button>
+              </div>
+              <div class="slds-grid">
+                <div class="slds-size--1-of-3">
+                  <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
+                    <li class="slds-truncate slds-list__item">Role: <span class="slds-tile__meta">Son</span></li>
+                    <li class="slds-truncate slds-list__item">Age: <span class="slds-tile__meta">14</span></li>
+                  </ul>
+                  <p class="slds-text-body--small"> Phone: <span class="slds-tile__meta">--</span> </p> 
+                  <p class="slds-text-body--small"> Mobile: <span class="slds-tile__meta">--</span> </p> 
+                  <p class="slds-text-body--small"> Email: <span class="slds-tile__meta"><a href="#">--</a></span> </p> 
+                </div>
+                <div class="slds-col--padded slds-size--1-of-3">
+                  <p class="slds-text-body--small"> Last Interaction: <span class="slds-tile__meta">--</span> </p>
+                  <p class="slds-text-body--small"> Next Interaction: <span class="slds-tile__meta">--</span> </p> 
+                </div>
+                <div class="slds-col--padded slds-size--1-of-3">
+                  <p class="slds-text-body--small slds-p-bottom--xxx-small">
+                    <svg aria-hidden="true" class="slds-icon slds-icon-standard-event slds-icon--x-small slds-align-top slds-m-right--xx-small">
+                        <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#event"></use>
+                      </svg> Events: <span class="slds-tile__meta">0</span> 
+                  </p> 
+                  <p class="slds-text-body--small slds-p-bottom--xxx-small">
+                    <svg aria-hidden="true" class="slds-icon slds-icon-standard-task slds-icon--x-small slds-align-top slds-m-right--xx-small">
+                        <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#task"></use>
+                      </svg> Tasks: <span class="slds-tile__meta">0</span> 
+                    </p> 
+                  <p class="slds-text-body--small slds-p-bottom--xxx-small"> 
+                    <svg aria-hidden="true" class="slds-icon slds-icon-standard-log-a-call slds-icon--x-small slds-align-top slds-m-right--xx-small">
+                        <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#log_a_call"></use>
+                      </svg> Calls: <span class="slds-tile__meta">0</span> 
+                    </p> 
+                  <p class="slds-text-body--small slds-p-bottom--xxx-small"> 
+                    <svg aria-hidden="true" class="slds-icon slds-icon-standard-email slds-icon--x-small slds-align-top slds-m-right--xx-small">
+                        <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#email"></use>
+                      </svg> Email: <span class="slds-tile__meta">0</span> 
+                    </p> 
+                </div>
+              </div>              
+            </div>
+        </div>
+<!-- End Household Item -->   	
+	</div>
+  </section>
+</div>
+<!-- End Card -->
+
+<!-- Begin Card -->
+<div class="slds-card">
+  <header class="slds-card__header slds-grid">
+    <div class="slds-media slds-media--center slds-has-flexi-truncate">
+      <div class="slds-media__figure">
+        <svg aria-hidden="true" class="slds-icon slds-icon-standard-contact slds-icon--small">
+          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#contact"></use>
+        </svg>
+      </div>
+      <div class="slds-media__body">
+        <h3 class="slds-text-heading--small slds-truncate">Related Entities (1)</h3>
+      </div>
+    </div>
+    <div class="slds-no-flex">
+      <div class="slds-button-group">
+        <button class="slds-button slds-button--neutral slds-button--small">Add</button>
+        <button class="slds-button slds-button--icon-border-filled">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
+          </svg>
+          <span class="slds-assistive-text">Show More</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <section class="slds-card__body">
+    <table class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal slds-no-row-hover">
+      <thead>
+        <tr>
+          <th class="slds-text-heading--label slds-size--1-of-5" scope="col">Company</th>
+          <th class="slds-text-heading--label slds-size--1-of-5" scope="col">Name</th>
+          <th class="slds-text-heading--label slds-size--1-of-5" scope="col">Role</th>
+          <th class="slds-text-heading--label slds-size--1-of-5" scope="col">Email</th>
+          <th class="slds-text-heading--label slds-size--1-of-5" scope="col">Phone</th>
+          <th class="slds-row-action" scope="col">
+            <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
+              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+                <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
+              </svg>
+              <span class="slds-assistive-text">Show More</span>
+            </button>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="slds-hint-parent">
+          <td class="slds-size--1-of-5" data-label="Company">RAD Designs</td>
+          <td class="slds-size--1-of-5" data-label="Name">Rachel Adams</td>
+          <td class="slds-size--1-of-5" data-label="Title">CEO/Founder</td>
+          <td class="slds-size--1-of-5" data-label="Email">rachel.adams@raddesigns.com</td>
+          <td class="slds-size--1-of-5" data-label="Phone">415-555-3000</td>
+          <td>
+            <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
+              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+                <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
+              </svg>
+              <span class="slds-assistive-text">Show More</span>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <footer class="slds-card__footer"><a href="#">View All</a></footer>
+</div>
+<!-- End Card -->

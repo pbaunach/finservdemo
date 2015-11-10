@@ -1,0 +1,110 @@
+<div class="slds-form slds-grid slds-wrap slds-m-top--large" id="basic-details-container">	
+</div>
+<div class="slds-form slds-grid slds-wrap slds-m-top--large" id="family-details-container">
+	<h1 class="slds-size--1-of-1 slds-section-title slds-col--padded slds-p-bottom--medium">Family</h1>
+</div>
+<div class="slds-form slds-grid slds-wrap slds-m-top--large" id="identity-details-container">
+	<h1 class="slds-size--1-of-1 slds-section-title slds-col--padded slds-p-bottom--medium">Identity</h1>
+</div>
+<div class="slds-form slds-grid slds-wrap slds-m-top--large" id="communication-details-container">
+	<h1 class="slds-size--1-of-1 slds-section-title slds-col--padded slds-p-bottom--medium">Communication</h1>
+</div>
+<div class="slds-form slds-grid slds-wrap slds-m-top--large" id="relationship-details-container">
+	<h1 class="slds-size--1-of-1 slds-section-title slds-col--padded slds-p-bottom--medium">Banking Relationship</h1>
+</div>
+<div class="slds-form slds-grid slds-wrap slds-m-top--large" id="employment-details-container">
+	<h1 class="slds-size--1-of-1 slds-section-title slds-col--padded slds-p-bottom--medium">Employment</h1>
+</div>
+
+<script>
+$(document).ready(function(){
+ 	window.profileDetails = [
+		
+		// Basic Info
+		{label: 'First Name', value: '--', append:'basic'},
+		{label: 'Last Name', value: '--', append:'basic'},
+		{label: 'Individual ID (Tax ID/SSN/Passport ID)', value: '--', append:'basic'},
+		{label: 'Date of Birth', value: '--', append:'basic'},
+		{label: 'Gender', value: '--', append:'basic'},
+		{label: 'Primary Citizenship', value: '--', append:'basic'},
+		{label: 'Secondary Citizenship', value: '--', append:'basic'},
+		{label: 'Permanent Resident', value: '--', append:'basic'},
+		{label: 'Visa Type', value: '--', append:'basic'},
+		{label: 'Driver License Number and State', value: '--', append:'basic'},
+		{label: 'Mother&#39;s Maiden Name', value: '--', append:'basic'},
+		{label: 'Special Instructions', value: '--', append:'basic'},
+		{label: 'Status', value: '--', append:'basic'},
+		{label: 'Credit Score', value: '--', append:'basic'},
+
+		// Family Information
+		{label: 'Marital Status', value: '--', append:'family'},
+		{label: 'Marriage Date', value: '--', append:'family'},
+		{label: 'Number of Children', value: '--', append:'family'},
+
+		// Identity Details
+		{label: 'Document Type', value: '--', append:'identity'},
+		{label: 'Document Number', value: '--', append:'identity'},
+		{label: 'Issue Date', value: '--', append:'identity'},
+		{label: 'Expiration Date', value: '--', append:'identity'},
+		{label: 'Issuing Country', value: '--', append:'identity'},
+
+		// Communication Info
+		{label: 'Address', value: '--', append:'communication'},
+		{label: 'Rent or Own', value: '--', append:'communication'},
+		{label: 'Marketing Opt-In', value: '--', append:'communication'},
+		{label: 'Primary Phone Number', value: '--', append:'communication'},
+		{label: 'Primary Phone Number Verified', value: '--', append:'communication'},
+		{label: 'Secondary Phone Number', value: '--', append:'communication'}, 
+		{label: 'Secondary Phone Number Verified', value: '--', append:'communication'},
+		{label: 'Email ID', value: '--', append:'communication'},
+		{label: 'Email ID Verified', value: '--', append:'communication'},
+		{label: 'Fax Number', value: '--', append:'communication'},
+		{label: 'Fax Number Verified', value: '--', append:'communication'},
+		{label: 'Time Zone', value: '--', append:'communication'},
+		{label: 'Primary Language', value: '--', append:'communication'},
+		{label: 'Secondary Language', value: '--', append:'communication'},
+		{label: 'Communication Preferences by Activity', value: '--', append:'communication'},
+		{label: 'Channel Activity', value: '--'},
+		{label: 'Channel Activity (List by Accounts)', value: '--', append:'communication'},
+		{label: 'Twitter ID', value: '--', append:'communication'},
+		{label: 'Facebook ID', value: '--', append:'communication'},
+
+		// Relationship Info
+		{label: 'VIP Status', value: '--', append:'relationship'},
+		{label: 'Source System ID', value: '--', append:'relationship'},
+		{label: 'Customer Lifetime Value', value: '--', append:'relationship'},
+		{label: 'Risk Profile', value: '--', append:'relationship'},
+		{label: 'Branch ID', value: '--', append:'relationship'},
+		{label: 'External Source ID', value: '--', append:'relationship'},
+		{label: 'Segment of the Customer', value: '--', append:'relationship'},
+		{label: 'Date of Opening the Relationship', value: '--', append:'relationship'},
+		{label: 'Length of Relationship', value: '--', append:'relationship'},
+
+		// Employment & Income
+		{label: 'Income/Salary', value: '--', append:'employment'},
+		{label: 'Education', value: '--', append:'employment'},
+		{label: 'Affiliations', value: '--', append:'employment'},
+		{label: 'Employer/Self-Employed', value: '--', append:'employment'},
+		{label: 'Employed Since', value: '--', append:'employment'},
+		{label: 'Position', value: '--', append:'employment'},
+		
+		]
+	// see if there are existing items
+	// var currentData = localStorage.getItem('profileDetailsData')
+	// Don't read the data from localstorage if theres already existing data
+	//if (!currentData) {
+		// Set data
+		localStorage.setItem("profileDetailsData", JSON.stringify(profileDetails))
+	//}
+
+	// Get data
+	var data = JSON.parse(localStorage.getItem('profileDetailsData'))
+	var numID = 0;
+	
+	data.forEach(function(datum) {
+
+		$('#'+datum.append+'-details-container').append('<div class="slds-col--padded slds-medium-size--1-of-2"> <div class="slds-form-element slds-form-separator"> <label class="slds-form-element__label">'+datum.label+'</label> <div>'+datum.value+'</div> </div> </div>') })
+
+});
+
+</script>

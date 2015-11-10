@@ -1,0 +1,134 @@
+<div class="slds-card slds-white-card-temp">
+	<div class="slds-card__header">
+    	<h2 class="slds-text-heading--medium slds-truncate">Financial Accounts Summary</h2>
+  	</div>
+  	<div class="slds-card__body slds-grid">
+  		<div class="slds-col--padded slds-size--1-of-4">
+  			<span class="slds-text-heading--label">Investments</span>
+  			<h1 class="slds-text-heading--medium slds-success-text-temp"> $1,244,234 </h1>
+  		</div>
+  		<div class="slds-col--padded slds-size--1-of-4">
+  			<span class="slds-text-heading--label">% Held Assets</span>
+  			<h1 class="slds-text-heading--medium">62.1%</h1>
+  		</div>
+  		<div class="slds-col--padded slds-size--1-of-4">
+  			<span class="slds-text-heading--label">Banking</span>
+  			<h1 class="slds-text-heading--medium slds-success-text-temp">$94,431</h1>
+  		</div>
+  		<div class="slds-col--padded slds-size--1-of-4">
+  			<span class="slds-text-heading--label">Insurance</span>
+  			<h1 class="slds-text-heading--medium slds-success-text-temp">$983</h1>
+  		</div>
+  	</div>
+</div>
+<!-- Begin Card -->
+      <div class="slds-card">
+        <header class="slds-card__header slds-grid">
+          <div class="slds-media slds-media--center slds-has-flexi-truncate">
+            <div class="slds-media__figure">
+              <svg aria-hidden="true" class="slds-icon slds-icon-custom-18 slds-icon--small">
+                <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom17"></use>
+              </svg>
+            </div>
+            <div class="slds-media__body">
+              <h3 class="slds-text-heading--small slds-truncate">Investment Accounts (4)</h3>
+            </div>
+          </div>
+          <div class="slds-no-flex">
+            <div class="slds-button-group">
+              <button class="slds-button slds-button--neutral slds-button--small">Add</button>
+              <button class="slds-button slds-button--icon-border-filled">
+                <svg aria-hidden="true" class="slds-button__icon">
+                  <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
+                </svg>
+                <span class="slds-assistive-text">Show More</span>
+              </button>
+            </div>
+          </div>
+        </header>
+        <section class="slds-card__body">
+          <table class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal slds-no-row-hover">
+            <thead>
+              <tr>
+                <th class="slds-text-heading--label slds-size--1-of-4" scope="col">Name</th>
+                <th class="slds-text-heading--label slds-size--1-of-4" scope="col">Type</th>
+                <th class="slds-text-heading--label slds-size--1-of-4 slds-align-right-temp" scope="col">Open Date</th>
+                <th class="slds-text-heading--label slds-size--1-of-4 slds-align-right-temp" scope="col">30-day change</th>
+                <th class="slds-text-heading--label slds-size--1-of-4" scope="col">Balance</th>
+                <th class="slds-row-action" scope="col">
+                  <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
+                    <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+                      <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Show More</span>
+                  </button>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="slds-hint-parent">
+                <td class="slds-size--1-of-4" data-label="Name">Cumulus Annuity</td>
+                <td class="slds-size--1-of-4" data-label="Type">Annuity</td>
+                <td class="slds-size--1-of-4 slds-align-right-temp" data-label="Open Date">5/8/2012</td>
+                <td class="slds-size--1-of-4 slds-align-right-temp slds-success-text-temp" data-label="Change">+1.02%</td>
+                <td class="slds-size--1-of-4" data-label="Balance">$250,465.25</td>
+                <td>
+                  <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
+                    <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+                      <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Show More</span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="slds-hint-parent">
+                <td class="slds-size--1-of-4" data-label="Name">Cumulus IRA</td>
+                <td class="slds-size--1-of-4" data-label="Type">Brokerage</td>
+                <td class="slds-size--1-of-4 slds-align-right-temp" data-label="Open Date">10/10/2001</td>
+                <td class="slds-size--1-of-4 slds-align-right-temp" data-label="Change">0%</td>
+                <td class="slds-size--1-of-4" data-label="Balance">$500,485.62</td>
+                <td>
+                  <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
+                    <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+                      <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Show More</span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="slds-hint-parent">
+                <td class="slds-size--1-of-4" data-label="Name">Budapest Hotel 401k</td>
+                <td class="slds-size--1-of-4" data-label="Type">Retirement Plan</td>
+                <td class="slds-size--1-of-4 slds-align-right-temp" data-label="Open Date">5/8/2012</td>
+                <td class="slds-size--1-of-4 slds-align-right-temp slds-error-text-temp" data-label="Change">-0.10%</td>
+                <td class="slds-size--1-of-4" data-label="Balance">$1,100,541.32</td>
+                <td>
+                  <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
+                    <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+                      <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Show More</span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="slds-hint-parent">
+                <td class="slds-size--1-of-4" data-label="Name">HeldAway IRA</td>
+                <td class="slds-size--1-of-4" data-label="Type">Brokerage</td>
+                <td class="slds-size--1-of-4 slds-align-right-temp" data-label="Open Date">11/18/1983</td>
+                <td class="slds-size--1-of-4 slds-align-right-temp slds-success-text-temp" data-label="Change">+2.44%</td>
+                <td class="slds-size--1-of-4" data-label="Balance">$1,150,000.00</td>
+                <td>
+                  <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
+                    <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+                      <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Show More</span>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <footer class="slds-card__footer"><a href="#">View All</a></footer>
+      </div>
+      <!-- End Card -->

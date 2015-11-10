@@ -126,7 +126,6 @@
 <% end %>
 	</ul>
 </div>
-
 <script>
 $(document).ready( function(){
 	// see if there are existing items
@@ -134,6 +133,7 @@ $(document).ready( function(){
 		// Set data
 		localStorage.setItem("navToggle", 'Open')
 	}
+
 
     $('#menu-btn-temp').click( function() {
         var toggleWidth = $(".tempSideNav").width() == 240 ? "56px" : "240px";
@@ -144,5 +144,6 @@ $(document).ready( function(){
     });
 
     var navToggle = localStorage.getItem('navToggle') == 'Closed' ? $('.tempSideNav').width('56') : $('.tempSideNav').width('240');
+    
 });
 </script>

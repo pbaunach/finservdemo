@@ -174,7 +174,7 @@
 			</div>
 		  </div>
 		  <div class="slds-tabs__content slds-hide main-tab-content" role="tabpanel" id="main-tab-content-details">
-		    Details
+		    <%= render 'wm/profile/details' %>
 		  </div>
 <!-- Tear Sheet -->
 		  <div class="slds-tabs__content slds-show main-tab-content" role="tabpanel" id="main-tab-content-tearsheet">
@@ -196,7 +196,7 @@
 		                                <p class="slds-tile__detail slds-text-body--small">Years as Client: 2</p>
 		                                <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
 		                                    <li class="slds-truncate slds-list__item">415-555-3000</li>
-		                                    <li class="slds-trunkate slds-list__item">rachel.adams@RAD Designs.com</li>
+		                                    <li class="slds-trunkate slds-list__item">rachel.adams@raddesigns.com</li>
 		                                </ul>
 		                            </div>
 		                        </div>
@@ -344,12 +344,12 @@
 		                            <ul class="slds-list--vertical">
 		                                <li class="slds-p-top--medium slds-list__item">
 		                                    <h3 class="slds-text-heading--label">March 4, 2015</h3>
-		                                    <div class="slds-text-body--regular slds-m-top--small">Called about the status of his house purchase</div>
+		                                    <div class="slds-text-body--regular slds-m-top--small">Called about the status of loan application</div>
 		                                    <div class="slds-text-body--regular slds-m-top--small">Things are looking good from a process perspective, but need to make sure allocations are on track.</div>
 		                                </li>
 		                                <li class="slds-p-top--medium slds-list__item">
 		                                    <h3 class="slds-text-heading--label">December 4, 2014</h3>
-		                                    <div class="slds-text-body--regular slds-m-top--small">Called about the status of his house purchase</div>
+		                                    <div class="slds-text-body--regular slds-m-top--small">Called about the status of loan application</div>
 		                                </li>
 		                            </ul>	
 		                        </div>
@@ -1020,9 +1020,11 @@ $(document).ready(function(){
 	$('#collaborate__send').click(function() {
 
 		var inputValue = $('#input__collaborate').val();
+		if (inputValue != ''){
 		$('#collaborate-side').prepend('<div class="slds-p-bottom--large slds-m-bottom--large" style="border-bottom:1px solid #d8dde6;"> <div class="slds-media slds-tile"> <div class="slds-media__figure"> <span class="slds-avatar slds-avatar--circle slds-avatar--small"> <img src="<%= asset_path('images/Brad.jpg') %>" alt="portrait" /> </span> </div> <div class="slds-media__body"> <p class="slds-tile__title slds-truncate"><a href="#">Brad Lee</a></p> <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small"> <li class="slds-truncate slds-list__item">September 8, 2015 at 10:23 AM</li> </ul> </div> </div> <div class="slds-card slds-card--empty slds-assistant-card-temp slds-m-top--small slds-p-around--small"> '+inputValue+'</div> <div> <div class="slds-form-element__control"> <input id="" class="slds-input" type="text" placeholder="Write a comment ..." /> </div> </div> </div>');
 
-							
+		$('#input__collaborate').val('');
+		}							
 
 		//if (inputValue == '') return
 

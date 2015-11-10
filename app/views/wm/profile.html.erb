@@ -163,466 +163,25 @@
 		    <li class="slds-tabs__item slds-text-heading--label center-tabs-temp" title="Relationships" role="presentation" id="main-tab-relationships" style="overflow:visible;"><a href="#" role="tab" tabindex="-1" aria-selected="false">Relationships</a></li>
 		    <li class="slds-tabs__item slds-text-heading--label center-tabs-temp" title="Goals" role="presentation" id="main-tab-goals" style="overflow:visible;"><a href="#" role="tab" tabindex="-1" aria-selected="false">Goals</a></li>
 		  </ul>
-		  <div class="slds-tabs__content slds-hide slds-grid main-tab-content" role="tabpanel" id="main-tab-content-overview">
-			<div class="slds-form slds-grid slds-wrap slds-m-top--large">
-			    <div class="slds-col--padded slds-medium-size--1-of-2">
-			    	<div class="slds-form-element slds-form-separator">
-			    		<label class="slds-form-element__label"> One</label>
-			    		<div>Woo</div>
-			    	</div>
-			    	<div class="slds-form-element slds-form-separator">
-			    		<label class="slds-form-element__label"> One</label>
-			    		<div>Woo</div>
-			    	</div>
-			    </div>
-			    <div class="slds-col--padded slds-medium-size--1-of-2">
-			    	<div class="slds-form-element slds-form-separator">
-			    		<label class="slds-form-element__label"> One</label>
-			    		<div>Woo</div>
-			    	</div>
-			    </div>
-			</div>
-		  </div>
 		  <div class="slds-tabs__content slds-hide main-tab-content" role="tabpanel" id="main-tab-content-details">
-		    Details
+		    <%= render 'wm/profile/details' %>
 		  </div>
 <!-- Tear Sheet -->
 		  <div class="slds-tabs__content slds-hide main-tab-content" role="tabpanel" id="main-tab-content-tearsheet">
-		    <div class="slds">
-		        <div class="slds-card">
-		            <header class="slds-card__header slds-grid slds-theme--default">
-		                <div class="slds-media slds-media--center slds-has-flexi-truncate">
-		                    <div class="slds-col slds-size--small">
-		                        <div class="slds-media slds-tile slds-hint-parent">
-		                            <div class="slds-media__figure">
-		                                <span class="slds-avatar slds-avatar--circle slds-avatar--medium">
-		                                    <img src="<%= asset_path('images/Rachel.png') %>" alt="portrait" />
-		                                </span>
-		                            </div>
-		                            <div class="slds-media__body">
-		                                <p class="slds-tile__title slds-truncate">Rachel Adams</p>
-		                                <p class="slds-tile__detail slds-text-body--small">Age 50, Designer</p>
-		                                <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
-		                                    <li class="slds-truncate slds-list__item">415-555-3000</li>
-		                                    <li class="slds-trunkate slds-list__item">rachel.adams@gmail.com</li>
-		                                </ul>
-		                            </div>
-		                        </div>
-		                    </div>
-		                    <div class="slds-col slds-no-flex slds-align-middle">
-		                        <div class="slds-button-group slds-button-space-left" role="group">
-		                            <button class="slds-button slds-button--neutral">Edit</button>
-		                            <button class="slds-button slds-button--neutral">Print</button>
-		                            <button class="slds-button slds-button--neutral">Share</button>
-		                        </div>
-		                    </div>
-		                </div>   
-		            </header>
-		            <section class="slds-p-top--x-large slds-card__body slds-theme--default">
-		                <div class="slds-grid slds-grid--align-space">
-		                    <div class="slds-col--padded slds-size--1-of-2">
-		                        <h3 class="slds-text-heading--label">2014 PERFORMANCE</h3>
-		                        <div class="slds-text-heading--medium slds-p-top--medium">
-		                            <ul class="slds-list--horizontal">
-		                                <li class="slds-list__item"><strong>8.18%</strong></li>
-		                                <li class="slds-list__item slds-p-left--small">$223,126</li>
-		                            </ul>	
-		                        </div>
-		                        <ul class="slds-m-top--large slds-list--vertical slds-has-dividers">
-		                            <li class="slds-list__item slds-text-heading--label">ACCOUNTS</li>
-		                            <li class="slds-list__item">
-		                                <div class="slds-grid slds-list__item slds-p-vertical--x-small slds-grid--align-spread slds-has-flexi-truncate">
-		                                    <p class="slds-tile__title slds-truncate">Cumulus Checking</p>
-		                                    <p>$98,653</p>
-		                                </div>
-		                            </li>
-		                            <li class="slds-list__item">
-		                                <div class="slds-grid slds-list__item slds-p-vertical--x-small slds-grid--align-spread slds-has-flexi-truncate">
-		                                    <p class="slds-tile__title slds-truncate">Cumulus Checking</p>
-		                                    <p>$98,653</p>
-		                                </div>
-		                            </li>
-		                            <li class="slds-list__item">
-		                                <div class="slds-grid slds-list__item slds-p-vertical--x-small slds-grid--align-spread slds-has-flexi-truncate">
-		                                    <p class="slds-tile__title slds-truncate">Cumulus IRA</p>
-		                                    <p>$500,486</p>
-		                                </div>
-		                            </li>
-		                            <li class="slds-list__item">
-		                                <div class="slds-grid slds-list__item slds-p-vertical--x-small slds-grid--align-spread slds-has-flexi-truncate">
-		                                    <p class="slds-tile__title slds-truncate">Cumulus Annuity</p>
-		                                    <p>$1,100,541</p>
-		                                </div>
-		                            </li>
-		                        </ul>
-		                        <ul class="slds-m-top--x-large slds-list--vertical slds-has-dividers">
-		                            <li class="slds-list__item slds-text-heading--label">GOALS</li>
-		                            <li class="slds-list__item">
-		                                <div class="slds-grid slds-list__item slds-p-vertical--x-small slds-grid--align-spread slds-has-flexi-truncate">
-		                                    <p class="slds-tile__title slds-truncate">Cumulus Checking</p>
-		                                    <p>$98,653</p>
-		                                </div>
-		                            </li>
-		                            <li class="slds-list__item">
-		                                <div class="slds-grid slds-list__item slds-p-vertical--x-small slds-grid--align-spread slds-has-flexi-truncate">
-		                                    <p class="slds-tile__title slds-truncate">Home Purchase</p>
-		                                    <p>98%</p>
-		                                </div>
-		                            </li>
-		                            <li class="slds-list__item">
-		                                <div class="slds-grid slds-list__item slds-p-vertical--x-small slds-grid--align-spread slds-has-flexi-truncate">
-		                                    <p class="slds-tile__title slds-truncate">Retirement</p>
-		                                    <p>45%</p>
-		                                </div>
-		                            </li>
-		                            <li class="slds-list__item">
-		                                <div class="slds-grid slds-list__item slds-p-vertical--x-small slds-grid--align-spread slds-has-flexi-truncate">
-		                                    <p class="slds-tile__title slds-truncate">Education Plan</p>
-		                                    <p>0%</p>
-		                                </div>
-		                            </li>
-		                        </ul>
-		                        <h3 class="slds-text-heading--label slds-m-top--x-large">OTHER TEAM/SPECIALISTS</h3>
-		                        <div class="slds-grid">
-		                            <div class="slds-col--padded slds-size--1-of-2">
-		                                <div class="slds-media slds-tile">
-		                                    <div class="slds-media__figure">
-		                                        <span class="slds-avatar slds-avatar--circle slds-avatar--small">
-		                                            <img src="<%= asset_path('images/avatar1.jpg') %>" alt="portrait" />
-		                                        </span>
-		                                    </div>
-		                                    <div class="slds-media__body">
-		                                        <p class="slds-tile__title slds-truncate"><a href="#">Lexee L. Jackson</a></p>
-		                                        <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
-		                                            <li class="slds-truncate slds-list__item">VP, Marketing</li>
-		                                        </ul>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                            <div class="slds-col--padded slds-size--1-of-2">
-		                                <div class="slds-media slds-tile">
-		                                    <div class="slds-media__figure">
-		                                        <span class="slds-avatar slds-avatar--circle slds-avatar--small">
-		                                            <img src="<%= asset_path('images/avatar2.jpg') %>" alt="portrait" />
-		                                        </span>
-		                                    </div>
-		                                    <div class="slds-media__body">
-		                                        <p class="slds-tile__title slds-truncate"><a href="#">Lexee L. Jackson</a></p>
-		                                        <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
-		                                            <li class="slds-truncate slds-list__item">VP, Marketing</li>
-		                                        </ul>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                        </div>
-		                    </div>
-		                    
-		                    <div class="slds-col--padded slds-size--1-of-2">
-		                        <ul class="slds-list--vertical">
-		                            <li class="slds-list__item">
-		                                <h3 class="slds-text-heading--label">TOPICS + INTERESTS</h3>
-		                            	<div class="slds-text-body--regular slds-m-top--small">Consumer Technology, Home Savings, Hotels, Tennis, Green Energy, Wine Connoisseur</div>
-		                            </li>
-		                            <li class="slds-p-top--medium slds-list__item">
-		                                <h3 class="slds-text-heading--label">IMPORTANT NOTES</h3>
-		                            	<div class="slds-text-body--regular slds-m-top--small">Remember to ask E*Trade details.  Rachel said she wanted to turn this over to us last time we met.</div>
-		                            </li>
-		                        </ul>
-		                        <h3 class="slds-m-top--medium slds-text-heading--label">RECENT ACTIVITY</h3>
-		                        <div class="slds-text-heading--medium">
-		                            <ul class="slds-list--vertical">
-		                                <li class="slds-p-top--medium slds-list__item">
-		                                    <h3 class="slds-text-heading--label">March 4, 2015</h3>
-		                                    <div class="slds-text-body--regular slds-m-top--small">Called about the status of his house purchase</div>
-		                                    <div class="slds-text-body--regular slds-m-top--small">Things are looking good from a process perspective, but need to make sure allocations are on track.</div>
-		                                </li>
-		                                <li class="slds-p-top--medium slds-list__item">
-		                                    <h3 class="slds-text-heading--label">December 4, 2014</h3>
-		                                    <div class="slds-text-body--regular slds-m-top--small">Called about the status of his house purchase</div>
-		                                </li>
-		                            </ul>	
-		                        </div>
-		                        <h3 class="slds-m-top--medium slds-text-heading--label">OPEN CASES</h3>
-		                        <div class="slds-text-heading--medium">
-		                            <ul class="slds-list--vertical">
-		                                <li class="slds-p-top--medium slds-list__item">
-		                                    <h3 class="slds-text-heading--label">March 4, 2015</h3>
-		                                    <div class="slds-text-body--regular slds-m-top--small">Called about the status of his house purchase</div>
-		                                    <div class="slds-text-body--regular slds-m-top--small">Things are looking good from a process perspective, but need to make sure allocations are on track.</div>
-		                                </li>
-		                                <li class="slds-p-top--medium slds-list__item">
-		                                    <h3 class="slds-text-heading--label">December 4, 2014</h3>
-		                                    <div class="slds-text-body--regular slds-m-top--small">Called about the status of his house purchase</div>
-		                                </li>
-		                            </ul>	
-		                        </div>
-		                    </div>
-		                </div>
-		            </section>
-		            <section class="slds-card__body slds-col-rule--top">
-		                <div class="slds-grid slds-grid--align-space">
-		                    <div class="slds-col--padded slds-size--1-of-2">
-								<div class="slds-grid slds-grid--align-center slds-p-vertical--medium">
-									<div>
-		                            	<img src="<%= asset_path('images/map.png') %>" />
-		                            </div>
-		                        </div>
-		                    </div>
-		                    <div class="slds-col--padded slds-size--1-of-2">
-								<h3 class="slds-m-top--medium slds-text-heading--label">OBJECTIVES</h3>
-		                        <div class="slds-text-heading--medium">
-		                            <ul class="slds-list--vertical">
-		                                <li class="slds-p-top--x-small slds-list__item">
-		                               		<div class="slds-text-body--regular">Advice on stock allocation &amp; upsell around Goals pertaining to the household.</div>
-		                                </li>
-		                                <li class="slds-p-top--medium slds-list__item">
-		                                    <div class="slds-text-body--regular">See if Rachel is ready to use our recommended accountant (she requested this last time we spoke).</div>
-		                                </li>
-		                            </ul>	
-		                        </div>
-		                        <h3 class="slds-m-top--medium slds-text-heading--label">EXPECTATIONS</h3>
-		                        <div class="slds-text-heading--medium">
-		                            <ul class="slds-list--vertical">
-		                                <li class="slds-p-top--x-small slds-list__item">
-		                               		<div class="slds-text-body--regular">Understand the current state of investments &amp; learn why her portfolio is performing so well</div>
-		                                </li>
-		                                <li class="slds-p-top--medium slds-list__item">
-		                                    <div class="slds-text-body--regular">She wants to know how she is progressing toward her home savings goal.</div>
-		                                </li>
-		                            </ul>	
-		                        </div>
-		                        <h3 class="slds-m-top--medium slds-text-heading--label">NEXT STEPS</h3>
-		                        <div class="slds-text-heading--medium">
-		                            <ul class="slds-m-top--x-small slds-list--vertical slds-list--dotted ">
-		                                <li class="slds-list__item">
-		                                	<div class="slds-text-body--small">Confirm new stock investment area</div>
-		                                </li>
-		                                <li class="slds-list__item">
-		                                	<div class="slds-text-body--small">Initiate any transfers for new stocks</div>
-		                                </li>
-		                                <li class="slds-list__item">
-		                                	<div class="slds-text-body--small">Confirm handover of E*Trade securities</div>
-		                                </li>
-		                                <li class="slds-list__item">
-		                                	<div class="slds-text-body--small">Book next meeting time and date</div>
-		                                </li>
-		                            </ul>	
-		                        </div>
-		                    </div>
-		                </div>
-		            </section>
-		            <footer class="slds-card__footer"></footer>
-		        </div>
-		    </div>
+		    <%= render 'wm/profile/tearsheet' %>
 		  </div>
 <!-- Financial Summary -->
 		  <div class="slds-tabs__content slds-show main-tab-content" role="tabpanel" id="main-tab-content-financial">
-		    <div class="slds-card slds-white-card-temp">
-		    	<img src="<%= asset_path('images/financial-summary.png') %>" alt="dashboard" style="" />
-		    </div>
-		    <!-- Begin Card -->
-			<div class="slds-card">
-			  <header class="slds-card__header slds-grid">
-			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
-			      <div class="slds-media__figure">
-			        <svg aria-hidden="true" class="slds-icon slds-icon-custom-18 slds-icon--small">
-			          <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom17"></use>
-			        </svg>
-			      </div>
-			      <div class="slds-media__body">
-			        <h3 class="slds-text-heading--small slds-truncate">Investment Accounts (4)</h3>
-			      </div>
-			    </div>
-			    <div class="slds-no-flex">
-			      <div class="slds-button-group">
-			        <button class="slds-button slds-button--neutral slds-button--small">Add</button>
-			        <button class="slds-button slds-button--icon-border-filled">
-			          <svg aria-hidden="true" class="slds-button__icon">
-			            <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
-			          </svg>
-			          <span class="slds-assistive-text">Show More</span>
-			        </button>
-			      </div>
-			    </div>
-			  </header>
-			  <section class="slds-card__body">
-			    <table class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal slds-no-row-hover">
-			      <thead>
-			        <tr>
-			          <th class="slds-text-heading--label slds-size--1-of-4" scope="col">Name</th>
-			          <th class="slds-text-heading--label slds-size--1-of-4" scope="col">Type</th>
-			          <th class="slds-text-heading--label slds-size--1-of-4 slds-align-right-temp" scope="col">Open Date</th>
-			          <th class="slds-text-heading--label slds-size--1-of-4 slds-align-right-temp" scope="col">30-day change</th>
-			          <th class="slds-text-heading--label slds-size--1-of-4" scope="col">Balance</th>
-			          <th class="slds-row-action" scope="col">
-			            <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
-			              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
-			                <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
-			              </svg>
-			              <span class="slds-assistive-text">Show More</span>
-			            </button>
-			          </th>
-			        </tr>
-			      </thead>
-			      <tbody>
-			        <tr class="slds-hint-parent">
-			          <td class="slds-size--1-of-4" data-label="Name">Cumulus Annuity</td>
-			          <td class="slds-size--1-of-4" data-label="Type">Annuity</td>
-			          <td class="slds-size--1-of-4 slds-align-right-temp" data-label="Open Date">5/8/2012</td>
-			          <td class="slds-size--1-of-4 slds-align-right-temp slds-success-text-temp" data-label="Change">+1.02%</td>
-			          <td class="slds-size--1-of-4" data-label="Balance">$250,465.25</td>
-			          <td>
-			            <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
-			              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
-			                <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
-			              </svg>
-			              <span class="slds-assistive-text">Show More</span>
-			            </button>
-			          </td>
-			        </tr>
-			        <tr class="slds-hint-parent">
-			          <td class="slds-size--1-of-4" data-label="Name">Cumulus IRA</td>
-			          <td class="slds-size--1-of-4" data-label="Type">Brokerage</td>
-			          <td class="slds-size--1-of-4 slds-align-right-temp" data-label="Open Date">10/10/2001</td>
-			          <td class="slds-size--1-of-4 slds-align-right-temp" data-label="Change">0%</td>
-			          <td class="slds-size--1-of-4" data-label="Balance">$500,485.62</td>
-			          <td>
-			            <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
-			              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
-			                <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
-			              </svg>
-			              <span class="slds-assistive-text">Show More</span>
-			            </button>
-			          </td>
-			        </tr>
-			        <tr class="slds-hint-parent">
-			          <td class="slds-size--1-of-4" data-label="Name">Budapest Hotel 401k</td>
-			          <td class="slds-size--1-of-4" data-label="Type">Retirement Plan</td>
-			          <td class="slds-size--1-of-4 slds-align-right-temp" data-label="Open Date">5/8/2012</td>
-			          <td class="slds-size--1-of-4 slds-align-right-temp slds-error-text-temp" data-label="Change">-0.10%</td>
-			          <td class="slds-size--1-of-4" data-label="Balance">$1,100,541.32</td>
-			          <td>
-			            <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
-			              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
-			                <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
-			              </svg>
-			              <span class="slds-assistive-text">Show More</span>
-			            </button>
-			          </td>
-			        </tr>
-			        <tr class="slds-hint-parent">
-			          <td class="slds-size--1-of-4" data-label="Name">HeldAway IRA</td>
-			          <td class="slds-size--1-of-4" data-label="Type">Brokerage</td>
-			          <td class="slds-size--1-of-4 slds-align-right-temp" data-label="Open Date">11/18/1983</td>
-			          <td class="slds-size--1-of-4 slds-align-right-temp slds-success-text-temp" data-label="Change">+2.44%</td>
-			          <td class="slds-size--1-of-4" data-label="Balance">$1,150,000.00</td>
-			          <td>
-			            <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
-			              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
-			                <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
-			              </svg>
-			              <span class="slds-assistive-text">Show More</span>
-			            </button>
-			          </td>
-			        </tr>
-			      </tbody>
-			    </table>
-			  </section>
-			  <footer class="slds-card__footer"><a href="#">View All</a></footer>
-			</div>
-			<!-- End Card -->
+		  	<%= render 'wm/profile/financials' %>
 		  </div>
 <!-- Begin Household -->
 		  <div class="slds-tabs__content slds-hide main-tab-content" role="tabpanel" id="main-tab-content-relationships">
-		    <div class="slds-card slds-white-card-temp" >
-			  <img src="<%= asset_path('images/household-summary.png') %>" alt="dashboard" style="padding:1rem;" />
-			</div>
-		    <!-- Begin Card -->
-  			<div class="slds-card" style="text-align:center; padding:1rem 0;">
-			  <img src="<%= asset_path('images/householding.png') %>" alt="dashboard" style="padding:1rem;" />
-			</div>
-			<!-- End Card -->
-			<!-- Begin Card -->
-			<div class="slds-card">
-			  <header class="slds-card__header slds-grid">
-			    <div class="slds-media slds-media--center slds-has-flexi-truncate">
-			      <div class="slds-media__figure">
-			        <svg aria-hidden="true" class="slds-icon slds-icon-standard-contact slds-icon--small">
-			          <use xlink:href="<%= asset_path('icons/standard-sprite/svg/symbols.svg') %>#contact"></use>
-			        </svg>
-			      </div>
-			      <div class="slds-media__body">
-			        <h3 class="slds-text-heading--small slds-truncate">Related Entities (1)</h3>
-			      </div>
-			    </div>
-			    <div class="slds-no-flex">
-			      <div class="slds-button-group">
-			        <button class="slds-button slds-button--neutral slds-button--small">Add</button>
-			        <button class="slds-button slds-button--icon-border-filled">
-			          <svg aria-hidden="true" class="slds-button__icon">
-			            <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
-			          </svg>
-			          <span class="slds-assistive-text">Show More</span>
-			        </button>
-			      </div>
-			    </div>
-			  </header>
-			  <section class="slds-card__body">
-			    <table class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal slds-no-row-hover">
-			      <thead>
-			        <tr>
-			          <th class="slds-text-heading--label slds-size--1-of-4" scope="col">Company</th>
-			          <th class="slds-text-heading--label slds-size--1-of-4" scope="col">Name</th>
-			          <th class="slds-text-heading--label slds-size--1-of-4" scope="col">Role</th>
-			          <th class="slds-text-heading--label slds-size--1-of-4" scope="col">Association</th>
-			          <th class="slds-text-heading--label slds-size--1-of-4" scope="col">Phone</th>
-			          <th class="slds-row-action" scope="col">
-			            <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
-			              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
-			                <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
-			              </svg>
-			              <span class="slds-assistive-text">Show More</span>
-			            </button>
-			          </th>
-			        </tr>
-			      </thead>
-			      <tbody>
-			        <tr class="slds-hint-parent">
-			          <td class="slds-size--1-of-4" data-label="Company">RAD Designs</td>
-			          <td class="slds-size--1-of-4" data-label="Name">Rachel Adams</td>
-			          <td class="slds-size--1-of-4" data-label="Company">RAD Designs</td>
-			          <td class="slds-size--1-of-4" data-label="Title">Director of Operations</td>
-			          <td class="slds-size--1-of-4" data-label="Email">adam@company.com</td>
-			          <td>
-			            <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
-			              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
-			                <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
-			              </svg>
-			              <span class="slds-assistive-text">Show More</span>
-			            </button>
-			          </td>
-			        </tr>
-			      </tbody>
-			    </table>
-			  </section>
-			  <footer class="slds-card__footer"><a href="#">View All</a></footer>
-			</div>
-			<!-- End Card -->
+		    <%= render 'wm/profile/relationships' %>
 		  </div>
+<!-- Begin Goals -->
 		  <div class="slds-tabs__content slds-hide main-tab-content" role="tabpanel" id="main-tab-content-goals">
-			<div class="slds-card slds-white-card-temp">
-		    	<img src="<%= asset_path('images/goal-home-purchase.png') %>" alt="dashboard" style="" />
-		    </div>
-		    <div class="slds-card slds-white-card-temp">
-		    	<img src="<%= asset_path('images/goal-retirement.png') %>" alt="dashboard" style="" />
-		    </div>
-		    <div class="slds-card slds-white-card-temp">
-		    	<img src="<%= asset_path('images/goal-education-fund.png') %>" alt="dashboard" style="" />
-		    </div>
+		    <%= render 'wm/profile/goals' %>
 		  </div>
-		</div>
-		<!-- begin table -->
-		<!-- end table -->
 	</main>
 
 <!-- BEGIN SIDE --><!-- BEGIN SIDE --><!-- BEGIN SIDE --><!-- BEGIN SIDE --><!-- BEGIN SIDE -->
@@ -909,11 +468,19 @@
 				  <ul class="slds-tabs--scoped__nav" role="tablist">
 				    <li class="slds-tabs__item slds-text-heading--label slds-active" title="Item One" role="presentation"><a href="#" role="tab" tabindex="0" aria-selected="true">Post</a></li>
 				    <li class="slds-tabs__item slds-text-heading--label" title="Item Two" role="presentation"><a href="#" role="tab" tabindex="-1" aria-selected="false">Question</a></li>
-				    <li class="slds-tabs__item slds-text-heading--label" title="Item Three" role="presentation"><a href="#" role="tab" tabindex="-1" aria-selected="false">Poll</a></li>
-				    <li class="slds-tabs__item slds-text-heading--label" title="Item Three" role="presentation"><a href="#" role="tab" tabindex="-1" aria-selected="false">More</a></li>
 				  </ul>
 				  <div class="slds-tabs__content slds-show" role="tabpanel">
-				     <input id="input__filter" class="slds-input" type="text" placeholder="Post a message..." />
+				      
+			  		<div class="slds-form-element">
+					  <label class="slds-form-element__label" for="sample2">To: This Account</label>
+					  <div class="slds-form-element__control">
+					    <textarea id="input__collaborate" class="slds-textarea" placeholder="Share an update, @mention someone, add a file..."></textarea>
+					  </div>
+					</div>
+					  <div class="slds-p-top--small" style="text-align:right;">
+					  	<button id="collaborate__send" class="slds-button slds-button--brand" type="button">Share</button>
+					  </div>
+
 				  </div>
 				  <div class="slds-tabs__content slds-hide" role="tabpanel">
 				    <h2>Item Two Content</h2>
@@ -921,6 +488,49 @@
 				  <div class="slds-tabs__content slds-hide" role="tabpanel">
 				    <h2>Item Three Content</h2>
 				  </div>
+				</div>
+				<div id="collaborate-side">
+					
+				<!-- Begin Feed Item -->
+				    <div class="slds-p-bottom--large slds-m-bottom--large" style="border-bottom:1px solid #d8dde6;">
+				      <div class="slds-media slds-tile">
+				        <div class="slds-media__figure">
+				          <span class="slds-avatar slds-avatar--circle slds-avatar--small">
+				            <img src="<%= asset_path('images/Rachel.png') %>" alt="portrait" />
+				          </span>
+				        </div>
+				        <div class="slds-media__body">
+				          <p class="slds-tile__title slds-truncate"><a href="#">Rachel Adams</a></p>
+				          <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
+				            <li class="slds-truncate slds-list__item">August 17, 2015 at 9:14 AM</li>
+				          </ul>
+				        </div>
+				      </div>
+				      <div class="slds-card slds-card--empty slds-assistant-card-temp slds-m-top--small slds-p-around--small">
+				        <div class="slds-form-element">
+				          <div class="slds-form-element__control">
+				            <span class="">@Ryan Dobson, how is my retirement plan looking?</span>
+				          </div>
+				        </div>
+				      </div>
+				      <div>
+				        <button class="slds-button slds-button--neutral slds-not-selected" aria-live="assertive">
+				          <span class="slds-text-not-selected">
+				            <svg aria-hidden="true" class="slds-button__icon--stateful slds-icon--x-small">
+				              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#like"></use>
+				            </svg>
+				          </span>
+				        </button>
+				        <button class="slds-button slds-button--neutral slds-not-selected" aria-live="assertive">
+				          <span class="slds-text-not-selected">
+				            <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
+				              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#add"></use>
+				            </svg> Comment
+				          </span>
+				        </button>
+				      </div>
+				    </div>
+				<!-- End Feed Item -->
 				</div>
 			  </div>
 			</div>		
@@ -975,6 +585,15 @@ $(document).ready(function(){
         $(".side-tab-content").hide();
         $("#side-tab-content-collaborate").show();
     });
+
+    $('#collaborate__send').click(function() {
+		var inputValue = $('#input__collaborate').val();
+		if (inputValue != ''){
+			$('#collaborate-side').prepend('<div class="slds-p-bottom--large slds-m-bottom--large" style="border-bottom:1px solid #d8dde6;"> <div class="slds-media slds-tile"> <div class="slds-media__figure"> <span class="slds-avatar slds-avatar--circle slds-avatar--small"> <img src="<%= asset_path('images/Ryan.png') %>" alt="portrait" /> </span> </div> <div class="slds-media__body"> <p class="slds-tile__title slds-truncate"><a href="#">Ryan Dobson</a></p> <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small"> <li class="slds-truncate slds-list__item">September 8, 2015 at 10:23 AM</li> </ul> </div> </div> <div class="slds-card slds-card--empty slds-assistant-card-temp slds-m-top--small slds-p-around--small"> '+inputValue+'</div> <div> <div class="slds-form-element__control"> <input id="" class="slds-input" type="text" placeholder="Write a comment ..." /> </div> </div> </div>');
+
+			$('#input__collaborate').val('');
+		}
+	})
 });
 </script>
 <!-- end grid -->

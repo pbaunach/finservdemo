@@ -86,56 +86,110 @@
 			        <button class="slds-button slds-button--brand slds-button-space-left slds-m-right--medium slds-shrink-none slds-align-middle slds-hide" aria-hidden="true">Save</button>
 			      </div>
 			    </div>
-			    <div class="slds-col slds-no-flex slds-align-bottom">
-			      <div class="slds-grid">
-			        <div class="slds-button-space-left">
-			          <button class="slds-button slds-button--icon-more" aria-haspopup="true">
-			            <svg aria-hidden="true" class="slds-button__icon">
-			              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#table"></use>
-			            </svg>
-			            <span class="slds-assistive-text">Table</span>
-			            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
-			              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
-			            </svg>
-			          </button>
-			        </div>
-			        <div class="slds-button-group slds-button-space-left" role="group">
-			          <button class="slds-button slds-button--icon-border">
-			            <svg aria-hidden="true" class="slds-button__icon">
-			              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#chart"></use>
-			            </svg>
-			            <span class="slds-assistive-text">Chart</span>
-			          </button>
-			          <button class="slds-button slds-button--icon-border">
-			            <svg aria-hidden="true" class="slds-button__icon">
-			              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#filterList"></use>
-			            </svg>
-			            <span class="slds-assistive-text">Filter List</span>
-			          </button>
-			          <button class="slds-button slds-button--icon-more">
-			            <svg aria-hidden="true" class="slds-button__icon">
-			              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#sort"></use>
-			            </svg>
-			            <span class="slds-assistive-text">Sort</span>
-			            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
-			              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
-			            </svg>
-			            <span class="slds-assistive-text">More</span>
-			          </button>
-			        </div>
-			        <div class="slds-button-group" role="group">
-			          <button class="slds-button slds-button--neutral">Actions</button>
-			          <div class="slds-button--last">
-			            <button class="slds-button slds-button--icon-border-filled">
-			              <svg aria-hidden="true" class="slds-button__icon">
-			                <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
-			              </svg>
-			              <span class="slds-assistive-text">More Actions</span>
-			            </button>
-			          </div>
-			        </div>
-			      </div>
-			    </div>
+<!-- Begin Buttons -->
+				    <div class="slds-col slds-no-flex slds-align-bottom">
+					    <div class="slds-grid">
+					        <div class="slds-button-space-left">
+					          <button class="slds-button slds-button--icon-more" aria-haspopup="true">
+					            <svg aria-hidden="true" class="slds-button__icon">
+					              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#table"></use>
+					            </svg>
+					            <span class="slds-assistive-text">Table</span>
+					            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
+					              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
+					            </svg>
+					          </button>
+					        </div>
+					        <div class="slds-button-group slds-button-space-left" role="group">
+<!-- Filter -->
+								<div class="slds-dropdown-trigger" aria-haspopup="true">
+								  <button class="slds-button slds-button--icon-border">
+								    <svg aria-hidden="true" class="slds-button__icon">
+								      <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#filterList"></use>
+								    </svg>
+								    <span class="slds-assistive-text">Show More</span>
+								  </button>
+								  <div class="slds-dropdown slds-dropdown--left slds-dropdown--menu">
+								    <ul class="slds-dropdown__list" role="menu">
+								      <li id="menu-86-1" href="#" class="slds-dropdown__item slds-text-heading--label" role="menuitem option" tabindex="-1"> <a href="#" tabindex="-1" class="slds-truncate"> Rank </a> </li>
+								      <li id="menu-87-1" href="#" class="slds-dropdown__item" role="menuitem option" tabindex="-1">
+								      	<a href="#" tabindex="-1" class="slds-truncate">
+								      	<label class="slds-checkbox" for="select-filter1">
+								          <input name="select-filter1" class="filter-diamond" type="checkbox" id="select-filter1" />
+								          <span class="slds-checkbox--faux"></span>
+								        </label>
+								      	<span class="slds-m-left--x-small"><svg aria-hidden="true" class="icon-star-active"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-active"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-active"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg></span>
+								      	</a>
+								      </li>
+								      <li id="menu-87-2" href="#" class="slds-dropdown__item" role="menuitem option" tabindex="-1">
+								      	<a href="#" tabindex="-1" class="slds-truncate">
+								      	<label class="slds-checkbox" for="select-filter2">
+								          <input name="select-filter2" class="filter-platinum" type="checkbox" id="select-filter2" />
+								          <span class="slds-checkbox--faux"></span>
+								        </label>
+								      	<span class="slds-m-left--x-small"><svg aria-hidden="true" class="icon-star-active"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-active"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg></span>
+								      	</a>
+								      </li>
+								      <li id="menu-87-3" href="#" class="slds-dropdown__item" role="menuitem option" tabindex="-1">
+								      	<a href="#" tabindex="-1" class="slds-truncate">
+								      	<label class="slds-checkbox" for="select-filter3">
+								          <input name="select-filter3" class="filter-gold" type="checkbox" id="select-filter3" />
+								          <span class="slds-checkbox--faux"></span>
+								        </label>
+								      	<span class="slds-m-left--x-small"><svg aria-hidden="true" class="icon-star-active"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg></span>
+								      	</a>
+								      </li>
+								      <li id="menu-87-4" href="#" class="slds-dropdown__item" role="menuitem option" tabindex="-1">
+								      	<a href="#" tabindex="-1" class="slds-truncate">
+								      	<label class="slds-checkbox" for="select-filter4">
+								          <input name="select-filter4" class="filter-silver" type="checkbox" id="select-filter4" />
+								          <span class="slds-checkbox--faux"></span>
+								        </label>
+								      	<span class="slds-m-left--x-small"><svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="<%= asset_path('icons/custom-sprite/svg/symbols.svg') %>#custom11"></use> </svg></span>
+								      	</a>
+								      </li>			      
+								    </ul>
+								  </div>
+							  </div>
+					          <button class="slds-button slds-button--icon-border">
+					            <svg aria-hidden="true" class="slds-button__icon">
+					              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#chart"></use>
+					            </svg>
+					            <span class="slds-assistive-text">Chart</span>
+					          </button>
+					          <button class="slds-button slds-button--icon-more">
+					            <svg aria-hidden="true" class="slds-button__icon">
+					              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#sort"></use>
+					            </svg>
+					            <span class="slds-assistive-text">Sort</span>
+					            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
+					              <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
+					            </svg>
+					            <span class="slds-assistive-text">More</span>
+					          </button>
+					        </div>
+
+					        <div class="slds-button-group" role="group">
+					          <button class="slds-button slds-button--neutral">Actions</button>
+					          <div class="slds-button--last slds-dropdown-trigger">
+					            <button class="slds-button slds-button--icon-border-filled ">
+					              <svg aria-hidden="true" class="slds-button__icon">
+					                <use xlink:href="<%= asset_path('icons/utility-sprite/svg/symbols.svg') %>#down"></use>
+					              </svg>
+					              <span class="slds-assistive-text">More Actions</span>
+					            </button>
+					              <div class="slds-dropdown slds-dropdown--right slds-dropdown--menu slds-dropdown--actions ">
+								    <ul class="slds-dropdown__list" role="menu">
+								      <li id="menu-0-0" href="#" class="slds-dropdown__item"><a href="#" class="slds-truncate" role="menuitem">New Lead...</a></li>
+								      <li id="menu-1-1" href="#" class="slds-dropdown__item"><a href="#" class="slds-truncate" role="menuitem">Create Tasks...</a></li>
+								      <li id="menu-2-2" href="#" class="slds-dropdown__item"><a href="#" class="slds-truncate" role="menuitem">Send to Campaign...</a></li>
+								      <li id="menu-4-4" href="#" class="slds-dropdown__item"><a href="#" class="slds-truncate" role="menuitem">Export to Excel</a></li>
+								    </ul>
+								  </div>
+					          </div>
+					        </div>
+					    </div>
+					</div>
 			  </div>
 			  <p class="slds-text-body--small slds-m-top--x-small">10 items • Sorted by Lead Value</p>
 			</div>
