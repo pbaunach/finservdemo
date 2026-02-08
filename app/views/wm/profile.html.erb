@@ -198,18 +198,18 @@
 			  <div class="slds-tabs__content slds-show side-tab-content" role="tabpanel" id="side-tab-content-activity">
 			    <div class="slds-tabs--scoped" style="padding-bottom:1.5rem;">
 				  <ul class="slds-tabs--scoped__nav" role="tablist">
-				    <li class="slds-tabs__item slds-text-heading--label slds-active" title="Item One" role="presentation"><a href="#" role="tab" tabindex="0" aria-selected="true">Task</a></li>
-				    <li class="slds-tabs__item slds-text-heading--label" title="Item Two" role="presentation"><a href="#" role="tab" tabindex="-1" aria-selected="false">Event</a></li>
-				    <li class="slds-tabs__item slds-text-heading--label" title="Item Three" role="presentation"><a href="#" role="tab" tabindex="-1" aria-selected="false">Log a Call</a></li>
+				    <li class="slds-tabs__item slds-text-heading--label slds-active activity-sub-tab-temp" title="Task" role="presentation" id="activity-sub-tab-task"><a href="#" role="tab" tabindex="0" aria-selected="true">Task</a></li>
+				    <li class="slds-tabs__item slds-text-heading--label activity-sub-tab-temp" title="Event" role="presentation" id="activity-sub-tab-event"><a href="#" role="tab" tabindex="-1" aria-selected="false">Event</a></li>
+				    <li class="slds-tabs__item slds-text-heading--label activity-sub-tab-temp" title="Log a Call" role="presentation" id="activity-sub-tab-log-call"><a href="#" role="tab" tabindex="-1" aria-selected="false">Log a Call</a></li>
 
 				  </ul>
-				  <div class="slds-tabs__content slds-show" role="tabpanel">
+				  <div class="slds-tabs__content slds-show activity-sub-content" role="tabpanel" id="activity-sub-content-task">
 				     <input id="input__filter" class="slds-input" type="text" placeholder="Create a new task..." />
 				  </div>
-				  <div class="slds-tabs__content slds-hide" role="tabpanel">
+				  <div class="slds-tabs__content slds-hide activity-sub-content" role="tabpanel" id="activity-sub-content-event">
 				    <h2>Item Two Content</h2>
 				  </div>
-				  <div class="slds-tabs__content slds-hide" role="tabpanel">
+				  <div class="slds-tabs__content slds-hide activity-sub-content" role="tabpanel" id="activity-sub-content-log-call">
 				    <h2>Item Three Content</h2>
 				  </div>
 				</div>
@@ -466,10 +466,10 @@
 			  <div class="slds-tabs__content slds-hide side-tab-content" role="tabpanel" id="side-tab-content-collaborate">
 			    <div class="slds-tabs--scoped" style="padding-bottom:1.5rem;">
 				  <ul class="slds-tabs--scoped__nav" role="tablist">
-				    <li class="slds-tabs__item slds-text-heading--label slds-active" title="Item One" role="presentation"><a href="#" role="tab" tabindex="0" aria-selected="true">Post</a></li>
-				    <li class="slds-tabs__item slds-text-heading--label" title="Item Two" role="presentation"><a href="#" role="tab" tabindex="-1" aria-selected="false">Question</a></li>
+				    <li class="slds-tabs__item slds-text-heading--label slds-active collaborate-sub-tab-temp" title="Post" role="presentation" id="collaborate-sub-tab-post"><a href="#" role="tab" tabindex="0" aria-selected="true">Post</a></li>
+				    <li class="slds-tabs__item slds-text-heading--label collaborate-sub-tab-temp" title="Question" role="presentation" id="collaborate-sub-tab-question"><a href="#" role="tab" tabindex="-1" aria-selected="false">Question</a></li>
 				  </ul>
-				  <div class="slds-tabs__content slds-show" role="tabpanel">
+				  <div class="slds-tabs__content slds-show collaborate-sub-content" role="tabpanel" id="collaborate-sub-content-post">
 				      
 			  		<div class="slds-form-element">
 					  <label class="slds-form-element__label" for="sample2">To: This Account</label>
@@ -482,7 +482,7 @@
 					  </div>
 
 				  </div>
-				  <div class="slds-tabs__content slds-hide" role="tabpanel">
+				  <div class="slds-tabs__content slds-hide collaborate-sub-content" role="tabpanel" id="collaborate-sub-content-question">
 				    <h2>Item Two Content</h2>
 				  </div>
 				  <div class="slds-tabs__content slds-hide" role="tabpanel">
@@ -542,48 +542,92 @@
 <!-- Being Lazy -->
 <script>
 $(document).ready(function(){
-     $("#main-tab-tearsheet").click(function(){
+     $("#main-tab-tearsheet").click(function(e){
+        e.preventDefault();
         $(".center-tabs-temp").removeClass('slds-active');
     	$(this).addClass('slds-active');
         $(".main-tab-content").hide();
         $("#main-tab-content-tearsheet").show();
     });
-    $("#main-tab-details").click(function(){
+    $("#main-tab-details").click(function(e){
+    	e.preventDefault();
     	$(".center-tabs-temp").removeClass('slds-active');
     	$(this).addClass('slds-active');
         $(".main-tab-content").hide();
         $("#main-tab-content-details").show();
     });
-    $("#main-tab-financial").click(function(){
+    $("#main-tab-financial").click(function(e){
+    	e.preventDefault();
     	$(".center-tabs-temp").removeClass('slds-active');
     	$(this).addClass('slds-active');
         $(".main-tab-content").hide();
         $("#main-tab-content-financial").show();
     });
-    $("#main-tab-relationships").click(function(){
+    $("#main-tab-relationships").click(function(e){
+        e.preventDefault();
         $(".center-tabs-temp").removeClass('slds-active');
     	$(this).addClass('slds-active');
         $(".main-tab-content").hide();
         $("#main-tab-content-relationships").show();
     });
-    $("#main-tab-goals").click(function(){
+    $("#main-tab-goals").click(function(e){
+        e.preventDefault();
         $(".center-tabs-temp").removeClass('slds-active');
     	$(this).addClass('slds-active');
         $(".main-tab-content").hide();
         $("#main-tab-content-goals").show();
     });
 
-    $("#side-tab-activity").click(function(){
+    $("#side-tab-activity").click(function(e){
+        e.preventDefault();
         $(".side-tabs-temp").removeClass('slds-active');
     	$(this).addClass('slds-active');
         $(".side-tab-content").hide();
         $("#side-tab-content-activity").show();
     });
-    $("#side-tab-collaborate").click(function(){
+    $("#side-tab-collaborate").click(function(e){
+        e.preventDefault();
         $(".side-tabs-temp").removeClass('slds-active');
     	$(this).addClass('slds-active');
         $(".side-tab-content").hide();
         $("#side-tab-content-collaborate").show();
+    });
+
+    $("#activity-sub-tab-task").click(function(e){
+        e.preventDefault();
+        $(".activity-sub-tab-temp").removeClass('slds-active');
+        $(this).addClass('slds-active');
+        $(".activity-sub-content").hide();
+        $("#activity-sub-content-task").show();
+    });
+    $("#activity-sub-tab-event").click(function(e){
+        e.preventDefault();
+        $(".activity-sub-tab-temp").removeClass('slds-active');
+        $(this).addClass('slds-active');
+        $(".activity-sub-content").hide();
+        $("#activity-sub-content-event").show();
+    });
+    $("#activity-sub-tab-log-call").click(function(e){
+        e.preventDefault();
+        $(".activity-sub-tab-temp").removeClass('slds-active');
+        $(this).addClass('slds-active');
+        $(".activity-sub-content").hide();
+        $("#activity-sub-content-log-call").show();
+    });
+
+    $("#collaborate-sub-tab-post").click(function(e){
+        e.preventDefault();
+        $(".collaborate-sub-tab-temp").removeClass('slds-active');
+        $(this).addClass('slds-active');
+        $(".collaborate-sub-content").hide();
+        $("#collaborate-sub-content-post").show();
+    });
+    $("#collaborate-sub-tab-question").click(function(e){
+        e.preventDefault();
+        $(".collaborate-sub-tab-temp").removeClass('slds-active');
+        $(this).addClass('slds-active');
+        $(".collaborate-sub-content").hide();
+        $("#collaborate-sub-content-question").show();
     });
 
     $('#collaborate__send').click(function() {
