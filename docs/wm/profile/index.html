@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Financial Services</title>
+  <link rel="stylesheet" href="../../assets/application-52492ed32fdbf09097d679b7569e0f903e8d2ba9449b34fa43d005ee11b8814a.css" media="all" /><script src="../../assets/application-07b8b902339e43ea24cb8c9e28cd462923f3d6e29f684f75525dca995954807f.js"></script>
+<script>(function(){function p(){if(window.Turbolinks&&typeof window.Turbolinks.visit==="function"){window.Turbolinks.visit=function(u){window.location.href=u;}}}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",p);}else{p();}window.addEventListener("load",p);})();</script>
+<script>(function(){function p(){if(window.Turbolinks&&typeof window.Turbolinks.visit==="function"){window.Turbolinks.visit=function(u){window.location.href=u;}}}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",p);}else{p();}window.addEventListener("load",p);})();</script>
+<script>(function(){function p(){if(window.Turbolinks&&typeof window.Turbolinks.visit==="function"){window.Turbolinks.visit=function(u){window.location.href=u;}}}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",p);}else{p();}window.addEventListener("load",p);})();</script><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Bgy9FwMMNRa8eohIqDHAKhOuME5VAXOxM9JU4hduw4ft7Se3841N3ou9LtepPz5FD-XZAWbguDgwc1jLs8mMaQ" />
+  <link rel="icon" type="image/png" href="../../assets/favicon-32x32-0138ad33dfd7d42fbf0d713d035a72d0112523e6fe8f0f648528521b3f79541e.png" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" href="../../assets/images/Cumulus_logos/CumulusLogo_button_blue-white-bg-3a09d4d75636b2638fbd557e7dd86f46c49df820784764b04664630b75489624.png">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+</head>
+<body> 
+
+ <div class="grid-temp" style="height:100vh; width:100vw;">
+	<div class="tempSideNav" style="min-height:100%; background-color:rgb(22, 50, 92); width:240px;overflow:hidden">
+	<ul class="slds-nowrap" style="width:240px">
+		<li id="menu-btn-temp">
+			<a href="#" class="sidenav-row-temp">
+				<span class="slds-icon__container slds-icon-utility-rows">
+				  <svg aria-hidden="true" class="slds-icon slds-icon--small">
+				    <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#rows"></use>
+				  </svg>
+				</span>
+			</a>
+		</li>
+		<li>
+			<a href="../../today/today/index.html?i=02u6100000052eW">
+				<span class="slds-icon__container">
+				  <svg aria-hidden="true" class="slds-icon">
+				    <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#today"></use>
+				  </svg>
+				</span>
+				Today
+</a>		</li>
+		<li>
+			<a href="../../sales/leadlist/index.html?i=02u6100000052eW">
+				<span class="slds-icon__container">
+				  <svg aria-hidden="true" class="slds-icon">
+				    <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#lead"></use>
+				  </svg>
+				</span>
+				Leads
+</a>		</li>
+		<li>
+			<a href="../../wm/bob/index.html?i=02u6100000052eW">
+				<span class="slds-icon__container">
+				  <svg aria-hidden="true" class="slds-icon">
+				    <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom15"></use>
+				  </svg>
+				</span>
+				Clients
+</a>		</li>
+		<li class="selected-temp">
+			<a href="../../wm/profile/index.html?i=02u6100000052eW">
+				<span class="slds-icon__container">
+				  <svg aria-hidden="true" class="slds-icon slds-icon-standard-people">
+				    <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#people"></use>
+				  </svg>
+				</span>
+				People
+</a>		</li>
+		<li>
+			<a href="../../cb/profile/index.html?i=02u6100000052eW">
+				<span class="slds-icon__container">
+				  <svg aria-hidden="true" class="slds-icon">
+				    <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#account"></use>
+				  </svg>
+				</span>
+				Accounts
+</a>		</li>
+	</ul>
+</div>
+<script>
+$(document).ready( function(){
+	// see if there are existing items
+	if (!localStorage.getItem("navToggle")) {
+		// Set data
+		localStorage.setItem("navToggle", 'Open')
+	}
+
+
+    $('#menu-btn-temp').click( function() {
+        var toggleWidth = $(".tempSideNav").width() == 240 ? "56px" : "240px";
+        $('.tempSideNav').animate({ width: toggleWidth });
+        var navOpen = $(".tempSideNav").width() == 240 ? "Closed" : "Open";
+
+        localStorage.setItem("navToggle", navOpen);
+    });
+
+    var navToggle = localStorage.getItem('navToggle') == 'Closed' ? $('.tempSideNav').width('56') : $('.tempSideNav').width('240');
+    
+});
+</script>
+
+	<div class="slds-col grid-1" style="overflow:scroll;">
+	 <div class="slds-grid slds-wrap slds-align-top">
+	 	<div class="slds-col slds-size--1-of-1 navbar-temp">
+	 		<div class="slds-grid">
+			  <div class="slds-col slds-align-middle">
+			  	<span class="slds-icon__container slds-icon-utility-salesforce1">
+				  <svg aria-hidden="true" class="slds-icon slds-icon-text-default icon-salesforce1-temp">
+				    <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#salesforce1"></use>
+				  </svg>
+				</span>
+			  </div>
+			  <div class="slds-col slds-align-middle" style="text-align:center;">
+			  	<div class="slds-input" style="text-align:left;">
+			  		<span class="slds-icon__container slds-icon-utility-search slds-m-horizontal--x-small">
+					  <svg aria-hidden="true" class="slds-icon--x-small slds-icon-text-default">
+					    <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#search"></use>
+					  </svg>
+					</span>
+			  		<input id="input__filter" type="text" placeholder="Search Salesforce" style="width:70%; border:none;">
+			  	</div>
+			  	
+			  </div>
+			  <div class="slds-col slds-align-middle icon-container ">
+				<span class="slds-icon__container slds-icon-utility-apps slds-m-horizontal--x-small">
+				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
+				    <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#apps"></use>
+				  </svg>
+				</span>
+				<span class="slds-icon__container slds-icon-utility-question slds-m-horizontal--x-small">
+				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
+				    <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#question"></use>
+				  </svg>
+				</span>
+				<span class="slds-icon__container slds-icon-utility-setup slds-m-horizontal--x-small">
+				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
+				    <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#setup"></use>
+				  </svg>
+				</span>
+				<span class="slds-icon__container slds-icon-utility-notification slds-m-horizontal--x-small">
+				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
+				    <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#notification"></use>
+				  </svg>
+				</span>
+		 		<a href="../../index.html">
+			 		<span class="slds-avatar slds-avatar--circle slds-avatar--small slds-m-horizontal--x-small">
+					  <img src="../../assets/images/Ryan-c0de6da88f6bc650b3fed6c9331535ff3c3d6949e772127217a5026afb51044b.png" alt="person name" />
+					</span>
+</a>			  </div>
+			</div>
+	 	</div>
+		<nav class="slds-col slds-size--1-of-1">
+		<!-- begin header -->
+			<div class="slds-page-header">
+			  <div class="slds-grid">
+			    <div class="slds-col slds-has-flexi-truncate">
+			      <div class="slds-media">
+			        <div class="slds-media__figure slds-avatar slds-avatar--medium">
+			          <img src="../../assets/images/Rachel-0787d2585b7dcb825a70e46d6d627e442cdb4d9f9ba1e69f02eb32c4a2c9f663.png" alt="Rachel Adams" />
+			        </div>
+			        <div class="slds-media__body">
+			          <p class="slds-text-heading--label">CLIENTS > CLIENT</p>
+			          <div class="slds-grid">
+			            <h1 class="slds-text-heading--medium slds-m-right--small slds-truncate slds-align-middle" title="Record Title">Rachel Adams</h1>
+			            <div class="slds-col slds-shrink-none">
+			              <button class="slds-button slds-button--neutral slds-not-selected" aria-live="assertive">
+			                <span class="slds-text-not-selected">
+			                  <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
+			                    <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#add"></use>
+			                  </svg>Follow</span>
+			                <span class="slds-text-selected">
+			                  <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
+			                    <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#check"></use>
+			                  </svg>Following</span>
+			                <span class="slds-text-selected-focus">
+			                  <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
+			                    <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#close"></use>
+			                  </svg>Unfollow</span>
+			              </button>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			    <div class="slds-col slds-no-flex slds-align-bottom">
+			      <div class="slds-button-group" role="group">
+			        <button class="slds-button slds-button--neutral">Actions</button>
+			        <div class="slds-button--last">
+			          <button class="slds-button slds-button--icon-border-filled">
+			            <svg aria-hidden="true" class="slds-button__icon">
+			              <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#down"></use>
+			            </svg>
+			            <span class="slds-assistive-text">More</span>
+			          </button>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="slds-grid slds-page-header__detail-row">
+			    <div class="slds-col--padded slds-size--1-of-5">
+			      <dl>
+			        <dt>
+			          <p class="slds-truncate" title="Field 1">Total Accounts</p>
+			        </dt>
+			        <dd>
+			          <p class="slds-text-body--regular slds-truncate" title="1">$3,500,000</p>
+			        </dd>
+			      </dl>
+			    </div>
+			    <div class="slds-col--padded slds-size--1-of-5">
+			      <dl>
+			        <dt>
+			          <p class="slds-truncate" title="Field 1">Level</p>
+			        </dt>
+			        <dd>
+			          <p class="slds-text-body--regular slds-truncate" title="2">Diamond</p>
+			        </dd>
+			      </dl>
+			    </div>
+			    <div class="slds-col--padded slds-size--1-of-5">
+			      <dl>
+			        <dt>
+			          <p class="slds-truncate" title="Field 1">Health</p>
+			        </dt>
+			        <dd>
+			          <p class="slds-text-body--regular slds-truncate" title="2">Poor</p>
+			        </dd>
+			      </dl>
+			    </div>
+			    <div class="slds-col--padded slds-size--1-of-5">
+			      <dl>
+			        <dt>
+			          <p class="slds-truncate" title="Field 1">Last Interaction</p>
+			        </dt>
+			        <dd>
+			          <p class="slds-text-body--regular slds-truncate" title="2">9/1/2015</p>
+			        </dd>
+			      </dl>
+			    </div>
+			    <div class="slds-col--padded slds-size--1-of-5">
+			      <dl>
+			        <dt>
+			          <p class="slds-truncate" title="Field 1">Next Interaction</p>
+			        </dt>
+			        <dd>
+			          <p class="slds-text-body--regular slds-truncate" title="2">2/15/2016</p>
+			        </dd>
+			      </dl>
+			    </div>
+			  </div>
+			</div>
+			<!-- end header -->
+		</nav>
+<!-- begin grid -->
+	<main class="slds-col slds-size--1-of-2 slds-medium-size--5-of-6 slds-large-size--8-of-12">
+		<div class="slds-tabs--default row-main" style="padding:0 1.5rem;">
+		  <ul class="slds-tabs--default__nav" role="tablist">
+		    <li class="slds-tabs__item slds-text-heading--label center-tabs-temp" title="Details" role="presentation" id="main-tab-details"><a  role="tab" tabindex="0" aria-selected="true">Details</a></li>
+		    <li class="slds-tabs__item slds-text-heading--label center-tabs-temp" title="Tearsheet" role="presentation" id="main-tab-tearsheet" style="overflow:visible;"><a  role="tab" tabindex="0" aria-selected="true">Tearsheet</a></li>
+		    <li class="slds-tabs__item slds-text-heading--label slds-active center-tabs-temp" title="Financial Accounts" role="presentation" id="main-tab-financial"><a href="#" role="tab" tabindex="-1" aria-selected="false">Financial Accounts</a></li>
+		    <li class="slds-tabs__item slds-text-heading--label center-tabs-temp" title="Relationships" role="presentation" id="main-tab-relationships" style="overflow:visible;"><a href="#" role="tab" tabindex="-1" aria-selected="false">Relationships</a></li>
+		    <li class="slds-tabs__item slds-text-heading--label center-tabs-temp" title="Goals" role="presentation" id="main-tab-goals" style="overflow:visible;"><a href="#" role="tab" tabindex="-1" aria-selected="false">Goals</a></li>
+		  </ul>
+		  <div class="slds-tabs__content slds-hide main-tab-content" role="tabpanel" id="main-tab-content-details">
+		    <div class="slds-form slds-grid slds-wrap slds-m-top--large" id="basic-details-container">	
+</div>
+<div class="slds-form slds-grid slds-wrap slds-m-top--large" id="family-details-container">
+	<h1 class="slds-size--1-of-1 slds-section-title slds-col--padded slds-p-bottom--medium">Family</h1>
+</div>
+<div class="slds-form slds-grid slds-wrap slds-m-top--large" id="identity-details-container">
+	<h1 class="slds-size--1-of-1 slds-section-title slds-col--padded slds-p-bottom--medium">Identity</h1>
+</div>
+<div class="slds-form slds-grid slds-wrap slds-m-top--large" id="communication-details-container">
+	<h1 class="slds-size--1-of-1 slds-section-title slds-col--padded slds-p-bottom--medium">Communication</h1>
+</div>
+<div class="slds-form slds-grid slds-wrap slds-m-top--large" id="relationship-details-container">
+	<h1 class="slds-size--1-of-1 slds-section-title slds-col--padded slds-p-bottom--medium">Banking Relationship</h1>
+</div>
+<div class="slds-form slds-grid slds-wrap slds-m-top--large" id="employment-details-container">
+	<h1 class="slds-size--1-of-1 slds-section-title slds-col--padded slds-p-bottom--medium">Employment</h1>
+</div>
+
+<script>
+$(document).ready(function(){
+ 	window.profileDetails = [
+		
+		// Basic Info
+		{label: 'First Name', value: '--', append:'basic'},
+		{label: 'Last Name', value: '--', append:'basic'},
+		{label: 'Individual ID (Tax ID/SSN/Passport ID)', value: '--', append:'basic'},
+		{label: 'Date of Birth', value: '--', append:'basic'},
+		{label: 'Gender', value: '--', append:'basic'},
+		{label: 'Primary Citizenship', value: '--', append:'basic'},
+		{label: 'Secondary Citizenship', value: '--', append:'basic'},
+		{label: 'Permanent Resident', value: '--', append:'basic'},
+		{label: 'Visa Type', value: '--', append:'basic'},
+		{label: 'Driver License Number and State', value: '--', append:'basic'},
+		{label: 'Mother&#39;s Maiden Name', value: '--', append:'basic'},
+		{label: 'Special Instructions', value: '--', append:'basic'},
+		{label: 'Status', value: '--', append:'basic'},
+		{label: 'Credit Score', value: '--', append:'basic'},
+
+		// Family Information
+		{label: 'Marital Status', value: '--', append:'family'},
+		{label: 'Marriage Date', value: '--', append:'family'},
+		{label: 'Number of Children', value: '--', append:'family'},
+
+		// Identity Details
+		{label: 'Document Type', value: '--', append:'identity'},
+		{label: 'Document Number', value: '--', append:'identity'},
+		{label: 'Issue Date', value: '--', append:'identity'},
+		{label: 'Expiration Date', value: '--', append:'identity'},
+		{label: 'Issuing Country', value: '--', append:'identity'},
+
+		// Communication Info
+		{label: 'Address', value: '--', append:'communication'},
+		{label: 'Rent or Own', value: '--', append:'communication'},
+		{label: 'Marketing Opt-In', value: '--', append:'communication'},
+		{label: 'Primary Phone Number', value: '--', append:'communication'},
+		{label: 'Primary Phone Number Verified', value: '--', append:'communication'},
+		{label: 'Secondary Phone Number', value: '--', append:'communication'}, 
+		{label: 'Secondary Phone Number Verified', value: '--', append:'communication'},
+		{label: 'Email ID', value: '--', append:'communication'},
+		{label: 'Email ID Verified', value: '--', append:'communication'},
+		{label: 'Fax Number', value: '--', append:'communication'},
+		{label: 'Fax Number Verified', value: '--', append:'communication'},
+		{label: 'Time Zone', value: '--', append:'communication'},
+		{label: 'Primary Language', value: '--', append:'communication'},
+		{label: 'Secondary Language', value: '--', append:'communication'},
+		{label: 'Communication Preferences by Activity', value: '--', append:'communication'},
+		{label: 'Channel Activity', value: '--'},
+		{label: 'Channel Activity (List by Accounts)', value: '--', append:'communication'},
+		{label: 'Twitter ID', value: '--', append:'communication'},
+		{label: 'Facebook ID', value: '--', append:'communication'},
+
+		// Relationship Info
+		{label: 'VIP Status', value: '--', append:'relationship'},
+		{label: 'Source System ID', value: '--', append:'relationship'},
+		{label: 'Customer Lifetime Value', value: '--', append:'relationship'},
+		{label: 'Risk Profile', value: '--', append:'relationship'},
+		{label: 'Branch ID', value: '--', append:'relationship'},
+		{label: 'External Source ID', value: '--', append:'relationship'},
+		{label: 'Segment of the Customer', value: '--', append:'relationship'},
+		{label: 'Date of Opening the Relationship', value: '--', append:'relationship'},
+		{label: 'Length of Relationship', value: '--', append:'relationship'},
+
+		// Employment & Income
+		{label: 'Income/Salary', value: '--', append:'employment'},
+		{label: 'Education', value: '--', append:'employment'},
+		{label: 'Affiliations', value: '--', append:'employment'},
+		{label: 'Employer/Self-Employed', value: '--', append:'employment'},
+		{label: 'Employed Since', value: '--', append:'employment'},
+		{label: 'Position', value: '--', append:'employment'},
+		
+		]
+	// see if there are existing items
+	// var currentData = localStorage.getItem('profileDetailsData')
+	// Don't read the data from localstorage if theres already existing data
+	//if (!currentData) {
+		// Set data
+		localStorage.setItem("profileDetailsData", JSON.stringify(profileDetails))
+	//}
+
+	// Get data
+	var data = JSON.parse(localStorage.getItem('profileDetailsData'))
+	var numID = 0;
+	
+	data.forEach(function(datum) {
+
+		$('#'+datum.append+'-details-container').append('<div class="slds-col--padded slds-medium-size--1-of-2"> <div class="slds-form-element slds-form-separator"> <label class="slds-form-element__label">'+datum.label+'</label> <div>'+datum.value+'</div> </div> </div>') })
+
+});
+
+</script>
+		  </div>
+<!-- Tear Sheet -->
+		  <div class="slds-tabs__content slds-hide main-tab-content" role="tabpanel" id="main-tab-content-tearsheet">
+		    <div class="slds">
+                <div class="slds-card">
+                    <header class="slds-card__header slds-grid slds-theme--default">
+                        <div class="slds-media slds-media--center slds-has-flexi-truncate">
+                            <div class="slds-col slds-size--small">
+                                <div class="slds-media slds-tile slds-hint-parent">
+                                    <div class="slds-media__figure">
+                                        <span class="slds-avatar slds-avatar--circle slds-avatar--medium">
+                                            <img src="../../assets/images/Rachel-0787d2585b7dcb825a70e46d6d627e442cdb4d9f9ba1e69f02eb32c4a2c9f663.png" alt="portrait" />
+                                        </span>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <p class="slds-tile__title slds-truncate">Rachel Adams</p>
+                                        <p class="slds-tile__detail slds-text-body--small">Age 50, Designer</p>
+                                        <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
+                                            <li class="slds-truncate slds-list__item">415-555-3000</li>
+                                            <li class="slds-trunkate slds-list__item">rachel.adams@gmail.com</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-col slds-no-flex slds-align-middle">
+                                <div class="slds-button-group slds-button-space-left" role="group">
+                                    <button class="slds-button slds-button--neutral">Edit</button>
+                                    <button class="slds-button slds-button--neutral">Print</button>
+                                    <button class="slds-button slds-button--neutral">Share</button>
+                                </div>
+                            </div>
+                        </div>   
+                    </header>
+                    <section class="slds-p-top--x-large slds-card__body slds-theme--default">
+                        <div class="slds-grid slds-grid--align-space">
+                            <div class="slds-col--padded slds-size--1-of-2">
+                                <h3 class="slds-text-heading--label">2014 PERFORMANCE</h3>
+                                <div class="slds-text-heading--medium slds-p-top--medium">
+                                    <ul class="slds-list--horizontal">
+                                        <li class="slds-list__item"><strong>8.18%</strong></li>
+                                        <li class="slds-list__item slds-p-left--small">$223,126</li>
+                                    </ul>   
+                                </div>
+                                <ul class="slds-m-top--large slds-list--vertical slds-has-dividers">
+                                    <li class="slds-list__item slds-text-heading--label">ACCOUNTS</li>
+                                    <li class="slds-list__item">
+                                        <div class="slds-grid slds-list__item slds-p-vertical--x-small slds-grid--align-spread slds-has-flexi-truncate">
+                                            <p class="slds-tile__title slds-truncate">Cumulus Checking</p>
+                                            <p>$98,653</p>
+                                        </div>
+                                    </li>
+                                    <li class="slds-list__item">
+                                        <div class="slds-grid slds-list__item slds-p-vertical--x-small slds-grid--align-spread slds-has-flexi-truncate">
+                                            <p class="slds-tile__title slds-truncate">Cumulus Checking</p>
+                                            <p>$98,653</p>
+                                        </div>
+                                    </li>
+                                    <li class="slds-list__item">
+                                        <div class="slds-grid slds-list__item slds-p-vertical--x-small slds-grid--align-spread slds-has-flexi-truncate">
+                                            <p class="slds-tile__title slds-truncate">Cumulus IRA</p>
+                                            <p>$500,486</p>
+                                        </div>
+                                    </li>
+                                    <li class="slds-list__item">
+                                        <div class="slds-grid slds-list__item slds-p-vertical--x-small slds-grid--align-spread slds-has-flexi-truncate">
+                                            <p class="slds-tile__title slds-truncate">Cumulus Annuity</p>
+                                            <p>$1,100,541</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="slds-m-top--x-large slds-list--vertical slds-has-dividers">
+                                    <li class="slds-list__item slds-text-heading--label">GOALS</li>
+                                    <li class="slds-list__item">
+                                        <div class="slds-grid slds-list__item slds-p-vertical--x-small slds-grid--align-spread slds-has-flexi-truncate">
+                                            <p class="slds-tile__title slds-truncate">Cumulus Checking</p>
+                                            <p>$98,653</p>
+                                        </div>
+                                    </li>
+                                    <li class="slds-list__item">
+                                        <div class="slds-grid slds-list__item slds-p-vertical--x-small slds-grid--align-spread slds-has-flexi-truncate">
+                                            <p class="slds-tile__title slds-truncate">Home Purchase</p>
+                                            <p>98%</p>
+                                        </div>
+                                    </li>
+                                    <li class="slds-list__item">
+                                        <div class="slds-grid slds-list__item slds-p-vertical--x-small slds-grid--align-spread slds-has-flexi-truncate">
+                                            <p class="slds-tile__title slds-truncate">Retirement</p>
+                                            <p>45%</p>
+                                        </div>
+                                    </li>
+                                    <li class="slds-list__item">
+                                        <div class="slds-grid slds-list__item slds-p-vertical--x-small slds-grid--align-spread slds-has-flexi-truncate">
+                                            <p class="slds-tile__title slds-truncate">Education Plan</p>
+                                            <p>0%</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <h3 class="slds-text-heading--label slds-m-top--x-large">OTHER TEAM/SPECIALISTS</h3>
+                                <div class="slds-grid">
+                                    <div class="slds-col--padded slds-size--1-of-2">
+                                        <div class="slds-media slds-tile">
+                                            <div class="slds-media__figure">
+                                                <span class="slds-avatar slds-avatar--circle slds-avatar--small">
+                                                    <img src="../../assets/images/Brad-a1e5f9e291a7850fbaa8994849c8a83f47dfc141c944d0ab19ae48519f4dc0b8.jpg" alt="portrait" />
+                                                </span>
+                                            </div>
+                                            <div class="slds-media__body">
+                                                <p class="slds-tile__title slds-truncate"><a href="#">Brad L. Jackson</a></p>
+                                                <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
+                                                    <li class="slds-truncate slds-list__item">Associate</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="slds-col--padded slds-size--1-of-2">
+                                <ul class="slds-list--vertical">
+                                    <li class="slds-list__item">
+                                        <h3 class="slds-text-heading--label">TOPICS + INTERESTS</h3>
+                                        <div class="slds-text-body--regular slds-m-top--small">Consumer Technology, Home Savings, Hotels, Tennis, Green Energy, Wine Connoisseur</div>
+                                    </li>
+                                    <li class="slds-p-top--medium slds-list__item">
+                                        <h3 class="slds-text-heading--label">IMPORTANT NOTES</h3>
+                                        <div class="slds-text-body--regular slds-m-top--small">Remember to ask E*Trade details.  Rachel said she wanted to turn this over to us last time we met.</div>
+                                    </li>
+                                </ul>
+                                <h3 class="slds-m-top--medium slds-text-heading--label">RECENT ACTIVITY</h3>
+                                <div class="slds-text-heading--medium">
+                                    <ul class="slds-list--vertical">
+                                        <li class="slds-p-top--medium slds-list__item">
+                                            <h3 class="slds-text-heading--label">March 4, 2015</h3>
+                                            <div class="slds-text-body--regular slds-m-top--small">Called about the status of her house purchase</div>
+                                            <div class="slds-text-body--regular slds-m-top--small">Things are looking good from a process perspective, but need to make sure allocations are on track.</div>
+                                        </li>
+                                        <li class="slds-p-top--medium slds-list__item">
+                                            <h3 class="slds-text-heading--label">December 4, 2014</h3>
+                                            <div class="slds-text-body--regular slds-m-top--small">Called about the status of her house purchase</div>
+                                        </li>
+                                    </ul>   
+                                </div>
+                                <h3 class="slds-m-top--medium slds-text-heading--label">OPEN CASES</h3>
+                                <div class="slds-text-heading--medium">
+                                    <ul class="slds-list--vertical">
+                                        <li class="slds-p-top--medium slds-list__item">
+                                            <div class="slds-text-body--regular slds-m-top--small">No Open Cases</div>
+                                        </li>
+                                    </ul>   
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="slds-card__body slds-col-rule--top">
+                        <div class="slds-grid slds-grid--align-space">
+                            <div class="slds-col--padded slds-size--1-of-2">
+                                <div class="slds-grid slds-grid--align-center slds-p-vertical--medium">
+                                    <div>
+                                        <img src="../../assets/images/map-80fa911f11c6da74585707851ad4acdf1047b56719929fb1f59ee277a8412f4c.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-col--padded slds-size--1-of-2">
+                                <h3 class="slds-m-top--medium slds-text-heading--label">OBJECTIVES</h3>
+                                <div class="slds-text-heading--medium">
+                                    <ul class="slds-list--vertical">
+                                        <li class="slds-p-top--x-small slds-list__item">
+                                            <div class="slds-text-body--regular">Advice on stock allocation &amp; upsell around Goals pertaining to the household.</div>
+                                        </li>
+                                        <li class="slds-p-top--medium slds-list__item">
+                                            <div class="slds-text-body--regular">See if Rachel is ready to use our recommended accountant (she requested this last time we spoke).</div>
+                                        </li>
+                                    </ul>   
+                                </div>
+                                <h3 class="slds-m-top--medium slds-text-heading--label">EXPECTATIONS</h3>
+                                <div class="slds-text-heading--medium">
+                                    <ul class="slds-list--vertical">
+                                        <li class="slds-p-top--x-small slds-list__item">
+                                            <div class="slds-text-body--regular">Understand the current state of investments &amp; learn why her portfolio is performing so well</div>
+                                        </li>
+                                        <li class="slds-p-top--medium slds-list__item">
+                                            <div class="slds-text-body--regular">She wants to know how she is progressing toward her home savings goal.</div>
+                                        </li>
+                                    </ul>   
+                                </div>
+                                <h3 class="slds-m-top--medium slds-text-heading--label">NEXT STEPS</h3>
+                                <div class="slds-text-heading--medium">
+                                    <ul class="slds-m-top--x-small slds-list--vertical slds-list--dotted ">
+                                        <li class="slds-list__item">
+                                            <div class="slds-text-body--small">Confirm new stock investment area</div>
+                                        </li>
+                                        <li class="slds-list__item">
+                                            <div class="slds-text-body--small">Initiate any transfers for new stocks</div>
+                                        </li>
+                                        <li class="slds-list__item">
+                                            <div class="slds-text-body--small">Confirm handover of E*Trade securities</div>
+                                        </li>
+                                        <li class="slds-list__item">
+                                            <div class="slds-text-body--small">Book next meeting time and date</div>
+                                        </li>
+                                    </ul>   
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <footer class="slds-card__footer"></footer>
+                </div>
+            </div>
+		  </div>
+<!-- Financial Summary -->
+		  <div class="slds-tabs__content slds-show main-tab-content" role="tabpanel" id="main-tab-content-financial">
+		  	<div class="slds-card slds-white-card-temp">
+	<div class="slds-card__header">
+    	<h2 class="slds-text-heading--medium slds-truncate">Financial Accounts Summary</h2>
+  	</div>
+  	<div class="slds-card__body slds-grid">
+  		<div class="slds-col--padded slds-size--1-of-4">
+  			<span class="slds-text-heading--label">Investments</span>
+  			<h1 class="slds-text-heading--medium slds-success-text-temp"> $1,244,234 </h1>
+  		</div>
+  		<div class="slds-col--padded slds-size--1-of-4">
+  			<span class="slds-text-heading--label">% Held Assets</span>
+  			<h1 class="slds-text-heading--medium">62.1%</h1>
+  		</div>
+  		<div class="slds-col--padded slds-size--1-of-4">
+  			<span class="slds-text-heading--label">Banking</span>
+  			<h1 class="slds-text-heading--medium slds-success-text-temp">$94,431</h1>
+  		</div>
+  		<div class="slds-col--padded slds-size--1-of-4">
+  			<span class="slds-text-heading--label">Insurance</span>
+  			<h1 class="slds-text-heading--medium slds-success-text-temp">$983</h1>
+  		</div>
+  	</div>
+</div>
+<!-- Begin Card -->
+      <div class="slds-card">
+        <header class="slds-card__header slds-grid">
+          <div class="slds-media slds-media--center slds-has-flexi-truncate">
+            <div class="slds-media__figure">
+              <svg aria-hidden="true" class="slds-icon slds-icon-custom-18 slds-icon--small">
+                <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom17"></use>
+              </svg>
+            </div>
+            <div class="slds-media__body">
+              <h3 class="slds-text-heading--small slds-truncate">Investment Accounts (4)</h3>
+            </div>
+          </div>
+          <div class="slds-no-flex">
+            <div class="slds-button-group">
+              <button class="slds-button slds-button--neutral slds-button--small">Add</button>
+              <button class="slds-button slds-button--icon-border-filled">
+                <svg aria-hidden="true" class="slds-button__icon">
+                  <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#down"></use>
+                </svg>
+                <span class="slds-assistive-text">Show More</span>
+              </button>
+            </div>
+          </div>
+        </header>
+        <section class="slds-card__body">
+          <table class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal slds-no-row-hover">
+            <thead>
+              <tr>
+                <th class="slds-text-heading--label slds-size--1-of-4" scope="col">Name</th>
+                <th class="slds-text-heading--label slds-size--1-of-4" scope="col">Type</th>
+                <th class="slds-text-heading--label slds-size--1-of-4 slds-align-right-temp" scope="col">Open Date</th>
+                <th class="slds-text-heading--label slds-size--1-of-4 slds-align-right-temp" scope="col">30-day change</th>
+                <th class="slds-text-heading--label slds-size--1-of-4" scope="col">Balance</th>
+                <th class="slds-row-action" scope="col">
+                  <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
+                    <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+                      <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#down"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Show More</span>
+                  </button>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="slds-hint-parent">
+                <td class="slds-size--1-of-4" data-label="Name">Cumulus Annuity</td>
+                <td class="slds-size--1-of-4" data-label="Type">Annuity</td>
+                <td class="slds-size--1-of-4 slds-align-right-temp" data-label="Open Date">5/8/2012</td>
+                <td class="slds-size--1-of-4 slds-align-right-temp slds-success-text-temp" data-label="Change">+1.02%</td>
+                <td class="slds-size--1-of-4" data-label="Balance">$250,465.25</td>
+                <td>
+                  <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
+                    <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+                      <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#down"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Show More</span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="slds-hint-parent">
+                <td class="slds-size--1-of-4" data-label="Name">Cumulus IRA</td>
+                <td class="slds-size--1-of-4" data-label="Type">Brokerage</td>
+                <td class="slds-size--1-of-4 slds-align-right-temp" data-label="Open Date">10/10/2001</td>
+                <td class="slds-size--1-of-4 slds-align-right-temp" data-label="Change">0%</td>
+                <td class="slds-size--1-of-4" data-label="Balance">$500,485.62</td>
+                <td>
+                  <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
+                    <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+                      <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#down"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Show More</span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="slds-hint-parent">
+                <td class="slds-size--1-of-4" data-label="Name">Budapest Hotel 401k</td>
+                <td class="slds-size--1-of-4" data-label="Type">Retirement Plan</td>
+                <td class="slds-size--1-of-4 slds-align-right-temp" data-label="Open Date">5/8/2012</td>
+                <td class="slds-size--1-of-4 slds-align-right-temp slds-error-text-temp" data-label="Change">-0.10%</td>
+                <td class="slds-size--1-of-4" data-label="Balance">$1,100,541.32</td>
+                <td>
+                  <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
+                    <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+                      <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#down"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Show More</span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="slds-hint-parent">
+                <td class="slds-size--1-of-4" data-label="Name">HeldAway IRA</td>
+                <td class="slds-size--1-of-4" data-label="Type">Brokerage</td>
+                <td class="slds-size--1-of-4 slds-align-right-temp" data-label="Open Date">11/18/1983</td>
+                <td class="slds-size--1-of-4 slds-align-right-temp slds-success-text-temp" data-label="Change">+2.44%</td>
+                <td class="slds-size--1-of-4" data-label="Balance">$1,150,000.00</td>
+                <td>
+                  <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
+                    <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+                      <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#down"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Show More</span>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <footer class="slds-card__footer"><a href="#">View All</a></footer>
+      </div>
+      <!-- End Card -->
+		  </div>
+<!-- Begin Household -->
+		  <div class="slds-tabs__content slds-hide main-tab-content" role="tabpanel" id="main-tab-content-relationships">
+		    <div class="slds-card slds-white-card-temp">
+	<div class="slds-card__header">
+    	<h2 class="slds-text-heading--medium slds-truncate">Household Summary</h2><a href="#">View Household</a>
+  	</div>
+  	<div class="slds-card__body slds-grid">
+  		<div class="slds-col--padded slds-size--1-of-5">
+  			<span class="slds-text-heading--label">Total Accounts</span>
+  			<p>$6,500,000</p>
+  		</div>
+  		<div class="slds-col--padded slds-size--1-of-5">
+  			<span class="slds-text-heading--label">AUM</span>
+  			<p>$2,200,500</p>
+  		</div>
+  		<div class="slds-col--padded slds-size--1-of-5">
+  			<span class="slds-text-heading--label">Assets Held Away</span>
+  			<p>$3,700,500</p>
+  		</div>
+  		<div class="slds-col--padded slds-size--1-of-5">
+  			<span class="slds-text-heading--label">Last Interaction</span>
+  			<p>8/18/2015</p>
+  		</div>
+  		<div class="slds-col--padded slds-size--1-of-5">
+  			<span class="slds-text-heading--label">Next Interaction</span>
+  			<p>12/15/2015</p>
+  		</div>
+  	</div>
+</div>
+<!-- Begin Card -->
+<div class="slds-card">
+  <header class="slds-card__header slds-grid">
+    <div class="slds-media slds-media--center slds-has-flexi-truncate">
+      <div class="slds-media__figure">
+        <svg aria-hidden="true" class="slds-icon slds-icon-custom-50 slds-icon--small">
+          <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom50"></use>
+        </svg>
+      </div>
+      <div class="slds-media__body">
+        <h3 class="slds-text-heading--small slds-truncate">Household Members (2)</h3>
+      </div>
+    </div>
+    <div class="slds-no-flex">
+      <div class="slds-button-group">
+        <button class="slds-button slds-button--neutral slds-button--small modal-action">Add Member</button>
+        <button class="slds-button slds-button--icon-border-filled">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#down"></use>
+          </svg>
+          <span class="slds-assistive-text">Show More</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <section class="slds-card__body">
+   <div class="slds-grid slds-wrap ">
+<!-- Household Item -->
+   				<div class="slds-media slds-tile slds-size--1-of-1 slds-col--padded">
+					<div class="slds-media__figure">
+					    <span class="slds-avatar slds-avatar--circle slds-avatar--small">
+					      <img src="../../assets/images/Rachel-0787d2585b7dcb825a70e46d6d627e442cdb4d9f9ba1e69f02eb32c4a2c9f663.png" alt="" />
+					    </span>
+					</div>
+		  			<div class="slds-media__body">
+					   	<div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
+					      <p class="slds-tile__title slds-truncate"><a href="#">Rachel Adams</a> <span class="slds-badge slds-m-left--small">Primary</span></p>
+					      <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small slds-shrink-none">
+					        <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+					          <use xlink:href="../../assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+					        </svg>
+					        <span class="slds-assistive-text">Show More</span>
+					      </button>
+					    </div>
+					    <div class="slds-grid">
+						   	<div class="slds-size--1-of-3">
+						   		<ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
+							      <li class="slds-truncate slds-list__item">Role: <span class="slds-tile__meta">Wife</span></li>
+							      <li class="slds-truncate slds-list__item">Age: <span class="slds-tile__meta">50</span></li>
+							    </ul>
+							    <p class="slds-text-body--small"> Phone: <span class="slds-tile__meta">(415)555-3132</span> </p> 
+							    <p class="slds-text-body--small"> Mobile: <span class="slds-tile__meta">(415)444-4123</span> </p> 
+							    <p class="slds-text-body--small"> Email: <span class="slds-tile__meta"><a href="#">rachel.adams@gmail.com</a></span> </p> 
+						   	</div>
+						   	<div class="slds-col--padded slds-size--1-of-3">
+						   		<p class="slds-text-body--small"> Last Interaction: <span class="slds-tile__meta">10/01/2015</span> </p> 
+                  <p class="slds-text-body--small"> Next Interaction: <span class="slds-tile__meta">2/15/2016</span> </p> 
+						   	</div>
+						   	<div class="slds-col--padded slds-size--1-of-3">
+						   		<p class="slds-text-body--small slds-p-bottom--xxx-small">
+						   			<svg aria-hidden="true" class="slds-icon slds-icon-standard-event slds-icon--x-small slds-align-top slds-m-right--xx-small">
+							          <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#event"></use>
+							        </svg> Events: <span class="slds-tile__meta">4</span> 
+							    </p> 
+						   		<p class="slds-text-body--small slds-p-bottom--xxx-small">
+							   		<svg aria-hidden="true" class="slds-icon slds-icon-standard-task slds-icon--x-small slds-align-top slds-m-right--xx-small">
+							          <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#task"></use>
+							        </svg> Tasks: <span class="slds-tile__meta">16</span> 
+						        </p> 
+						   		<p class="slds-text-body--small slds-p-bottom--xxx-small"> 
+							   		<svg aria-hidden="true" class="slds-icon slds-icon-standard-log-a-call slds-icon--x-small slds-align-top slds-m-right--xx-small">
+							          <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#log_a_call"></use>
+							        </svg> Calls: <span class="slds-tile__meta">5</span> 
+						        </p> 
+						   		<p class="slds-text-body--small slds-p-bottom--xxx-small"> 
+							   		<svg aria-hidden="true" class="slds-icon slds-icon-standard-email slds-icon--x-small slds-align-top slds-m-right--xx-small">
+							          <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#email"></use>
+							        </svg> Email: <span class="slds-tile__meta">20</span> 
+						        </p> 
+						   	</div>
+					   	</div>					    
+		  			</div>
+				</div>
+<!-- End Household Item -->
+<!-- Household Item -->
+   				<div class="slds-media slds-tile slds-size--1-of-1 slds-col--padded">
+					<div class="slds-media__figure">
+					    <span class="slds-avatar slds-avatar--circle slds-avatar--small">
+					      <img src="../../assets/images/Nigel-0deb5153b53baf7ccdd118985fb5858658ee7105324a552bf048f74841731a2b.png" alt="" />
+					    </span>
+					</div>
+		  			<div class="slds-media__body">
+					   	<div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
+					      <p class="slds-tile__title slds-truncate"><a href="#">Nigel Adams</a></p>
+					      <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small slds-shrink-none">
+					        <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+					          <use xlink:href="../../assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+					        </svg>
+					        <span class="slds-assistive-text">Show More</span>
+					      </button>
+					    </div>
+					    <div class="slds-grid">
+						   	<div class="slds-size--1-of-3">
+						   		<ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
+							      <li class="slds-truncate slds-list__item">Role: <span class="slds-tile__meta">Husband</span></li>
+							      <li class="slds-truncate slds-list__item">Age: <span class="slds-tile__meta">55</span></li>
+							    </ul>
+							    <p class="slds-text-body--small"> Phone: <span class="slds-tile__meta">(415)555-3132</span> </p> 
+							    <p class="slds-text-body--small"> Mobile: <span class="slds-tile__meta">(415)444-4129</span> </p> 
+							    <p class="slds-text-body--small"> Email: <span class="slds-tile__meta"><a href="#">nigel.adams@gmail.com</a></span> </p> 
+						   	</div>
+						   	<div class="slds-col--padded slds-size--1-of-3">
+						   		<p class="slds-text-body--small"> Last Interaction: <span class="slds-tile__meta">10/01/2015</span> </p> 
+                  <p class="slds-text-body--small"> Next Interaction: <span class="slds-tile__meta">--</span> </p> 
+						   	</div>
+						   	<div class="slds-col--padded slds-size--1-of-3">
+						   		<p class="slds-text-body--small slds-p-bottom--xxx-small">
+						   			<svg aria-hidden="true" class="slds-icon slds-icon-standard-event slds-icon--x-small slds-align-top slds-m-right--xx-small">
+							          <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#event"></use>
+							        </svg> Events: <span class="slds-tile__meta">2</span> 
+							    </p> 
+						   		<p class="slds-text-body--small slds-p-bottom--xxx-small">
+							   		<svg aria-hidden="true" class="slds-icon slds-icon-standard-task slds-icon--x-small slds-align-top slds-m-right--xx-small">
+							          <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#task"></use>
+							        </svg> Tasks: <span class="slds-tile__meta">8</span> 
+						        </p> 
+						   		<p class="slds-text-body--small slds-p-bottom--xxx-small"> 
+							   		<svg aria-hidden="true" class="slds-icon slds-icon-standard-log-a-call slds-icon--x-small slds-align-top slds-m-right--xx-small">
+							          <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#log_a_call"></use>
+							        </svg> Calls: <span class="slds-tile__meta">0</span> 
+						        </p> 
+						   		<p class="slds-text-body--small slds-p-bottom--xxx-small"> 
+							   		<svg aria-hidden="true" class="slds-icon slds-icon-standard-email slds-icon--x-small slds-align-top slds-m-right--xx-small">
+							          <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#email"></use>
+							        </svg> Email: <span class="slds-tile__meta">4</span> 
+						        </p> 
+						   	</div>
+					   	</div>					    
+		  			</div>
+				</div>
+<!-- End Household Item -->
+<!-- Household Item -->
+          <div class="slds-media slds-tile slds-size--1-of-1 slds-col--padded">
+          <div class="slds-media__figure">
+              <span class="slds-avatar slds-avatar--circle slds-avatar--small">
+                <img src="../../assets/images/Claire-123dd57f45f49e5b2de649c6677c93837337dfb77594048561cf1db352100c88.png" alt="" />
+              </span>
+          </div>
+            <div class="slds-media__body">
+              <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
+                <p class="slds-tile__title slds-truncate"><a href="#">Claire Adams</a></p>
+                <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small slds-shrink-none">
+                  <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+                    <use xlink:href="../../assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+                  </svg>
+                  <span class="slds-assistive-text">Show More</span>
+                </button>
+              </div>
+              <div class="slds-grid">
+                <div class="slds-size--1-of-3">
+                  <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
+                    <li class="slds-truncate slds-list__item">Role: <span class="slds-tile__meta">Daughter</span></li>
+                    <li class="slds-truncate slds-list__item">Age: <span class="slds-tile__meta">17</span></li>
+                  </ul>
+                  <p class="slds-text-body--small"> Phone: <span class="slds-tile__meta">--</span> </p> 
+                  <p class="slds-text-body--small"> Mobile: <span class="slds-tile__meta">--</span> </p> 
+                  <p class="slds-text-body--small"> Email: <span class="slds-tile__meta">--</span> </p> 
+                </div>
+                <div class="slds-col--padded slds-size--1-of-3">
+                  <p class="slds-text-body--small"> Last Interaction: <span class="slds-tile__meta">--</span> </p> 
+                  <p class="slds-text-body--small"> Next Interaction: <span class="slds-tile__meta">--</span> </p> 
+                </div>
+                <div class="slds-col--padded slds-size--1-of-3">
+                  <p class="slds-text-body--small slds-p-bottom--xxx-small">
+                    <svg aria-hidden="true" class="slds-icon slds-icon-standard-event slds-icon--x-small slds-align-top slds-m-right--xx-small">
+                        <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#event"></use>
+                      </svg> Events: <span class="slds-tile__meta">0</span> 
+                  </p> 
+                  <p class="slds-text-body--small slds-p-bottom--xxx-small">
+                    <svg aria-hidden="true" class="slds-icon slds-icon-standard-task slds-icon--x-small slds-align-top slds-m-right--xx-small">
+                        <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#task"></use>
+                      </svg> Tasks: <span class="slds-tile__meta">0</span> 
+                    </p> 
+                  <p class="slds-text-body--small slds-p-bottom--xxx-small"> 
+                    <svg aria-hidden="true" class="slds-icon slds-icon-standard-log-a-call slds-icon--x-small slds-align-top slds-m-right--xx-small">
+                        <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#log_a_call"></use>
+                      </svg> Calls: <span class="slds-tile__meta">0</span> 
+                    </p> 
+                  <p class="slds-text-body--small slds-p-bottom--xxx-small"> 
+                    <svg aria-hidden="true" class="slds-icon slds-icon-standard-email slds-icon--x-small slds-align-top slds-m-right--xx-small">
+                        <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#email"></use>
+                      </svg> Email: <span class="slds-tile__meta">0</span> 
+                    </p> 
+                </div>
+              </div>              
+            </div>
+        </div>
+<!-- End Household Item -->
+<!-- Household Item -->
+          <div class="slds-media slds-tile slds-size--1-of-1 slds-col--padded">
+          <div class="slds-media__figure">
+              <span class="slds-avatar slds-avatar--circle slds-avatar--small">
+                <img src="../../assets/images/Jack-78fc6f1a3839158615ff0fc0ea93c430c2e7063f71127748e1d761dfa9f0f90b.png" alt="" />
+              </span>
+          </div>
+            <div class="slds-media__body">
+              <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
+                <p class="slds-tile__title slds-truncate"><a href="#">Jack Adams</a></p>
+                <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small slds-shrink-none">
+                  <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+                    <use xlink:href="../../assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+                  </svg>
+                  <span class="slds-assistive-text">Show More</span>
+                </button>
+              </div>
+              <div class="slds-grid">
+                <div class="slds-size--1-of-3">
+                  <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
+                    <li class="slds-truncate slds-list__item">Role: <span class="slds-tile__meta">Son</span></li>
+                    <li class="slds-truncate slds-list__item">Age: <span class="slds-tile__meta">14</span></li>
+                  </ul>
+                  <p class="slds-text-body--small"> Phone: <span class="slds-tile__meta">--</span> </p> 
+                  <p class="slds-text-body--small"> Mobile: <span class="slds-tile__meta">--</span> </p> 
+                  <p class="slds-text-body--small"> Email: <span class="slds-tile__meta"><a href="#">--</a></span> </p> 
+                </div>
+                <div class="slds-col--padded slds-size--1-of-3">
+                  <p class="slds-text-body--small"> Last Interaction: <span class="slds-tile__meta">--</span> </p>
+                  <p class="slds-text-body--small"> Next Interaction: <span class="slds-tile__meta">--</span> </p> 
+                </div>
+                <div class="slds-col--padded slds-size--1-of-3">
+                  <p class="slds-text-body--small slds-p-bottom--xxx-small">
+                    <svg aria-hidden="true" class="slds-icon slds-icon-standard-event slds-icon--x-small slds-align-top slds-m-right--xx-small">
+                        <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#event"></use>
+                      </svg> Events: <span class="slds-tile__meta">0</span> 
+                  </p> 
+                  <p class="slds-text-body--small slds-p-bottom--xxx-small">
+                    <svg aria-hidden="true" class="slds-icon slds-icon-standard-task slds-icon--x-small slds-align-top slds-m-right--xx-small">
+                        <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#task"></use>
+                      </svg> Tasks: <span class="slds-tile__meta">0</span> 
+                    </p> 
+                  <p class="slds-text-body--small slds-p-bottom--xxx-small"> 
+                    <svg aria-hidden="true" class="slds-icon slds-icon-standard-log-a-call slds-icon--x-small slds-align-top slds-m-right--xx-small">
+                        <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#log_a_call"></use>
+                      </svg> Calls: <span class="slds-tile__meta">0</span> 
+                    </p> 
+                  <p class="slds-text-body--small slds-p-bottom--xxx-small"> 
+                    <svg aria-hidden="true" class="slds-icon slds-icon-standard-email slds-icon--x-small slds-align-top slds-m-right--xx-small">
+                        <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#email"></use>
+                      </svg> Email: <span class="slds-tile__meta">0</span> 
+                    </p> 
+                </div>
+              </div>              
+            </div>
+        </div>
+<!-- End Household Item -->   	
+	</div>
+  </section>
+</div>
+<!-- End Card -->
+
+<!-- Begin Card -->
+<div class="slds-card">
+  <header class="slds-card__header slds-grid">
+    <div class="slds-media slds-media--center slds-has-flexi-truncate">
+      <div class="slds-media__figure">
+        <svg aria-hidden="true" class="slds-icon slds-icon-standard-contact slds-icon--small">
+          <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#contact"></use>
+        </svg>
+      </div>
+      <div class="slds-media__body">
+        <h3 class="slds-text-heading--small slds-truncate">Related Entities (1)</h3>
+      </div>
+    </div>
+    <div class="slds-no-flex">
+      <div class="slds-button-group">
+        <button class="slds-button slds-button--neutral slds-button--small">Add</button>
+        <button class="slds-button slds-button--icon-border-filled">
+          <svg aria-hidden="true" class="slds-button__icon">
+            <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#down"></use>
+          </svg>
+          <span class="slds-assistive-text">Show More</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <section class="slds-card__body">
+    <table class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal slds-no-row-hover">
+      <thead>
+        <tr>
+          <th class="slds-text-heading--label slds-size--1-of-5" scope="col">Company</th>
+          <th class="slds-text-heading--label slds-size--1-of-5" scope="col">Name</th>
+          <th class="slds-text-heading--label slds-size--1-of-5" scope="col">Role</th>
+          <th class="slds-text-heading--label slds-size--1-of-5" scope="col">Email</th>
+          <th class="slds-text-heading--label slds-size--1-of-5" scope="col">Phone</th>
+          <th class="slds-row-action" scope="col">
+            <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
+              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+                <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#down"></use>
+              </svg>
+              <span class="slds-assistive-text">Show More</span>
+            </button>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="slds-hint-parent">
+          <td class="slds-size--1-of-5" data-label="Company">RAD Designs</td>
+          <td class="slds-size--1-of-5" data-label="Name">Rachel Adams</td>
+          <td class="slds-size--1-of-5" data-label="Title">CEO/Founder</td>
+          <td class="slds-size--1-of-5" data-label="Email">rachel.adams@raddesigns.com</td>
+          <td class="slds-size--1-of-5" data-label="Phone">415-555-3000</td>
+          <td>
+            <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
+              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+                <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#down"></use>
+              </svg>
+              <span class="slds-assistive-text">Show More</span>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <footer class="slds-card__footer"><a href="#">View All</a></footer>
+</div>
+<!-- End Card -->
+		  </div>
+<!-- Begin Goals -->
+		  <div class="slds-tabs__content slds-hide main-tab-content" role="tabpanel" id="main-tab-content-goals">
+		    <div class="slds-card slds-white-card-temp">
+	<img src="../../assets/images/goal-home-purchase-e4929b91eb4a0a1a1b20ca49dd9ce5919c8ee71576fbda5c9e9fbc5e48c9bd71.png" alt="dashboard" style="" />
+</div>
+<div class="slds-card slds-white-card-temp">
+	<img src="../../assets/images/goal-retirement-cdb491f8ca2e7f6b491f3c17f394c903ba4c8e9b0037ca24a57a6f9c51da8e30.png" alt="dashboard" style="" />
+</div>
+<div class="slds-card slds-white-card-temp">
+	<img src="../../assets/images/goal-education-fund-abc711a569279718c60369b5ab84c29d04273d2fd2089f053e50444760f46b7b.png" alt="dashboard" style="" />
+</div>
+		  </div>
+	</main>
+
+<!-- BEGIN SIDE --><!-- BEGIN SIDE --><!-- BEGIN SIDE --><!-- BEGIN SIDE --><!-- BEGIN SIDE -->
+	
+	<aside class="slds-col slds-size--1-of-2 slds-medium-size--1-of-6 slds-large-size--4-of-12" >
+		<!-- begin Side Area -->
+		<div  style="border-left:1px solid #d8dde6; padding:0 1.5rem;">
+			<!-- begin Chatter Thing -->
+			<div class="slds-tabs--default">
+			  <ul class="slds-tabs--default__nav" role="tablist">
+			    <li class="slds-tabs__item slds-text-heading--label slds-active side-tabs-temp" title="Item One" role="presentation" id="side-tab-activity"><a href="#" role="tab" tabindex="0" aria-selected="true" >Activity</a></li>
+			    <li class="slds-tabs__item slds-text-heading--label side-tabs-temp" title="Item Two" role="presentation" id="side-tab-collaborate"><a href="#" role="tab" tabindex="-1" aria-selected="false" >Collaborate</a></li>
+			  </ul>
+			  <div class="slds-tabs__content slds-show side-tab-content" role="tabpanel" id="side-tab-content-activity">
+			    <div class="slds-tabs--scoped" style="padding-bottom:1.5rem;">
+				  <ul class="slds-tabs--scoped__nav" role="tablist">
+				    <li class="slds-tabs__item slds-text-heading--label slds-active activity-sub-tab-temp" title="Task" role="presentation" id="activity-sub-tab-task"><a href="#" role="tab" tabindex="0" aria-selected="true">Task</a></li>
+				    <li class="slds-tabs__item slds-text-heading--label activity-sub-tab-temp" title="Event" role="presentation" id="activity-sub-tab-event"><a href="#" role="tab" tabindex="-1" aria-selected="false">Event</a></li>
+				    <li class="slds-tabs__item slds-text-heading--label activity-sub-tab-temp" title="Log a Call" role="presentation" id="activity-sub-tab-log-call"><a href="#" role="tab" tabindex="-1" aria-selected="false">Log a Call</a></li>
+
+				  </ul>
+				  <div class="slds-tabs__content slds-show activity-sub-content" role="tabpanel" id="activity-sub-content-task">
+				     <input id="input__filter" class="slds-input" type="text" placeholder="Create a new task..." />
+				  </div>
+				  <div class="slds-tabs__content slds-hide activity-sub-content" role="tabpanel" id="activity-sub-content-event">
+				    <h2>Item Two Content</h2>
+				  </div>
+				  <div class="slds-tabs__content slds-hide activity-sub-content" role="tabpanel" id="activity-sub-content-log-call">
+				    <h2>Item Three Content</h2>
+				  </div>
+				</div>
+				<!-- begin Timeline -->
+				<div class="timelineHeader">
+					<h2 class="sectionHeader"> Next Steps </h2>
+				</div>
+				<ul class="slds-timeline">
+				  <li class="slds-timeline__item">
+				    <span class="slds-assistive-text">Task</span>
+				    <div class="slds-media slds-media--reverse">
+				      <div class="slds-media__figure">
+				        <div class="slds-timeline__actions">
+				          <p class="slds-timeline__date">Sep 17</p>
+				          <button class="slds-button slds-button--icon-border-filled">
+				            <svg aria-hidden="true" class="slds-button__icon">
+				              <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#switch"></use>
+				            </svg>
+				            <span class="slds-assistive-text">Switch</span>
+				          </button>
+				        </div>
+				      </div>
+				      <div class="slds-media__body">
+				        <div class="slds-media slds-media--timeline slds-timeline__media--task">
+				          <div class="slds-media__figure">
+				            <svg aria-hidden="true" class="slds-icon slds-icon-standard-task slds-timeline__icon">
+				              <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#task"></use>
+				            </svg>
+				          </div>
+				          <div class="slds-media__body">
+				            <div class="slds-media slds-tile slds-media--small">
+				              <div class="slds-media__figure">
+				                <label class="slds-checkbox" for="mark-complete">
+				                  <input name="checkbox" type="checkbox" id="mark-complete" />
+				                  <span class="slds-checkbox--faux"></span>
+				                  <span class="slds-form-element__label slds-assistive-text">mark-complete</span>
+				                </label>
+				              </div>
+				              <div class="slds-media__body">
+				                <p class="slds-tile__title slds-truncate"><a href="#">Send new documentation for signature of HNW clients</a></p>
+				                <ul class="slds-tile__detail slds-list--horizontal slds-text-body--small">
+				                  <li class="slds-list__item slds-m-right--large">
+				                    <dl class="slds-dl--inline">
+				                      <dt class="slds-dl--inline__label">Contact:</dt>
+				                      <dd class="slds-dl--inline__detail"><a href="#">Rachel Adams</a></dd>
+				                    </dl>
+				                  </li>
+				                  <li class="slds-list__item">
+				                    <dl class="slds-dl--inline">
+				                      <dt class="slds-dl--inline__label">Assigned to:</dt>
+				                      <dd class="slds-dl--inline__detail"><a href="#">Ryan Dobson</a></dd>
+				                    </dl>
+				                  </li>
+				                </ul>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				  </li>
+				</ul>
+				<div class="timelineHeader" style="padding-top:1rem;">
+					<h2 class="sectionHeader"> Past Activity </h2>
+				</div>
+				<ul class="slds-timeline">
+				  <li class="slds-timeline__item">
+				    <span class="slds-assistive-text">Event</span>
+				    <div class="slds-media slds-media--reverse">
+				      <div class="slds-media__figure">
+				        <div class="slds-timeline__actions">
+				          <p class="slds-timeline__date">Sep 8</p>
+				          <button class="slds-button slds-button--icon-border-filled">
+				            <svg aria-hidden="true" class="slds-button__icon">
+				              <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#switch"></use>
+				            </svg>
+				            <span class="slds-assistive-text">Switch</span>
+				          </button>
+				        </div>
+				      </div>
+				      <div class="slds-media__body">
+				        <div class="slds-media slds-media--timeline slds-timeline__media--event">
+				          <div class="slds-media__figure">
+				            <svg aria-hidden="true" class="slds-icon slds-icon-standard-event slds-timeline__icon">
+				              <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#event"></use>
+				            </svg>
+				          </div>
+				          <div class="slds-media__body">
+				            <p><a href="#">Rachel Adams — Porfolio Review</a></p>
+				            <p class="slds-truncate">Let's get together and review your portfolio performance.</p>
+				            <ul class="slds-list--horizontal slds-text-body--small">
+				              <li class="slds-list__item slds-m-right--large">
+				                <dl class="slds-dl--inline">
+				                  <dt class="slds-dl--inline__label">Time:</dt>
+				                  <dd class="slds-dl--inline__detail"><a href="#">Sep 9, 2015 11:00am–12:00pm</a></dd>
+				                </dl>
+				              </li>
+				              <li class="slds-list__item">
+				                <dl class="slds-dl--inline">
+				                  <dt class="slds-dl--inline__label">Location:</dt>
+				                  <dd class="slds-dl--inline__detail"><a href="#">1 Market St, San Francisco CA</a></dd>
+				                </dl>
+				              </li>
+				            </ul>
+				            <dl class="slds-dl--inline slds-text-body--small">
+				              <dt class="slds-dl--inline__label">Name:</dt>
+				              <dd class="slds-dl--inline__detail"><a href="#">Ryan Dobson</a> and <a href="#">Rachel Adams</a></dd>
+				            </dl>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				  </li>
+				  <li class="slds-timeline__item">
+				    <span class="slds-assistive-text">Event</span>
+				    <div class="slds-media slds-media--reverse">
+				      <div class="slds-media__figure">
+				        <div class="slds-timeline__actions">
+				          <p class="slds-timeline__date">Sep 3</p>
+				          <button class="slds-button slds-button--icon-border-filled">
+				            <svg aria-hidden="true" class="slds-button__icon">
+				              <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#switch"></use>
+				            </svg>
+				            <span class="slds-assistive-text">Switch</span>
+				          </button>
+				        </div>
+				      </div>
+				      <div class="slds-media__body">
+				        <div class="slds-media slds-media--timeline slds-timeline__media--event">
+				          <div class="slds-media__figure">
+				            <svg aria-hidden="true" class="slds-icon slds-icon-standard-event slds-timeline__icon">
+				              <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#event"></use>
+				            </svg>
+				          </div>
+				          <div class="slds-media__body">
+				            <p><a href="#">Napa Valley Film Festival</a></p>
+				            <p class="slds-truncate">Rachel, I'd like to invite you, and your family, to be my guest at the Napa Valley Film Festival. </p>
+				            <ul class="slds-list--horizontal slds-text-body--small">
+				              <li class="slds-list__item slds-m-right--large">
+				                <dl class="slds-dl--inline">
+				                  <dt class="slds-dl--inline__label">Time:</dt>
+				                  <dd class="slds-dl--inline__detail"><a href="#">Feb 23, 2015 6:00pm–7:00pm</a></dd>
+				                </dl>
+				              </li>
+				              <li class="slds-list__item">
+				                <dl class="slds-dl--inline">
+				                  <dt class="slds-dl--inline__label">Location:</dt>
+				                  <dd class="slds-dl--inline__detail"><a href="#">4th St, Napa CA</a></dd>
+				                </dl>
+				              </li>
+				            </ul>
+				            <dl class="slds-dl--inline slds-text-body--small">
+				              <dt class="slds-dl--inline__label">Name:</dt>
+				              <dd class="slds-dl--inline__detail"><a href="#">Product Team</a>, <a href="#">Marketing Team</a> and <a href="#">Sales Team</a></dd>
+				            </dl>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				  </li>
+				  <li class="slds-timeline__item">
+				    <span class="slds-assistive-text">Call</span>
+				    <div class="slds-media slds-media--reverse">
+				      <div class="slds-media__figure">
+				        <div class="slds-timeline__actions">
+				          <p class="slds-timeline__date">Aug 26</p>
+				          <button class="slds-button slds-button--icon-border-filled">
+				            <svg aria-hidden="true" class="slds-button__icon">
+				              <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#switch"></use>
+				            </svg>
+				            <span class="slds-assistive-text">Switch</span>
+				          </button>
+				        </div>
+				      </div>
+				      <div class="slds-media__body">
+				        <div class="slds-media slds-media--timeline slds-timeline__media--call">
+				          <div class="slds-media__figure">
+				            <svg aria-hidden="true" class="slds-icon slds-icon-standard-log-a-call slds-timeline__icon">
+				              <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#log_a_call"></use>
+				            </svg>
+				          </div>
+				          <div class="slds-media__body">
+				            <p><a href="#">Mobile conversation on Wednesday</a></p>
+				            <p class="slds-truncate">Great chat about next steps for financial savings goal.</p>
+				            <ul class="slds-list--horizontal slds-text-body--small">
+				              <li class="slds-list__item slds-m-right--large">
+				                <dl class="slds-dl--inline">
+				                  <dt class="slds-dl--inline__label">Name:</dt>
+				                  <dd class="slds-dl--inline__detail"><a href="#">Rachel Adams</a></dd>
+				                </dl>
+				              </li>
+				              <li class="slds-list__item">
+				                <dl class="slds-dl--inline">
+				                  <dt class="slds-dl--inline__label">Logged by:</dt>
+				                  <dd class="slds-dl--inline__detail"><a href="#">Ryan Dobson</a></dd>
+				                </dl>
+				              </li>
+				            </ul>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				  </li>
+				  <li class="slds-timeline__item">
+				    <span class="slds-assistive-text">Email</span>
+				    <div class="slds-media slds-media--reverse">
+				      <div class="slds-media__figure">
+				        <div class="slds-timeline__actions">
+				          <p class="slds-timeline__date">Aug 18</p>
+				          <button class="slds-button slds-button--icon-border-filled">
+				            <svg aria-hidden="true" class="slds-button__icon">
+				              <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#switch"></use>
+				            </svg>
+				            <span class="slds-assistive-text">Switch</span>
+				          </button>
+				        </div>
+				      </div>
+				      <div class="slds-media__body">
+				        <div class="slds-media slds-media--timeline slds-timeline__media--email">
+				          <div class="slds-media__figure">
+				            <svg aria-hidden="true" class="slds-icon slds-icon-standard-email slds-timeline__icon">
+				              <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#email"></use>
+				            </svg>
+				          </div>
+				          <div class="slds-media__body">
+				            <div class="slds-tile">
+				              <p class="slds-tile__title slds-truncate"><a href="#">Updated Proposals</a></p>
+				              <div class="slds-tile__detail">
+				                <p class="slds-truncate">Hi Rachel, Thanks for meeting with the team today and going through the proposals with us.</p>
+				                <ul class="slds-list--horizontal slds-text-body--small">
+				                  <li class="slds-list__item slds-m-right--large">
+				                    <dl class="slds-dl--inline">
+				                      <dt class="slds-dl--inline__label">To:</dt>
+				                      <dd class="slds-dl--inline__detail"><a href="#">Rachel Adams</a></dd>
+				                    </dl>
+				                  </li>
+				                  <li class="slds-list__item">
+				                    <dl class="slds-dl--inline">
+				                      <dt class="slds-dl--inline__label">From:</dt>
+				                      <dd class="slds-dl--inline__detail"><a href="#">Ryan Dobson</a></dd>
+				                    </dl>
+				                  </li>
+				                </ul>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				  </li>
+				</ul>
+				<!-- End Timeline -->
+			  </div>
+			  <div class="slds-tabs__content slds-hide side-tab-content" role="tabpanel" id="side-tab-content-collaborate">
+			    <div class="slds-tabs--scoped" style="padding-bottom:1.5rem;">
+				  <ul class="slds-tabs--scoped__nav" role="tablist">
+				    <li class="slds-tabs__item slds-text-heading--label slds-active collaborate-sub-tab-temp" title="Post" role="presentation" id="collaborate-sub-tab-post"><a href="#" role="tab" tabindex="0" aria-selected="true">Post</a></li>
+				    <li class="slds-tabs__item slds-text-heading--label collaborate-sub-tab-temp" title="Question" role="presentation" id="collaborate-sub-tab-question"><a href="#" role="tab" tabindex="-1" aria-selected="false">Question</a></li>
+				  </ul>
+				  <div class="slds-tabs__content slds-show collaborate-sub-content" role="tabpanel" id="collaborate-sub-content-post">
+				      
+			  		<div class="slds-form-element">
+					  <label class="slds-form-element__label" for="sample2">To: This Account</label>
+					  <div class="slds-form-element__control">
+					    <textarea id="input__collaborate" class="slds-textarea" placeholder="Share an update, @mention someone, add a file..."></textarea>
+					  </div>
+					</div>
+					  <div class="slds-p-top--small" style="text-align:right;">
+					  	<button id="collaborate__send" class="slds-button slds-button--brand" type="button">Share</button>
+					  </div>
+
+				  </div>
+				  <div class="slds-tabs__content slds-hide collaborate-sub-content" role="tabpanel" id="collaborate-sub-content-question">
+				    <h2>Item Two Content</h2>
+				  </div>
+				  <div class="slds-tabs__content slds-hide" role="tabpanel">
+				    <h2>Item Three Content</h2>
+				  </div>
+				</div>
+				<div id="collaborate-side">
+					
+				<!-- Begin Feed Item -->
+				    <div class="slds-p-bottom--large slds-m-bottom--large" style="border-bottom:1px solid #d8dde6;">
+				      <div class="slds-media slds-tile">
+				        <div class="slds-media__figure">
+				          <span class="slds-avatar slds-avatar--circle slds-avatar--small">
+				            <img src="../../assets/images/Rachel-0787d2585b7dcb825a70e46d6d627e442cdb4d9f9ba1e69f02eb32c4a2c9f663.png" alt="portrait" />
+				          </span>
+				        </div>
+				        <div class="slds-media__body">
+				          <p class="slds-tile__title slds-truncate"><a href="#">Rachel Adams</a></p>
+				          <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small">
+				            <li class="slds-truncate slds-list__item">August 17, 2015 at 9:14 AM</li>
+				          </ul>
+				        </div>
+				      </div>
+				      <div class="slds-card slds-card--empty slds-assistant-card-temp slds-m-top--small slds-p-around--small">
+				        <div class="slds-form-element">
+				          <div class="slds-form-element__control">
+				            <span class="">@Ryan Dobson, how is my retirement plan looking?</span>
+				          </div>
+				        </div>
+				      </div>
+				      <div>
+				        <button class="slds-button slds-button--neutral slds-not-selected" aria-live="assertive">
+				          <span class="slds-text-not-selected">
+				            <svg aria-hidden="true" class="slds-button__icon--stateful slds-icon--x-small">
+				              <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#like"></use>
+				            </svg>
+				          </span>
+				        </button>
+				        <button class="slds-button slds-button--neutral slds-not-selected" aria-live="assertive">
+				          <span class="slds-text-not-selected">
+				            <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
+				              <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#add"></use>
+				            </svg> Comment
+				          </span>
+				        </button>
+				      </div>
+				    </div>
+				<!-- End Feed Item -->
+				</div>
+			  </div>
+			</div>		
+		</div>
+		<!-- end Side Area -->
+	</aside>
+	</div>
+</div>
+<!-- Being Lazy -->
+<script>
+$(document).ready(function(){
+     $("#main-tab-tearsheet").click(function(e){
+        e.preventDefault();
+        $(".center-tabs-temp").removeClass('slds-active');
+    	$(this).addClass('slds-active');
+        $(".main-tab-content").hide();
+        $("#main-tab-content-tearsheet").show();
+    });
+    $("#main-tab-details").click(function(e){
+    	e.preventDefault();
+    	$(".center-tabs-temp").removeClass('slds-active');
+    	$(this).addClass('slds-active');
+        $(".main-tab-content").hide();
+        $("#main-tab-content-details").show();
+    });
+    $("#main-tab-financial").click(function(e){
+    	e.preventDefault();
+    	$(".center-tabs-temp").removeClass('slds-active');
+    	$(this).addClass('slds-active');
+        $(".main-tab-content").hide();
+        $("#main-tab-content-financial").show();
+    });
+    $("#main-tab-relationships").click(function(e){
+        e.preventDefault();
+        $(".center-tabs-temp").removeClass('slds-active');
+    	$(this).addClass('slds-active');
+        $(".main-tab-content").hide();
+        $("#main-tab-content-relationships").show();
+    });
+    $("#main-tab-goals").click(function(e){
+        e.preventDefault();
+        $(".center-tabs-temp").removeClass('slds-active');
+    	$(this).addClass('slds-active');
+        $(".main-tab-content").hide();
+        $("#main-tab-content-goals").show();
+    });
+
+    $("#side-tab-activity").click(function(e){
+        e.preventDefault();
+        $(".side-tabs-temp").removeClass('slds-active');
+    	$(this).addClass('slds-active');
+        $(".side-tab-content").hide();
+        $("#side-tab-content-activity").show();
+    });
+    $("#side-tab-collaborate").click(function(e){
+        e.preventDefault();
+        $(".side-tabs-temp").removeClass('slds-active');
+    	$(this).addClass('slds-active');
+        $(".side-tab-content").hide();
+        $("#side-tab-content-collaborate").show();
+    });
+
+    $("#activity-sub-tab-task").click(function(e){
+        e.preventDefault();
+        $(".activity-sub-tab-temp").removeClass('slds-active');
+        $(this).addClass('slds-active');
+        $(".activity-sub-content").hide();
+        $("#activity-sub-content-task").show();
+    });
+    $("#activity-sub-tab-event").click(function(e){
+        e.preventDefault();
+        $(".activity-sub-tab-temp").removeClass('slds-active');
+        $(this).addClass('slds-active');
+        $(".activity-sub-content").hide();
+        $("#activity-sub-content-event").show();
+    });
+    $("#activity-sub-tab-log-call").click(function(e){
+        e.preventDefault();
+        $(".activity-sub-tab-temp").removeClass('slds-active');
+        $(this).addClass('slds-active');
+        $(".activity-sub-content").hide();
+        $("#activity-sub-content-log-call").show();
+    });
+
+    $("#collaborate-sub-tab-post").click(function(e){
+        e.preventDefault();
+        $(".collaborate-sub-tab-temp").removeClass('slds-active');
+        $(this).addClass('slds-active');
+        $(".collaborate-sub-content").hide();
+        $("#collaborate-sub-content-post").show();
+    });
+    $("#collaborate-sub-tab-question").click(function(e){
+        e.preventDefault();
+        $(".collaborate-sub-tab-temp").removeClass('slds-active');
+        $(this).addClass('slds-active');
+        $(".collaborate-sub-content").hide();
+        $("#collaborate-sub-content-question").show();
+    });
+
+    $('#collaborate__send').click(function() {
+		var inputValue = $('#input__collaborate').val();
+		if (inputValue != ''){
+			$('#collaborate-side').prepend('<div class="slds-p-bottom--large slds-m-bottom--large" style="border-bottom:1px solid #d8dde6;"> <div class="slds-media slds-tile"> <div class="slds-media__figure"> <span class="slds-avatar slds-avatar--circle slds-avatar--small"> <img src="../../assets/images/Ryan-c0de6da88f6bc650b3fed6c9331535ff3c3d6949e772127217a5026afb51044b.png" alt="portrait" /> </span> </div> <div class="slds-media__body"> <p class="slds-tile__title slds-truncate"><a href="#">Ryan Dobson</a></p> <ul class="slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small"> <li class="slds-truncate slds-list__item">September 8, 2015 at 10:23 AM</li> </ul> </div> </div> <div class="slds-card slds-card--empty slds-assistant-card-temp slds-m-top--small slds-p-around--small"> '+inputValue+'</div> <div> <div class="slds-form-element__control"> <input id="" class="slds-input" type="text" placeholder="Write a comment ..." /> </div> </div> </div>');
+
+			$('#input__collaborate').val('');
+		}
+	})
+});
+</script>
+<!-- end grid -->
+
+</body>
+</html>

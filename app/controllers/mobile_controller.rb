@@ -3,4 +3,10 @@ class MobileController < ApplicationController
 
   def demo
   end
+
+  def ipad
+  end
+
+  def ins
+  end
 end

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Financial Services</title>
+  <link rel="stylesheet" href="../../assets/application-52492ed32fdbf09097d679b7569e0f903e8d2ba9449b34fa43d005ee11b8814a.css" media="all" /><script src="../../assets/application-07b8b902339e43ea24cb8c9e28cd462923f3d6e29f684f75525dca995954807f.js"></script>
+<script>(function(){function p(){if(window.Turbolinks&&typeof window.Turbolinks.visit==="function"){window.Turbolinks.visit=function(u){window.location.href=u;}}}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",p);}else{p();}window.addEventListener("load",p);})();</script>
+<script>(function(){function p(){if(window.Turbolinks&&typeof window.Turbolinks.visit==="function"){window.Turbolinks.visit=function(u){window.location.href=u;}}}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",p);}else{p();}window.addEventListener("load",p);})();</script>
+<script>(function(){function p(){if(window.Turbolinks&&typeof window.Turbolinks.visit==="function"){window.Turbolinks.visit=function(u){window.location.href=u;}}}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",p);}else{p();}window.addEventListener("load",p);})();</script><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Fx19o31bjlYLzU1rNr0l_02H8JIwQKyTVO5wKxs3Hf5Es9njhPezkImI5WsmdhLlerqucEeb4he7XSbb_uwVXw" />
+  <link rel="icon" type="image/png" href="../../assets/favicon-32x32-0138ad33dfd7d42fbf0d713d035a72d0112523e6fe8f0f648528521b3f79541e.png" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" href="../../assets/images/Cumulus_logos/CumulusLogo_button_blue-white-bg-3a09d4d75636b2638fbd557e7dd86f46c49df820784764b04664630b75489624.png">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+</head>
+<body> 
+
+ <div class="grid-temp" style="height:100vh; width:100vw;">
+	<div class="tempSideNav" style="min-height:100%; background-color:rgb(22, 50, 92); width:240px;overflow:hidden">
+	<ul class="slds-nowrap" style="width:240px">
+		<li id="menu-btn-temp">
+			<a href="#" class="sidenav-row-temp">
+				<span class="slds-icon__container slds-icon-utility-rows">
+				  <svg aria-hidden="true" class="slds-icon slds-icon--small">
+				    <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#rows"></use>
+				  </svg>
+				</span>
+			</a>
+		</li>
+		<li>
+			<a href="../../today/today/index.html?i=02u6100000052eW">
+				<span class="slds-icon__container">
+				  <svg aria-hidden="true" class="slds-icon">
+				    <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#today"></use>
+				  </svg>
+				</span>
+				Today
+</a>		</li>
+		<li class="selected-temp">
+			<a href="../../sales/leadlist/index.html?i=02u6100000052eW">
+				<span class="slds-icon__container">
+				  <svg aria-hidden="true" class="slds-icon slds-icon-standard-lead">
+				    <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#lead"></use>
+				  </svg>
+				</span>
+				Leads
+</a>		</li>
+		<li>
+			<a href="../../wm/bob/index.html?i=02u6100000052eW">
+				<span class="slds-icon__container">
+				  <svg aria-hidden="true" class="slds-icon">
+				    <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom15"></use>
+				  </svg>
+				</span>
+				Clients
+</a>		</li>
+		<li>
+			<a href="../../wm/profile/index.html?i=02u6100000052eW">
+				<span class="slds-icon__container">
+				  <svg aria-hidden="true" class="slds-icon">
+				    <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#people"></use>
+				  </svg>
+				</span>
+				People
+</a>		</li>
+		<li>
+			<a href="../../cb/profile/index.html?i=02u6100000052eW">
+				<span class="slds-icon__container">
+				  <svg aria-hidden="true" class="slds-icon">
+				    <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#account"></use>
+				  </svg>
+				</span>
+				Accounts
+</a>		</li>
+	</ul>
+</div>
+<script>
+$(document).ready( function(){
+	// see if there are existing items
+	if (!localStorage.getItem("navToggle")) {
+		// Set data
+		localStorage.setItem("navToggle", 'Open')
+	}
+
+
+    $('#menu-btn-temp').click( function() {
+        var toggleWidth = $(".tempSideNav").width() == 240 ? "56px" : "240px";
+        $('.tempSideNav').animate({ width: toggleWidth });
+        var navOpen = $(".tempSideNav").width() == 240 ? "Closed" : "Open";
+
+        localStorage.setItem("navToggle", navOpen);
+    });
+
+    var navToggle = localStorage.getItem('navToggle') == 'Closed' ? $('.tempSideNav').width('56') : $('.tempSideNav').width('240');
+    
+});
+</script>
+
+	<div class="slds-col grid-1" style="overflow:scroll;">
+	 <div class="slds-grid slds-wrap slds-align-top">
+	 	<div class="slds-col slds-size--1-of-1 navbar-temp">
+	 		<div class="slds-grid">
+			  <div class="slds-col slds-align-middle">
+			  	<span class="slds-icon__container slds-icon-utility-salesforce1">
+				  <svg aria-hidden="true" class="slds-icon slds-icon-text-default icon-salesforce1-temp">
+				    <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#salesforce1"></use>
+				  </svg>
+				</span>
+			  </div>
+			  <div class="slds-col slds-align-middle" style="text-align:center;">
+			  	<div class="slds-input" style="text-align:left;">
+			  		<span class="slds-icon__container slds-icon-utility-search slds-m-horizontal--x-small">
+					  <svg aria-hidden="true" class="slds-icon--x-small slds-icon-text-default">
+					    <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#search"></use>
+					  </svg>
+					</span>
+			  		<input id="input__filter" type="text" placeholder="Search Salesforce" style="width:70%; border:none;">
+			  	</div>
+			  	
+			  </div>
+			  <div class="slds-col slds-align-middle icon-container ">
+				<span class="slds-icon__container slds-icon-utility-apps slds-m-horizontal--x-small">
+				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
+				    <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#apps"></use>
+				  </svg>
+				</span>
+				<span class="slds-icon__container slds-icon-utility-question slds-m-horizontal--x-small">
+				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
+				    <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#question"></use>
+				  </svg>
+				</span>
+				<span class="slds-icon__container slds-icon-utility-setup slds-m-horizontal--x-small">
+				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
+				    <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#setup"></use>
+				  </svg>
+				</span>
+				<span class="slds-icon__container slds-icon-utility-notification slds-m-horizontal--x-small">
+				  <svg aria-hidden="true" class="slds-icon--small slds-icon-text-default">
+				    <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#notification"></use>
+				  </svg>
+				</span>
+		 		<a href="../../index.html">
+			 		<span class="slds-avatar slds-avatar--circle slds-avatar--small slds-m-horizontal--x-small">
+					  <img src="../../assets/images/Mike-f02b0868666368e7930902901d6acbbc180fff93c475642bf45f76dae8821909.jpg" alt="person name" />
+					</span>
+</a>			  </div>
+			</div>
+	 	</div>
+		<nav class="slds-col slds-size--1-of-1">
+		<!-- begin header -->
+			<div class="slds-page-header">
+			  <div class="slds-grid">
+			    <div class="slds-media">
+			        <div class="slds-media__figure">
+			          <svg aria-hidden="true" class="slds-icon slds-icon--large slds-icon-standard-lead">
+			            <use xlink:href="../../assets/icons/standard-sprite/svg/symbols-231328976110c0eb8db0785554a465f531064187c7c16ae28da81d8e89242c37.svg#lead"></use>
+			          </svg>
+			        </div>
+		        </div>
+			    <div class="slds-col slds-has-flexi-truncate">
+			      <p class="slds-text-heading--label">Leads</p>
+			      <div class="slds-grid">
+			        <div class="slds-grid slds-type-focus slds-no-space">
+			          <h1 class="slds-text-heading--medium slds-truncate" title="My Leads (truncates)">My Leads</h1>
+			          <button class="slds-button slds-button--icon-bare slds-shrink-none slds-align-middle slds-m-left--x-small">
+			            <svg aria-hidden="true" class="slds-button__icon">
+			              <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#down"></use>
+			            </svg>
+			            <span class="slds-assistive-text">View More</span>
+			          </button>
+			        </div>
+			        <button class="slds-button slds-button--icon-more slds-shrink-none slds-m-left--large" aria-haspopup="true">
+			          <svg aria-hidden="true" class="slds-button__icon">
+			            <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#settings"></use>
+			          </svg>
+			          <span class="slds-assistive-text">Settings</span>
+			          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
+			            <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#down"></use>
+			          </svg>
+			        </button>
+			        <button class="slds-button slds-button--brand slds-button-space-left slds-m-right--medium slds-shrink-none slds-align-middle slds-hide" aria-hidden="true">Save</button>
+			      </div>
+			    </div>
+<!-- Begin Buttons -->
+				    <div class="slds-col slds-no-flex slds-align-bottom">
+					    <div class="slds-grid">
+					        <div class="slds-button-space-left">
+					          <button class="slds-button slds-button--icon-more" aria-haspopup="true">
+					            <svg aria-hidden="true" class="slds-button__icon">
+					              <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#table"></use>
+					            </svg>
+					            <span class="slds-assistive-text">Table</span>
+					            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
+					              <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#down"></use>
+					            </svg>
+					          </button>
+					        </div>
+					        <div class="slds-button-group slds-button-space-left" role="group">
+<!-- Filter -->
+								<div class="slds-dropdown-trigger" aria-haspopup="true">
+								  <button class="slds-button slds-button--icon-border">
+								    <svg aria-hidden="true" class="slds-button__icon">
+								      <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#filterList"></use>
+								    </svg>
+								    <span class="slds-assistive-text">Show More</span>
+								  </button>
+								  <div class="slds-dropdown slds-dropdown--left slds-dropdown--menu">
+								    <ul class="slds-dropdown__list" role="menu">
+								      <li id="menu-86-1" href="#" class="slds-dropdown__item slds-text-heading--label" role="menuitem option" tabindex="-1"> <a href="#" tabindex="-1" class="slds-truncate"> Rank </a> </li>
+								      <li id="menu-87-1" href="#" class="slds-dropdown__item" role="menuitem option" tabindex="-1">
+								      	<a href="#" tabindex="-1" class="slds-truncate">
+								      	<label class="slds-checkbox" for="select-filter1">
+								          <input name="select-filter1" class="filter-diamond" type="checkbox" id="select-filter1" />
+								          <span class="slds-checkbox--faux"></span>
+								        </label>
+								      	<span class="slds-m-left--x-small"><svg aria-hidden="true" class="icon-star-active"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-active"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-active"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg></span>
+								      	</a>
+								      </li>
+								      <li id="menu-87-2" href="#" class="slds-dropdown__item" role="menuitem option" tabindex="-1">
+								      	<a href="#" tabindex="-1" class="slds-truncate">
+								      	<label class="slds-checkbox" for="select-filter2">
+								          <input name="select-filter2" class="filter-platinum" type="checkbox" id="select-filter2" />
+								          <span class="slds-checkbox--faux"></span>
+								        </label>
+								      	<span class="slds-m-left--x-small"><svg aria-hidden="true" class="icon-star-active"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-active"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg></span>
+								      	</a>
+								      </li>
+								      <li id="menu-87-3" href="#" class="slds-dropdown__item" role="menuitem option" tabindex="-1">
+								      	<a href="#" tabindex="-1" class="slds-truncate">
+								      	<label class="slds-checkbox" for="select-filter3">
+								          <input name="select-filter3" class="filter-gold" type="checkbox" id="select-filter3" />
+								          <span class="slds-checkbox--faux"></span>
+								        </label>
+								      	<span class="slds-m-left--x-small"><svg aria-hidden="true" class="icon-star-active"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg></span>
+								      	</a>
+								      </li>
+								      <li id="menu-87-4" href="#" class="slds-dropdown__item" role="menuitem option" tabindex="-1">
+								      	<a href="#" tabindex="-1" class="slds-truncate">
+								      	<label class="slds-checkbox" for="select-filter4">
+								          <input name="select-filter4" class="filter-silver" type="checkbox" id="select-filter4" />
+								          <span class="slds-checkbox--faux"></span>
+								        </label>
+								      	<span class="slds-m-left--x-small"><svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg></span>
+								      	</a>
+								      </li>			      
+								    </ul>
+								  </div>
+							  </div>
+					          <button class="slds-button slds-button--icon-border">
+					            <svg aria-hidden="true" class="slds-button__icon">
+					              <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#chart"></use>
+					            </svg>
+					            <span class="slds-assistive-text">Chart</span>
+					          </button>
+					          <button class="slds-button slds-button--icon-more">
+					            <svg aria-hidden="true" class="slds-button__icon">
+					              <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#sort"></use>
+					            </svg>
+					            <span class="slds-assistive-text">Sort</span>
+					            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
+					              <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#down"></use>
+					            </svg>
+					            <span class="slds-assistive-text">More</span>
+					          </button>
+					        </div>
+
+					        <div class="slds-button-group" role="group">
+					          <button class="slds-button slds-button--neutral">Actions</button>
+					          <div class="slds-button--last slds-dropdown-trigger">
+					            <button class="slds-button slds-button--icon-border-filled ">
+					              <svg aria-hidden="true" class="slds-button__icon">
+					                <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#down"></use>
+					              </svg>
+					              <span class="slds-assistive-text">More Actions</span>
+					            </button>
+					              <div class="slds-dropdown slds-dropdown--right slds-dropdown--menu slds-dropdown--actions ">
+								    <ul class="slds-dropdown__list" role="menu">
+								      <li id="menu-0-0" href="#" class="slds-dropdown__item"><a href="#" class="slds-truncate" role="menuitem">New Lead...</a></li>
+								      <li id="menu-1-1" href="#" class="slds-dropdown__item"><a href="#" class="slds-truncate" role="menuitem">Create Tasks...</a></li>
+								      <li id="menu-2-2" href="#" class="slds-dropdown__item"><a href="#" class="slds-truncate" role="menuitem">Send to Campaign...</a></li>
+								      <li id="menu-4-4" href="#" class="slds-dropdown__item"><a href="#" class="slds-truncate" role="menuitem">Export to Excel</a></li>
+								    </ul>
+								  </div>
+					          </div>
+					        </div>
+					    </div>
+					</div>
+			  </div>
+			  <p class="slds-text-body--small slds-m-top--x-small">10 items • Sorted by Lead Value</p>
+			</div>
+			<!-- end header -->
+		</nav>
+
+		<!-- begin grid -->
+		<main class="slds-col slds-size--1-of-2 slds-medium-size--5-of-6 slds-large-size--8-of-12">
+			<div class="row-main">
+				<!-- begin table -->
+				<table class="slds-table slds-table--bordered slds-max-medium-table--stacked">
+				  <thead>
+				    <tr class="slds-text-heading--label">
+				      <th class="slds-row-select" scope="col">
+				        <label class="slds-checkbox" for="select-all">
+				          <input name="checkbox" type="checkbox" id="select-all" />
+				          <span class="slds-checkbox--faux"></span>
+				          <span class="slds-form-element__label slds-assistive-text">select all</span>
+				        </label>
+				      </th>
+				      <th class="slds-is-sortable" scope="col">
+				        <span class="slds-truncate">Lead Name</span>
+				          <button class="slds-button slds-button--icon-bare slds-button--icon-border-small">
+				          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
+				            <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#arrowdown"></use>
+				          </svg>
+				        </button>
+				      </th>
+				      <th scope="col">
+				        <span class="slds-truncate">Lead Rank</span>
+				      </th>
+				      <th class="slds-is-sortable" scope="col">
+				        <span class="slds-truncate">Lead Value</span>
+				          <button class="slds-button slds-button--icon-bare slds-button--icon-border-small">
+				          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small" style="visibility:visible">
+				            <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#arrowdown"></use>
+				          </svg>
+				        </button>
+				      </th>
+				      <th scope="col">
+				        <span class="slds-truncate">Source</span>
+				      </th>
+				      <th scope="col">
+				        <span class="slds-truncate">Interested</span>
+				      </th>
+				      <th scope="col">
+				        <span class="slds-truncate">Owned</span>
+				      </th>
+				      <th scope="col">
+				        <span class="slds-truncate">Last Contacted</span>
+				      </th>
+				      <th scope="col">
+				        <span class="slds-truncate">Last Activity</span>
+				      </th>
+				      <th class="slds-row-action" scope="col">
+				        <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small">
+				          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+				            <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#down"></use>
+				          </svg>
+				          <span class="slds-assistive-text">Show More</span>
+				        </button>
+				      </th>
+				    </tr>
+				  </thead>
+				  <tbody id="leadlistTable">				 
+<!-- Populated from JSON -->				    
+				  </tbody>
+				</table>
+				<!-- end table -->
+			</div>
+		</main>
+	</div>
+</div>
+<!-- end grid -->
+
+<script>
+$(document).ready(function(){
+
+	// see if there are existing items
+	var currentData = localStorage.getItem('leadlistData')
+
+	window.leadlist = [
+		{
+			name: 'Sarah Bui',
+			rank: '2', 
+			value: '170',
+			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom41"></use> </svg>',
+			source: 'Website',
+			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom41"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom40"></use></svg>',
+			contacted: 'Not Contacted',
+			datetime: '08/13/2015'
+		},
+		{
+			name: 'Rachel Adams',
+			rank: '3', 
+			value: '155',
+			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom40"></use> </svg>',
+			source: 'Mobile App',
+			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom41"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom40"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom90"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom17"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom16"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom28"></use> </svg>',
+			contacted: 'Not Contacted',
+			datetime: '09/02/2015'
+		},
+		{
+			name: 'Jeremy Catronio',
+			rank: '0', 
+			value: '130',
+			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom16"></use> </svg>',
+			source: 'Partner Referral',
+			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom40"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom90"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom28"></use> </svg>',
+			contacted: '08/25/2015',
+			datetime: '08/25/2015'
+		},
+		{
+			name: 'Erica Wilford',
+			rank: '1', 
+			value: '125',
+			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom16"></use> </svg>',
+			source: 'Phone Inquiry',
+			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom41"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom40"></use> </svg>',
+			contacted: 'Not Contacted',
+			datetime: '08/13/2015'
+		},
+		{
+			name: 'Jane Ramirez',
+			rank: '3', 
+			value: '125',
+			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom41"></use> </svg>',
+			source: 'Partner Referral',
+			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom40"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom90"></use> </svg> ',
+			contacted: '08/18/2015',
+			datetime: '08/18/2015'
+		},
+		{
+			name: 'Rachelle Siemaszko',
+			rank: '2', 
+			value: '125',
+			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom40"></use> </svg>',
+			source: 'Mobile App',
+			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom41"></use> </svg> ',
+			contacted: '08/25/2015',
+			datetime: '09/04/2015'
+		},
+		{
+			name: 'Frederic Torsdottir',
+			rank: '3', 
+			value: '110',
+			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom90"></use> </svg>',
+			source: 'Partner Referral',
+			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom40"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom17"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom16"></use> </svg>',
+			contacted: '08/13/2015',
+			datetime: '08/18/2015'
+		},
+		{
+			name: 'Carter Jameson',
+			rank: '2', 
+			value: '75',
+			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom17"></use> </svg>',
+			source: 'Mobile App',
+			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom41"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom40"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom90"></use> </svg> ',
+			contacted: '08/13/2015',
+			datetime: '08/27/2015'
+		},
+		{
+			name: 'Bruno Fabian',
+			rank: '1', 
+			value: '75',
+			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom40"></use> </svg>',
+			source: 'Website',
+			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom41"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom16"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom28"></use> </svg>',
+			contacted: '08/13/2015',
+			datetime: '08/24/2015'
+		},
+		{
+			name: 'Tina Moore',
+			rank: '1', 
+			value: '75',
+			product: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom40"></use> </svg>',
+			source: 'Website',
+			customer: '<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom17"></use> </svg> <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom16"></use> </svg><svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom28"></use> </svg>',
+			contacted: 'Not Contacted',
+			datetime: '09/03/2015'
+		},
+		
+	]
+
+	// Don't read the data from localstorage if theres already existing data
+	//if (!currentData) {
+		// Set data
+		localStorage.setItem("leadlistData", JSON.stringify(leadlist))
+	//}
+
+	// Get data
+	var data = JSON.parse(localStorage.getItem('leadlistData'))
+		var numID = 0;
+	
+		data.forEach(function(datum) {
+			numID = numID+1;
+			switch(datum.rank){
+				
+				case '0':
+					datum.rank = '<svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg>';
+					break;
+				case '1':
+					datum.rank = '<svg aria-hidden="true" class="icon-star-active"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg>';
+					break;
+				case '2':
+					datum.rank = '<svg aria-hidden="true" class="icon-star-active"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-active"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-inactive"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg>';
+					break;
+				case '3':
+					datum.rank = '<svg aria-hidden="true" class="icon-star-active"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-active"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg> <svg aria-hidden="true" class="icon-star-active"> <use xlink:href="../../assets/icons/custom-sprite/svg/symbols-5b372753a3a4a8b52b103f65cc7916395d5837a62d41884690c79f8343fd9c57.svg#custom11"></use> </svg>'; 
+					break;
+				default:
+					datum.rank = 'Unranked';
+					break;
+			};
+
+		$('#leadlistTable').append('<tr class="slds-hint-parent"> <td class="slds-row-select"> <label class="slds-checkbox" for="select-row'+numID+'"> <input name="select-row'+numID+'" type="checkbox" id="select-row'+numID+'" /> <span class="slds-checkbox--faux"></span> <span class="slds-form-element__label slds-assistive-text">select row1</span> </label> </td> <td data-label="lead-name"><a href="#" class="slds-truncate">'+datum.name+'</a></td> <td data-label="rank"> '+datum.rank+' </td> <td data-label="value"> <span class="slds-truncate">$'+datum.value+'</span> </td> <td data-label="interest"> '+datum.source+' </td> <td data-label="value"> <span class="slds-truncate">'+datum.product+'</span> </td> <td data-label="customer">'+datum.customer+'</td><td><span class="slds-truncate">'+datum.contacted+'</span></td><td data-label="activity"> <span class="slds-truncate">'+datum.datetime+'</span> </td> <td class="slds-row-action"> <button class="slds-button slds-button--icon-border-filled slds-button--icon-border-small"> <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small"> <use xlink:href="../../assets/icons/utility-sprite/svg/symbols-94b72932d863b0f61e7de4a3767da8de5e2b95cb02c68f4f71b424420f166229.svg#down"></use> </svg> <span class="slds-assistive-text">Show More</span> </button> </td> </tr>') 
+	})
+
+
+	//data.forEach(function(datum) {
+	//	$('#myTestElement').append('<tr><td>'+datum.name+'</td><td>'+datum.value+'<td><td>'+datum.datetime+'<td></tr>')
+	//})
+
+	// to clear the data
+	// localStorage.clear()
+
+})
+</script>
+
+</body>
+</html>
